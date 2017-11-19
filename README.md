@@ -2,6 +2,11 @@
 
 Theme Based on -cybernetic vision Intro 
 
+# Instructions
+* Install npm on your pc globally 
+* The css is written is sass to build the file just run $~"npm run sass"
+* This will recompile all the sass into css(css folder)
+	
 ## Developers
 * [Chinmay Pandhare](https://github.com/ccpandhare) 	
 * [Neethu Maria Joy](https://github.com/Roboneet)
