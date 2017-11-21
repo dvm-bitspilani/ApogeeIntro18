@@ -21,9 +21,12 @@
 .info-page .logo {
   width: 65vw;
   color: white;
-  display: flex; }
+  display: flex;
+  font-size: 3rem; }
   .info-page .logo p {
     margin: auto 2vw; }
+.info-page #color {
+  color: #04FFE5; }
 .info-page .link {
   position: relative;
   display: flex;
@@ -32,7 +35,13 @@
   text-transform: uppercase; }
   .info-page .link p {
     margin: auto;
+    font-size: 1.2em;
     padding: 0 1vw 0 2vw; }
+.info-page #ham img {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid white; }
 .info-page .main_con {
   display: flex;
   position: relative;
@@ -63,7 +72,6 @@
   width: 100%;
   height: 100%;
   opacity: 0.1;
-  pointer-events: none;
   background-image: url("../Image/bg.jpg"); }
 .info-page .info_cont {
   position: relative;
@@ -91,7 +99,21 @@
 .info-page .social {
   height: 10vh;
   background-color: #04E6CE;
-  width: 100%; }
+  width: 100%;
+  display: flex; }
+  .info-page .social ul {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    list-style: none; }
+    .info-page .social ul a {
+      text-decoration: none;
+      padding: 0 3vw; }
+      .info-page .social ul a img {
+        height: 40%;
+        width: 40%; }
+    .info-page .social ul a:first-child {
+      margin-left: -10vw; }
 
 .event .social {
   text-align: center;
@@ -101,6 +123,8 @@
   font-family: "Raleway", sans-serif;
   color: #FDFBFB;
   background: #F6A211; }
+  .event .social h3 {
+    width: 100%; }
 .event .image {
   background-image: url("../Image/dummy.jpg"); }
 .event #data_wrapper {
