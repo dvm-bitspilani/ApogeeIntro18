@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 @font-face {
   font-family: "COVES";
   src: url("Fonts/coveslight.otf"); }
@@ -5,43 +6,38 @@
   padding: 0;
   margin: 0; }
 
-body {
+.info-page body {
   width: 100vw;
   overflow: hidden;
   height: 100vh;
   background-size: cover; }
-
-.navbar {
+.info-page .navbar {
   width: 100%;
   background-color: #111;
   height: 10vh;
   display: flex;
   font-family: "COVES";
   font-weight: bold; }
-
-.logo {
+.info-page .logo {
   width: 65vw;
   color: white;
   display: flex; }
-  .logo p {
+  .info-page .logo p {
     margin: auto 2vw; }
-
-.link {
+.info-page .link {
   position: relative;
   display: flex;
   color: white;
   justify-content: center;
   text-transform: uppercase; }
-  .link p {
+  .info-page .link p {
     margin: auto;
     padding: 0 1vw 0 2vw; }
-
-.main_con {
+.info-page .main_con {
   display: flex;
   position: relative;
   z-index: 10; }
-
-.image {
+.info-page .image {
   position: absolute;
   width: 55vw;
   height: 90vh;
@@ -50,8 +46,7 @@ body {
   background-position: center;
   right: 0px;
   -webkit-clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 8% 100%); }
-
-.info {
+.info-page .info {
   font-family: "COVES";
   height: 90vh;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
@@ -59,8 +54,7 @@ body {
   width: 55vw;
   flex-wrap: wrap;
   flex-direction: column; }
-
-.info_cont:before {
+.info-page .info_cont:before {
   content: " ";
   display: block;
   position: absolute;
@@ -69,9 +63,9 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0.1;
+  pointer-events: none;
   background-image: url("../Image/bg.jpg"); }
-
-.info_cont {
+.info-page .info_cont {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -81,23 +75,65 @@ body {
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap; }
-  .info_cont p {
+  .info-page .info_cont p {
     text-align: left;
     text-transform: uppercase;
     margin-left: 7vw;
     font-weight: bold; }
-  .info_cont #head {
+  .info-page .info_cont #head {
     font-size: 4.8vw; }
-  .info_cont #date {
+  .info-page .info_cont #date {
     font-size: 1.6vw;
     color: #95989A; }
-  .info_cont #info {
+  .info-page .info_cont #info {
     font-size: 1.7vw;
     color: #04E6CE; }
-
-.social {
+.info-page .social {
   height: 10vh;
   background-color: #04E6CE;
   width: 100%; }
+
+.event .social {
+  text-align: center;
+  line-height: 10vh;
+  font-size: 2em;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  color: #FDFBFB;
+  background: #F6A211; }
+.event .image {
+  background-image: url("../Image/dummy.jpg"); }
+.event #data_wrapper {
+  align-items: center;
+  flex-direction: row-reverse; }
+  .event #data_wrapper .letter {
+    width: 20%;
+    height: 100%; }
+  .event #data_wrapper .container {
+    box-sizing: border-box;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 70px 30px; }
+    .event #data_wrapper .container header {
+      position: relative;
+      font-size: 1.7em;
+      color: #2B2B2B;
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      width: fit-content; }
+      .event #data_wrapper .container header ::before {
+        position: absolute;
+        width: 95%;
+        height: 100%;
+        content: "";
+        background: #F6DF11;
+        pointer-events: none;
+        z-index: -1;
+        transform: rotate(-2deg); }
+    .event #data_wrapper .container section {
+      font-size: 1.2em; }
 
 /*# sourceMappingURL=main.css.map */

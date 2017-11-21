@@ -5,30 +5,76 @@
 	<link type="text/css" rel="stylesheet" href="css/main.css">
 	<title>Apogee-2018</title>
 </head>
+<body>
+<section id="main_wrapper" class="info-page home">
 <div class="navbar">
 	<div class="logo"><p>LOGO AYEGA</p>	</div>
 	<div class="link">
+		<p><a onclick="renderHome()">HOME</a></p>
 		<p>about</p>
 		<p>sponsors</p>
 		<p>contact</p>
+		<p><a onclick="renderEvent()">EVENT</a></p>
 		<p>ham</p>
 	</div>
-</div>	
+</div>
+
 <div class="image"></div>
 <div class="main_con">
 	<div class="info">
-		<div class="info_cont">
-			<div class="data">
-				<p id="head">cybernetic<br> vision</p>
-				<p id="date">78-67 february</p>
-				<p id="info">annual technical fest
-				<br>
-				 of bits pilani</p>
-			</div>
+		<div class="info_cont" id="data_wrapper">
+
 		</div>
-		<div class="social">
+		<div class="social" id="footer">
+
 		</div>
 	</div>
 </div>
+</section>
+<script>
+	document.addEventListener('DOMContentLoaded', onloadHandler);
+
+	function	renderHome(){
+		document.body.querySelector("#main_wrapper").className = "info-page home";
+		document.body.querySelector("#data_wrapper").innerHTML = templates.home.data_wrapper;
+		document.body.querySelector("#footer").innerHTML = templates.home.footer;
+	}
+
+	function onloadHandler(){
+		console.log("LOADED")
+		renderHome();
+	}
+
+	function renderEvent(){
+			document.body.querySelector("#main_wrapper").className = "info-page event";
+			document.body.querySelector("#data_wrapper").innerHTML = templates.event.data_wrapper;
+			document.body.querySelector("#footer").innerHTML = templates.event.footer;
+
+		}
+
+		var templates = {
+			"home":{
+				data_wrapper: '<div class="data">\
+					<p id="head">cybernetic<br> vision</p>\
+					<p id="date">78-67 february</p>\
+					<p id="info">annual technical fest\
+					<br>\
+					 of bits pilani</p>\
+				</div>',
+				footer: ''
+			},
+			"event" :{
+				data_wrapper: '<div class="letter"></div>\
+				<div class="container">\
+					<header><h1><b>Reverse Engineering</b></h1></header>\
+					<section>\
+						Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.\
+					</section>\
+				</div>',
+				footer: '<h3>PROBLEM STATEMENTS</h3>'
+			}
+		}
+</script>
+
 	</body>
 </html>
