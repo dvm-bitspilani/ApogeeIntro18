@@ -22,9 +22,13 @@ body {
 .logo {
   width: 65vw;
   color: white;
-  display: flex; }
+  display: flex;
+  font-size: 3rem; }
   .logo p {
     margin: auto 2vw; }
+
+#color {
+  color: #04FFE5; }
 
 .link {
   position: relative;
@@ -34,7 +38,14 @@ body {
   text-transform: uppercase; }
   .link p {
     margin: auto;
+    font-size: 1.2em;
     padding: 0 1vw 0 2vw; }
+
+#ham img {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid white; }
 
 .main_con {
   display: flex;
@@ -98,6 +109,20 @@ body {
 .social {
   height: 10vh;
   background-color: #04E6CE;
-  width: 100%; }
+  width: 100%;
+  display: flex; }
+  .social ul {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    list-style: none; }
+    .social ul a {
+      text-decoration: none;
+      padding: 0 3vw; }
+      .social ul a img {
+        height: 40%;
+        width: 40%; }
+    .social ul a:first-child {
+      margin-left: -10vw; }
 
 /*# sourceMappingURL=main.css.map */
