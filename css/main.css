@@ -3,11 +3,11 @@
   src: url("Fonts/coveslight.otf"); }
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  transition: all 0.3s linear; }
 
 body {
   width: 100vw;
-  overflow: hidden;
   height: 100vh;
   background-size: cover; }
 
@@ -58,11 +58,13 @@ body {
   margin: auto;
   margin-left: 3vw; }
 
-#ham img {
-  width: 30px;
-  height: 30px;
-  padding: 5px;
-  border: 1px solid white; }
+#ham {
+  margin: auto; }
+  #ham img {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid white; }
 
 .main_con {
   display: flex;
@@ -104,11 +106,23 @@ body {
   display: flex;
   flex-wrap: wrap;
   z-index: 10;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap; }
+  height: 80vh; }
+  .info_cont .infodata {
+    width: 70%;
+    display: flex;
+    display: none;
+    flex-direction: column; }
+    .info_cont .infodata .heading {
+      padding: 1% 5%;
+      display: none;
+      margin: 6vh auto 4vh auto;
+      font-size: 3em;
+      background-color: yellow; }
+  .info_cont .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap; }
   .info_cont p {
     text-align: left;
     text-transform: uppercase;
@@ -128,9 +142,21 @@ body {
   background-color: #04E6CE;
   width: 100%;
   display: flex; }
-  .social ul {
+  .social .linkage {
     margin: auto;
+    width: 100%;
     display: flex;
+    display: none;
+    justify-content: center;
+    font-size: 2em;
+    margin-left: -10vw;
+    font-weight: bold; }
+    .social .linkage a {
+      text-decoration: none;
+      color: black; }
+  .social ul {
+    display: flex;
+    margin: auto;
     flex-direction: row;
     list-style: none; }
     .social ul a {
@@ -141,5 +167,97 @@ body {
         width: 40%; }
     .social ul a:first-child {
       margin-left: -10vw; }
+
+@media screen and (max-width: 700px) {
+  .link {
+    display: none; }
+
+  .image {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    background-image: url("../Image/mainbg.jpeg");
+    background-size: cover;
+    background-position: center;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+
+  .info {
+    font-family: "COVES";
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    flex-direction: column; }
+
+  .social .linkage {
+    margin-left: 0; }
+  .social ul a:first-child {
+    margin-left: 0; }
+
+  .info_cont .infodata {
+    width: 100%; }
+
+  .data {
+    width: 100vw;
+    justify-content: content;
+    margin: auto;
+    text-align: center; }
+    .data p {
+      text-align: center;
+      margin-left: 0; }
+    .data #head {
+      font-size: 4.5rem; }
+    .data #date {
+      font-size: 2rem; }
+    .data #info {
+      font-size: 2.2rem; } }
+@media screen and (max-width: 450px) {
+  .link {
+    display: none; }
+
+  .logo {
+    font-size: 2.5rem; }
+    .logo #bps {
+      font-size: 0.35em; }
+
+  .image {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    background-image: url("../Image/mainbg.jpeg");
+    background-size: cover;
+    background-position: center;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+
+  .info {
+    font-family: "COVES";
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    flex-direction: column; }
+
+  .social .linkage {
+    margin-left: 0; }
+  .social ul a:first-child {
+    margin-left: 0; }
+
+  .info_cont .infodata {
+    width: 100%; }
+
+  .data {
+    width: 100vw;
+    justify-content: content;
+    margin: auto;
+    text-align: center; }
+    .data p {
+      text-align: center;
+      margin-left: 0; }
+    .data #head {
+      font-size: 3rem; }
+    .data #date {
+      font-size: 1.1rem; }
+    .data #info {
+      font-size: 1.3rem; } }
 
 /*# sourceMappingURL=main.css.map */

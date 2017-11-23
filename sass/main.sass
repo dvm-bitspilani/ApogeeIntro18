@@ -5,11 +5,10 @@ $a : 12vw/93vw*15vw
 *
 	padding : 0
 	margin : 0
+	transition : all 0.3s linear
 body
 	width : 100vw
-	overflow : hidden
 	height : 100vh
-	
 	background-size : cover
 
 .navbar
@@ -55,6 +54,7 @@ body
 	margin : auto
 	margin-left : 3vw
 #ham
+	margin : auto
 	img
 		width: 30px
 		height: 30px
@@ -97,11 +97,23 @@ body
 	flex-wrap : wrap
 	z-index : 10
 	height : 80vh
+	.infodata	
+		width: 70%
+		display: flex
+		display: none
+		flex-direction: column
+		.heading
+			padding : 1% 5%
+			display: none
+			margin: 6vh auto 4vh auto
+			font-size: 3em
+			background-color : yellow
+		.infocontent
 	.data
-	display : flex
-	flex-direction : column
-	justify-content : center
-	flex-wrap : wrap
+		display : flex
+		flex-direction : column
+		justify-content : center
+		flex-wrap : wrap
 	p
 		text-align: left
 		text-transform: uppercase
@@ -121,9 +133,21 @@ body
 	background-color : #04E6CE
 	width : 100%
 	display : flex
-	ul	
+	.linkage
 		margin: auto
+		width: 100%
 		display: flex
+		display: none
+		justify-content: center
+		font-size : 2em
+		margin-left: -10vw
+		font-weight: bold
+		a
+			text-decoration : none
+			color : black
+	ul	
+		display: flex
+		margin: auto
 		flex-direction: row
 		list-style:  none
 		a
@@ -135,3 +159,90 @@ body
 		a:first-child
 			margin-left : -10vw
 			
+@media screen and (max-width: 700px )
+	.link
+		display: none
+	.image
+		position: relative
+		width : 100vw
+		height : 50vh
+		background-image : url('../Image/mainbg.jpeg')
+		background-size : cover 
+		background-position : center
+		-webkit-clip-path : polygon(0% 0%,100% 0%,100% 100%,0% 100% )
+	.info
+		font-family : "COVES"
+		-webkit-clip-path : polygon(0% 0%,100% 0%,100% 100%,0% 100% )
+		display : flex
+		width : 100vw
+		flex-wrap : wrap
+		flex-direction : column
+	.social
+		.linkage
+			margin-left: 0
+		ul
+			a:first-child
+				margin-left : 0
+	.info_cont
+		.infodata
+			width: 100%
+	.data
+		width: 100vw
+		justify-content: content
+		margin : auto
+		text-align: center
+		p
+			text-align: center
+			margin-left: 0
+		#head
+			font-size: 4.5rem
+		#date
+			font-size: 2rem
+		#info
+			font-size: 2.2rem
+@media screen and (max-width : 450px )
+	.link
+		display: none
+	.logo
+		font-size: 2.5rem
+		#bps
+			font-size: 0.35em
+	.image
+		position: relative
+		width : 100vw
+		height : 50vh
+		background-image : url('../Image/mainbg.jpeg')
+		background-size : cover 
+		background-position : center
+		-webkit-clip-path : polygon(0% 0%,100% 0%,100% 100%,0% 100% )
+	.info
+		font-family : "COVES"
+		-webkit-clip-path : polygon(0% 0%,100% 0%,100% 100%,0% 100% )
+		display : flex
+		width : 100vw
+		flex-wrap : wrap
+		flex-direction : column
+	.social
+		.linkage
+			margin-left: 0
+		ul
+			a:first-child
+				margin-left : 0
+	.info_cont
+		.infodata
+			width: 100%
+	.data
+		width: 100vw
+		justify-content: content
+		margin : auto
+		text-align: center
+
+		p
+			text-align: center
+			margin-left: 0
+		#head
+			font-size: 3rem
+		#date
+			font-size: 1.1rem
+		#info
+			font-size: 1.3rem
