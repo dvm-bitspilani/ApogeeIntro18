@@ -159,6 +159,8 @@ body {
     margin: auto;
     flex-direction: row;
     list-style: none; }
+    .social ul li {
+      text-align: center; }
     .social ul a {
       text-decoration: none;
       padding: 0 3vw; }
