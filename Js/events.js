@@ -60,7 +60,7 @@ var _url = document.location.pathname;
 var dir = _url.substring(0,_url.lastIndexOf('/'));
 function change()
 {	info.style.display = "flex";
-	image.style.backgroundImage = "url("+dir+"/Image/hackathon.jpg"+")";
+	image.style.backgroundImage = "url("+dir+"/Image/hackathon.jpg"+")"	;
 	slink.style.display = "none";
 	data.style.display = "none";
 	content.innerHTML = Events.RAW.info;
