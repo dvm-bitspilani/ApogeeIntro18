@@ -1,0 +1,111 @@
+body{
+  overflow-x: hidden;
+}
+.about-heading{
+  /*width: 100%;*/
+  height: 10vh;
+}
+#event-menu,#about{
+  display: none;
+}
+.about-wrapper{
+  position: fixed;
+  font-family: 'COVES';
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100vh;
+  width: 100vw;
+  overflow-x  : hidden;
+  background-color: #000000;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+.about-text{
+  width: 60%;
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  margin-top: 50px;
+}
+.about-head{
+  font-size: 2rem;
+  line-height: 1.2em;
+  border-bottom: 1px solid #04E6CE; 
+  margin-bottom: 50px;
+}
+.about-text p{
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.about-wrapper .logo{
+  width: auto;
+  margin:0;
+  margin-top: 20px;
+}
+.box-wrapper{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  /*align-items: center;*/
+  width: 70%;
+  flex-wrap: wrap;
+}
+.box{
+  /*margin-right: 25px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box .img{
+  border:1px solid #606060;
+  padding: 5px;
+  overflow: hidden;
+  height: 180px;
+  width: 180px;
+}
+.box .img:hover{
+  border:1px solid #f6a211;
+}
+.box p{
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  /*width: %;*/
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.cross-btn{
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../Image/cross.svg");
+  background-size: cover;
+  border: 0.5px solid #04E6CE;
+  cursor: pointer; 
+}
+@media screen and (max-width: 700px){
+  .box-wrapper{
+    width: 85%;
+  }
+  .about-text{
+    width: 80%;
+  }
+  .box .img{
+    width: 150px;
+    height: 150px;
+  }
+  .cross-btn{
+    right: 30px;
+    top: 5px;
+  }
+}
