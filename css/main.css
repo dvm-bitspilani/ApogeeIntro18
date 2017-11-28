@@ -41,7 +41,8 @@ body {
   .link p {
     margin: auto;
     font-size: 1.2em;
-    padding: 0 1vw 0 2vw; }
+    padding: 0 1vw 0 2vw; 
+    cursor: pointer;}
 
 #bps:before {
   position: absolute;
