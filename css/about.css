@@ -8,7 +8,8 @@ body{
 #event-menu,#about{
   display: none;
 }
-.about-wrapper:before
+
+/*.about-wrapper:before
 {
   content: " ";
   display: block;
@@ -19,8 +20,9 @@ body{
   height: 100%;
   opacity: 0.1;
   background-image: url("../Image/bg.jpg");
-  z-index: -1;
-}
+  z-index: 8;
+}*/
+
 .about-wrapper
 {
   position: fixed;
