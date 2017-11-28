@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "COVES";
+  src: url("css/Fonts/coveslight.otf"); }
+/*body {
+  background-color: #3e4c66;
+  margin: 0; }*/
+
+.container {
+  margin-top: 5vh;
+  margin-bottom: 10px;
+  margin-left: 10vw;
+  padding-top: 0vh;
+  padding-bottom: 5vh;
+  display: flex;
+  /* height: 80%; */
+  box-sizing: border-box;
+  width: 80vw;
+  flex: 0 1 auto;
+  flex-direction: column;
+  justify-content: space-around;
+  }
+
+.paper, .presentation {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "COVES";
+  font-weight: bold;
+  margin-top: 0; }
+
+#projectinrcontainer, #paperinrcontainer {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: vw;
+  margin-top: 10vh; }
+
+.container p {
+  font-family: "COVES";
+  font-weight: bold;
+  margin: 0; }
+.container h1 {
+  font-family: "COVES";
+  font-weight: bold;
+  color: #04FFE5;
+  font-size: 2.5em; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.link2 {
+  margin: 0;
+  text-decoration: none;
+  color: white; }
+
+#pre p, #pap p {
+  flex-basis: 80%;
+  font-size: 1.3em; }
+
+.container .img {
+  margin: 0; }
+
+@media not screen and (max-width: 761px) {
+  .container {
+    overflow-y: auto;
+    } }
+@media screen and (max-width: 761px) {
+  .container h1 {
+    font-family: "COVES";
+    font-weight: bold;
+    color: #04FFE5;
+    font-size: 1.75em; }
+
+  #pre p, #pap p {
+    flex-basis: 80%;
+    font-size: 0.95em; }
+
+  .container .img {
+    margin: 0;
+    width: 10vw;
+    height: 15vw; }
+
+  #projectinrcontainer, #paperinrcontainer, .container {
+    padding-top: 0; } }
+@media screen and (orientation: portrait) and (max-width: 561px) {
+  .container h1 {
+    font-family: "COVES";
+    font-weight: bold;
+    color: #04FFE5;
+    font-size: 1.65em; }
+
+  #pre p, #pap p {
+    flex-basis: 80%;
+    font-size: 0.85em; }
+
+  .container .img {
+    margin-top: 0;
+    width: 10vw;
+    transform: scale(1.15);
+    transform-origin: 50% 50%;
+    margin: 5px; }
+
+  .link {
+    margin-top: -50vh; }
+
+  .container {
+    padding-top: 0vh;
+    margin-top: 7vh;
+    line-height: 1; } }
+
+/*# sourceMappingURL=pep.css.map */
+  

@@ -8,9 +8,10 @@ body{
 #event-menu,#about{
   display: none;
 }
-/*.about-wrapper:before
+
+.about-wrapper:before
 {
-   content: " ";
+  content: " ";
   display: block;
   position: absolute;
   left: 0;
@@ -19,8 +20,9 @@ body{
   height: 100%;
   opacity: 0.1;
   background-image: url("../Image/bg.jpg");
-  z-index: 8;
-}*/
+  z-index: -1;
+}
+
 .about-wrapper
 {
   position: fixed;
@@ -76,6 +78,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 .box .img{
   border:1px solid #606060;
@@ -124,5 +127,37 @@ body{
   .cross-btn{
     right: 30px;
     top: 5px;
+  }
+}
+
+.fadeOutDown{
+  animation: fadeOutDown .5s cubic-bezier(0.62, 0.12, 0.29, 0.97);
+}
+
+
+@keyframes fadeOutDown{
+  from{
+    top: 0;
+    /*opacity: 1;*/
+  }
+  to{
+    top: 100%;
+    /*opacity: 0;*/
+  }
+}
+
+.fadeInUp{
+  animation: fadeInUp .5s cubic-bezier(0.62, 0.12, 0.29, 0.97);
+}
+
+
+@keyframes fadeInUp{
+  from{
+    top: 100%;
+    /*opacity: 1;*/
+  }
+  to{
+    top: 0;
+    /*opacity: 0;*/
   }
 }

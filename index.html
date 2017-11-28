@@ -4,6 +4,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link type="text/css" rel="stylesheet" href="css/main.css">
 	<link type="text/css" rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="css/pep.css">
 	<title>Apogee-2018</title>
 </head>
 <body>
@@ -12,11 +14,10 @@
 	<div class="link">
 		<p onclick="renderHome()">HOME</p>
 		<p class="about-link">about</p>
-		<p onclick="renderEvent('RE')">EVENT</p>
-		<p class="eMenu-link">sponsors</p>
-		<p>contact</p>
+		<p class="eMenu-link">EVENTS</p>
+		
 	</div>
-		<p id="ham"><img src="Image/menu.png"></p>
+		<p id="ham" onclick="openNav()"><img src="Image/menu.png"></p>
 </div>	
 <div class="image"></div>
 <div class="main_con">
@@ -60,7 +61,6 @@
 	</div>
 	<div class="cross-btn" id="cross-abt"></div>
 </div>
-
 <div class="about-wrapper" id="event-menu">
 	<div class="about-heading">
 		<div class="logo"><p>APOGEE<span id="color">'18</span><p id="bps">BITS PILANI</p></p></div>
@@ -69,7 +69,55 @@
 	</div>
 	<div class="cross-btn" id="cross-em"></div>
 </div>
+<div id="viewlist">
+	<div class="header">	
+		<p></p>
+		<div class="title">
+			<span class="apogee">APOGEE</span>
+			<span class="h">'18 |</span>
+			<span class="bits">BITS Pilani</span></div>
+			
+			<div class="cross" onclick="closeNav()">
+				<div class="cr">&#10060;
+				</div><!-- <div class="left"></div><div class="right"></div> -->
+		</div>
+		</div>
+		<div class="list">
+<span class="num">1</span>
+<span class="name eMenu-link">EVENTS</span>
+<span class="num">2</span>
+<span class="name" onclick="openinfo()">PAST SPEAKERS</span>
+<span class="num">3</span>
+<span class="name" onclick="openinfo()">LAST</span>
+<span class="num">4</span>
+<span class="name" onclick="openinfo()">CAMPUS AMBASSADOR</span>
+<span class="num">5</span>
+<span class="name" onclick="openinfo()">PRE-REGISTER</span>
+<span class="num">6</span>
+<span class="name about-link">ABOUT</span>
+</div>
+<div id="incontmain">
+<div class="header">
+		<p></p>
+		<div class="title">
+			<span class="apogee">APOGEE</span>
+			<span class="h">'18 |</span>
+			<span class="bits">BITS Pilani</span>
+		</div>
+
+		<div class="cross" onclick="closeinfo()">
+			<div class="cr">&#10060;</div>
+		</div>
+	</div>
+	<div class="container">
+			<div class="paper" id="pap"><div><h1 style="float:right;margin-bottom:0">PAPER PRESENTATION</h1>
+			</div></div>
+		<div class="presentation"  id="pre"><h1 style="float:left;margin-bottom:0">PROJECTS</h1>
+	</div></div>
+</div>
+</div>
 <script type="text/javascript" src="Js/events.js"></script>
 <script type="text/javascript" src="Js/about.js"></script>
+<script type="text/javascript" src="Js/navbar.js"></script>
 	</body>
 </html>
