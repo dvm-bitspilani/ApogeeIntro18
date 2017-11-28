@@ -15,7 +15,6 @@
 		<p onclick="renderHome()">HOME</p>
 		<p class="about-link">about</p>
 		<p class="eMenu-link">EVENTS</p>
-		
 	</div>
 		<p id="ham" onclick="openNav()"><img src="Image/menu.png"></p>
 </div>	
@@ -69,6 +68,22 @@
 	</div>
 	<div class="cross-btn" id="cross-em"></div>
 </div>
+<div class="about-wrapper" id="past-speakers">
+	<div class="about-heading">
+		<div class="logo"><p>APOGEE<span id="color">'18</span><p id="bps">BITS PILANI</p></p></div>
+	</div>
+	<div class="speakers">
+	</div>
+	<div class="cross-btn"></div>
+</div>
+<div class="about-wrapper" id="sponsors">
+	<div class="about-heading">
+		<div class="logo"><p>APOGEE<span id="color">'18</span><p id="bps">BITS PILANI</p></p></div>
+	</div>
+	<div class="sponsors">
+	</div>
+	<div class="cross-btn"></div>
+</div>
 <div id="viewlist">
 	<div class="header">	
 		<p></p>
@@ -86,9 +101,9 @@
 <span class="num">1</span>
 <span class="name eMenu-link">EVENTS</span>
 <span class="num">2</span>
-<span class="name" onclick="openinfo()">PAST SPEAKERS</span>
+<span class="name" onclick="renderPastSpeakers()">PAST SPEAKERS</span>
 <span class="num">3</span>
-<span class="name" onclick="openinfo()">LAST</span>
+<span class="name" onclick="renderSponsors()">SPONSORS</span>
 <span class="num">4</span>
 <span class="name" onclick="openinfo()">CAMPUS AMBASSADOR</span>
 <span class="num">5</span>
@@ -119,5 +134,6 @@
 <script type="text/javascript" src="Js/events.js"></script>
 <script type="text/javascript" src="Js/about.js"></script>
 <script type="text/javascript" src="Js/navbar.js"></script>
+<script type="text/javascript" src="Js/speakers.js"></script>
 	</body>
 </html>

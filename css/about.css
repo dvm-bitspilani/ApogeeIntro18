@@ -5,7 +5,7 @@ body{
   /*width: 100%;*/
   height: 10vh;
 }
-#event-menu,#about{
+#event-menu,#about, #past-speakers, #sponsors{
   display: none;
 }
 
@@ -160,4 +160,42 @@ body{
     top: 0;
     /*opacity: 0;*/
   }
+}
+
+
+.speakers, .sponsors{
+  display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+    justify-content: space-evenly;
+    min-height: 90vh;
+    align-items: center;
+  
+}
+
+.sponsors img, .speakers img {
+    padding: 10px;
+    width: inherit;
+    height: 200px;
+    transition: all 0.3s linear;
+    border: 1px solid transparent;
+}
+
+.sponsors .s-name, .speakers .s-name{
+    color: #fff;
+    text-align: center;
+    /* line-height: 1.6em; */
+    font-size: 1.3em;
+    height: auto;
+}
+
+.s-cont{
+      width: 200px;
+    height: 200px;
+    padding: 10px;
+    height: auto;
+}
+
+.s-cont:hover img{
+  border: 1px solid #fff;
 }

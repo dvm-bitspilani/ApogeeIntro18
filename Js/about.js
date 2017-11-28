@@ -39,6 +39,7 @@ var about = document.querySelector('#about');
 var boxWrapper = document.querySelector('.box-wrapper');																																										
 var crossAbt = document.querySelector('#cross-abt');
 var crossEm = document.querySelector('#cross-em');
+var crossButtons  = document.querySelectorAll('.cross-btn');
 var p1 = document.querySelector('#p1');
 var p2 = document.querySelector('#p2');
 for(var i = 0;i < boxes.length;i++)
@@ -80,16 +81,25 @@ function loadImages(){
 		Array.prototype.forEach.call(boxWrapper.children,(el, i)=>{
 			el.querySelector('.img').style.backgroundImage = "url(" + boxes[i].image + ")";
 		});
-	opened = true;
+	opened = true;	
 }
-crossAbt.addEventListener("click",function(e){
-	about.style.display = "none";
-});
+// crossAbt.addEventListener("click",function(e){
+// 	about.style.display = "none";
+// });
 
-crossEm.addEventListener("click",function(){
-	closeNav();
-	fadeOutDown(crossEm.parentNode);
-})
+// crossEm.addEventListener("click",function(){
+// 	closeNav();
+// 	fadeOutDown(crossEm.parentNode);
+// })
+
+console.log('eee')
+Array.prototype.forEach.call(crossButtons, (el)=>{
+	console.log(el);
+	el.addEventListener("click", ()=>{
+		fadeOutDown(el.parentNode);
+	})
+})	
+
 
 function fadeOutDown(e, callback=null){
 	// console.log(e)
@@ -115,4 +125,12 @@ function fadeInUp(e,display, callback=null){
 		if(callback)
 			callback();
 	},480);
+}
+
+function renderPastSpeakers(){
+	fadeInUp(document.body.querySelector('#past-speakers'), "flex");
+}
+
+function renderSponsors(){
+	fadeInUp(document.body.querySelector('#sponsors'), "flex");
 }
