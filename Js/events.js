@@ -13,49 +13,49 @@ var Events =
 	{	color : "#03B3E5",
 		head : "Stock Market Simulation",
 		info : random_text,
-		image : "hogakoi"
+		image: "Image/sms.jpeg"
 	},
 	RE :
 	{	color : "#F6A211",
 		head : "Reverse Engineering",
 		info : random_text,
-		image : "hogakoi"
+		image: "Image/re.jpeg"
 	},
 	AIC :
 	{	color : "#F33562",
 		head : "Apogee Innovation Challenge",
 		info : random_text,
-		image : "hogakoi"
+		image: "Image/aic.jpg"
 	},
 	FTGP :
 	{	color : "#52B5A0",
 		head : "Full Throttle Grand Prix",
 		info : random_text,
-		image : "hogakoi"
+		image: "Image/ftgp.jpeg"
 	},
-	HC :
+	HACK :
 	{	color : "#37F275",
 		head : "Hackathon",
 		info : random_text,
-		image : "hogakoi"
+		image: "Image/hack.jpg"
 	},
 	ICL :
 	{	color : "#357BF3",
 		head : "International Coding League",
 		info : random_text,
-		image : "hogakoi"
+		image: "Image/icl.jpeg"
 	},
 	RAW :
 	{	color : "#F6A211",
 		head : "Robots At War",
 		info : random_text,
-		image : "hogakoi"
+		image: "Image/re.jpeg"
 	},
-	LP :
+	LEAP :
 	{	color : "#F6A211",
 		head : "Leap",
 		info : random_text,
-		image : "hogakoi"
+		image: "Image/leap.jpeg"
 	}
 }
 var info = document.querySelector(".infodata");
@@ -67,13 +67,16 @@ var linkage = document.querySelector(".linkage");
 var image = document.querySelector(".image");
 var _url = document.location.pathname;
 var dir = _url.substring(0,_url.lastIndexOf('/'));
-function change(className, data_wrapper, footer)
+function change(className, data_wrapper, footer, color, imageURL)
 {	
 	
 	return function(){
 		document.body.className = className;
 		document.body.querySelector("#data_wrapper").innerHTML = data_wrapper;
 		document.body.querySelector("#footer").innerHTML = footer;
+		document.body.querySelector("#color").style.color = color;
+		document.body.querySelector("#footer").style.backgroundColor = color;
+		setTimeout(()=>{document.body.querySelector('.image').style.backgroundImage = "url(" + imageURL + ")";} , 480);
 	}
 }
 
@@ -95,7 +98,7 @@ var templates = {
 	},
 	"event" :{
 		data_wrapper: function(eventCode){
-
+			console.log(eventCode);
 			return '<div class="letter"></div>\
 			<div class="container">\
 				<header><h1><b>' + Events[eventCode].head + '</b></h1></header>\
@@ -113,7 +116,9 @@ window.renderEvent = function(eventCode){
 	return change(
 		"event "+ eventCode,
 		templates.event.data_wrapper(eventCode),
-		templates.event.footer
-		)();
+		templates.event.footer, 
+		Events[eventCode].color,
+		Events[eventCode].image
+		);
 }
-window.renderHome = change("home", templates.home.data_wrapper, templates.home.footer);
+window.renderHome = change("home", templates.home.data_wrapper, templates.home.footer, "#04FFE5", "Image/mainbg.jpeg");

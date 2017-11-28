@@ -45,9 +45,10 @@ for(var i = 0;i < boxes.length;i++)
 {																																																																																																																						
 	var box = document.createElement("div");
 	box.className = "box"+" "+boxes[i].class;
+	box.data = boxes[i].class.toUpperCase();
 	var img = document.createElement("div");
 	img.className = "img";
-	img.style.backgroundImage = "url(" + boxes[i].image + ")";
+	// img.style.backgroundImage = "url(" + boxes[i].image + ")";
 	var p = document.createElement("p");
 	p.innerHTML = boxes[i].name;
 	box.appendChild(img);
@@ -55,10 +56,25 @@ for(var i = 0;i < boxes.length;i++)
 	boxWrapper.appendChild(box);
 }
 
-openEventMenu.addEventListener("click",function(e){
-	eMenu.style.display = "flex";
-
+Array.prototype.forEach.call(boxWrapper.children,(el)=>{
+	el.addEventListener("click", ()=>{
+		crossEm.click();
+		window.renderEvent(el.data)();
+	});
 });
+
+var opened = false;
+openEventMenu.addEventListener("click",function(e){
+	fadeInUp(eMenu, "flex", loadImages);
+});
+
+function loadImages(){
+	if(!opened)
+		Array.prototype.forEach.call(boxWrapper.children,(el, i)=>{
+			el.querySelector('.img').style.backgroundImage = "url(" + boxes[i].image + ")";
+		});
+	opened = true;
+}
 
 aboutPage.addEventListener("click",function(e){
 	about.style.display = "flex";
@@ -71,6 +87,33 @@ crossAbt.addEventListener("click",function(e){
 });
 
 crossEm.addEventListener("click",function(){
-	eMenu.style.display = "none";
+	fadeOutDown(crossEm.parentNode);
 })
+
+function fadeOutDown(e, callback=null){
+	// console.log(e)
+	e.className += " fadeOutDown";
+	setTimeout(()=>{
+		e.style.display = "none";
+		e.style.top = '0px';
+		e.className = e.className.replace(" fadeOutDown", '');
+		if(callback)
+			callback();
+	},480);
+}
+
+
+function fadeInUp(e,display, callback=null){
+	// console.log(e)
+	e.style.top = '100%';
+	e.style.display = display;
+	e.className += " fadeInUp";
+	setTimeout(()=>{
+		e.style.top = '0px';
+		e.className = e.className.replace(" fadeInUp", '');
+		if(callback)
+			callback();
+	},480);
+}
+
 /*navbar ham*/
