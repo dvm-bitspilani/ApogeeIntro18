@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>list</title>
+	<link rel="stylesheet" type="text/css" href="css/navlist.css">
+</head>
+<body>
+<div class="Events">
+	<div class="header">
+		
+		<p></p>
+		<div class="title">
+			<span class="apogee">APOGEE</span>
+			<span class="h">'18 |</span>
+			<span class="bits">BITS Pilani</span></div>
+			
+			<div class="cross">
+				<div class="cr">&#10060;
+				</div>
+		</div>
+		</div>
+		<div class="list">
+<span class="num">1</span>
+<span class="name">EVENTS</span>
+<span class="num">2</span>
+<span class="name">PAST SPEAKERS</span>
+<span class="num">3</span>
+<span class="name">LAST</span>
+<span class="num">4</span>
+<span class="name">CAMPUS AMBASSADOR</span>
+<span class="num">5</span>
+<span class="name">PRE-REGISTER</span>
+		</div>
+</div>
+<script type="text/javascript">
+	var events = document.querySelector(".Events");
+	console.log(events);
+	var cross = document.querySelector(".cross");
+	console.log(cross);
+	cross.onclick = function change()
+	{	
+		events.style.opacity = 0;
+		events.style.display = "none";
+	}
+</script>
+</body>
+</html>

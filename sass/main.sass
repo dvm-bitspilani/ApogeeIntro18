@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700')
+
 $a : 12vw/93vw*15vw 
+$social_height : 10vh
+
 @font-face
 	font-family : "COVES"
 	src : url('Fonts/coveslight.otf')
@@ -129,7 +133,7 @@ body
 		font-size: 1.7vw
 		color : #04E6CE
 .social
-	height : 10vh
+	height : $social_height
 	background-color : #04E6CE
 	width : 100%
 	display : flex
@@ -248,3 +252,78 @@ body
 			font-size: 1.1rem
 		#info
 			font-size: 1.3rem
+
+.event
+	.social
+		text-align: center
+		line-height: $social_height
+		font-size: 2em
+		font-weight: 700
+		font-family: 'Raleway', sans-serif
+		color: #FDFBFB
+		background: #F6A211
+		h3
+			width: 100%
+	.image
+		background-image : url('../Image/hackathon.jpg')
+	#data_wrapper
+		align-items: center
+		flex-direction: row-reverse
+		.letter
+			width: 20%
+			height: 100%
+		.container
+			box-sizing: border-box
+			height: 100%
+			width: 80%
+			display: flex
+			justify-content: space-around
+			// align-items: center
+			flex-direction: column
+			padding: 70px 30px
+
+			header
+				position: relative
+				font-size: 1.7em
+
+				// text-transform: uppercase
+				color: #2B2B2B
+				font-family: 'Raleway', sans-serif
+				font-weight: 700
+				width: fit-content
+
+				::before
+					position: absolute
+					width: 95%
+					// border: 1px solid
+					height: 100%
+					content: ''
+					background: #F6DF11
+					pointer-events: none
+					z-index: -1
+					transform: rotate(-2deg)
+			section
+				// padding: 0 30px
+				// text-align: justify
+				font-size: 1.2em
+
+@media screen and (max-width: 700px )
+	.event
+		height: 100%
+		overflow: scroll
+		#data_wrapper
+			flex-direction: row
+			align-items: center
+			flex-wrap: wrap
+			width: 100vw
+			.letter
+				width: 100vw
+				height: 20%
+				margin-top: -10%
+			.container
+				height: fit-content
+				padding: 0 20px 40px
+				width: 100%
+				font-size: 0.8em
+				header
+					margin-bottom: 50px

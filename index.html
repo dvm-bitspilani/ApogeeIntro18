@@ -5,10 +5,13 @@
 	<link type="text/css" rel="stylesheet" href="css/main.css">
 	<title>Apogee-2018</title>
 </head>
+<body>
 <div class="navbar">
 	<div class="logo"><p>APOGEE<span id="color">'18</span><p id="bps">BITS PILANI</p></p></div>
 	<div class="link">
+		<p onclick="renderHome()">HOME</p>
 		<p>about</p>
+		<p onclick="renderEvent('RE')">EVENT</p>
 		<p>sponsors</p>
 		<p>contact</p>
 	</div>
@@ -17,7 +20,7 @@
 <div class="image"></div>
 <div class="main_con">
 	<div class="info">
-		<div class="info_cont">
+		<div class="info_cont" id="data_wrapper">
 			<!-- info data for the events -->
  			<div class="infodata">
 				<p class="heading"></p>
@@ -32,15 +35,15 @@
 				 of bits pilani</p>
 			</div>
 		</div>
-		<div class="social">
-		<!-- linkage is for the events -->
-		<span class="linkage"><p><a href="#">Linkage</a></p></span>	
-		<!-- social links are in the main page -->
-		<ul class="social_link">
-			<a href="#"><li><img src="./Image/fb.png"></li></a>
-			<a href="#"><li><img src="./Image/twitter.png"></li></a>
-			<a href="#"><li><img src="./Image/insta.png"></li></a>
-		</ul>
+		<div class="social" id="footer">
+			<!-- linkage is for the events -->
+			<span class="linkage"><p><a href="#">Linkage</a></p></span>	
+			<!-- social links are in the main page -->
+			<ul class="social_link">
+				<a href="#"><li><img src="./Image/fb.png"></li></a>
+				<a href="#"><li><img src="./Image/twitter.png"></li></a>
+				<a href="#"><li><img src="./Image/insta.png"></li></a>
+			</ul>
 		</div>
 	</div>
 </div>

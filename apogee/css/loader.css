@@ -1,0 +1,299 @@
+body {
+  overflow: hidden;
+  background: #787d84; }
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+
+.c1 {
+  stroke-dasharray: 500;
+  fill: none;
+  stroke-width: 6;
+  stroke: #ed0716;
+  animation: fun1 1.5s ease-out 12s;
+  animation-fill-mode: forwards; }
+
+.c2 {
+  stroke-dasharray: 200;
+  fill: none;
+  stroke-width: 6;
+  stroke: grey;
+  stroke-dashoffset: 200;
+  animation: fun2 1.5s ease-out 12s;
+  animation-fill-mode: forwards; }
+
+.c3 {
+  stroke-dasharray: 120;
+  stroke-dashoffset: 100;
+  fill: none;
+  stroke-width: 6;
+  stroke: #274c82;
+  animation: fun3 1.5s ease-out 12s;
+  animation-fill-mode: forwards; }
+
+@keyframes fun1 {
+  0% {
+    stroke-dashoffset: 0; }
+  50% {
+    stroke-dashoffset: -150; }
+  100% {
+    stroke-dashoffset: -50; } }
+@keyframes fun2 {
+  0% {
+    stroke-dashoffset: 200; }
+  50% {
+    stroke-dashoffset: 400; }
+  100% {
+    stroke-dashoffset: 300; } }
+@keyframes fun3 {
+  0% {
+    stroke-dashoffset: 100; }
+  50% {
+    stroke-dashoffset: -200; }
+  100% {
+    stroke-dashoffset: 0; } }
+#ao {
+  transition: all 2s;
+  transform-origin: 50% 50%; }
+
+.a {
+  animation: aa 2s ease-in 17s;
+  stroke: #00FFFF;
+  stroke-dasharray: 0 1000;
+  animation-fill-mode: forwards; }
+
+.b {
+  animation: bb 2s ease-in 17s;
+  stroke: black;
+  stroke-dasharray: 0 300;
+  animation-fill-mode: forwards; }
+
+@keyframes aa {
+  0% {
+    stroke-dasharray: 0 1000; }
+  100% {
+    stroke-dasharray: 1000 0; } }
+@keyframes bb {
+  0% {
+    stroke-dasharray: 0 300; }
+  100% {
+    stroke-dasharray: 300 0; } }
+#combi {
+  transition: all 2s ease-in;
+  transform-origin: 50% 50%; }
+
+.path {
+  stroke: #00FFFF;
+  fill: none;
+  stroke-width: 2.5;
+  transform-origin: 50% 50%;
+  stroke-dasharray: 1200; }
+
+#cont {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center; }
+
+#logo {
+  display: none;
+  transition: all 1s ease-in; }
+
+#loading {
+  transition: all 1s ease-in; }
+
+#cont .first > *, #cont .second > *, #cont .third > * {
+  transform-origin: 50% 50%;
+  transition: all 0.5s linear;
+  animation-fill-mode: forwards; }
+
+.base {
+  stroke-dasharray: 0 350;
+  animation: line 0.5s linear;
+  animation-fill-mode: forwards; }
+
+@keyframes loading {
+  0% {
+    fill: rgba(105, 105, 105, 0.7); }
+  50% {
+    fill: dimgray; }
+  100% {
+    fill: rgba(105, 105, 105, 0); } }
+.load1 {
+  animation: loading 1s linear;
+  animation-fill-mode: forwards;
+  animation-repeatcount: 2; }
+
+.load2 {
+  animation: loading 1s linear 0.75s;
+  animation-fill-mode: forwards; }
+
+.load3 {
+  animation: loading 1s linear 1.5s;
+  animation-fill-mode: forwards; }
+
+.load4 {
+  animation: loading 1s linear 2.25s;
+  animation-fill-mode: forwards; }
+
+@keyframes line {
+  0% {
+    stroke-dasharray: 0 350; }
+  100% {
+    stroke-dasharray: 350 0; } }
+#b01 {
+  animation: b01 0.25s ease-in 3.25s;
+  animation-fill-mode: forwards; }
+
+@keyframes b01 {
+  30% {
+    transform: translate(0, 30px); }
+  70% {
+    transform: translate(0, 30px); }
+  100% {
+    transform: translate(0, 30px); } }
+@keyframes b02 {
+  30% {
+    transform: translate(0, 30px); }
+  70% {
+    transform: translate(0, 30px); }
+  100% {
+    transform: translate(0, 30px); } }
+#b02 {
+  animation: b02 0.25s ease-in 4.25s;
+  animation-fill-mode: forwards; }
+
+@keyframes b21 {
+  30% {
+    transform: translate(0, -30px); }
+  70% {
+    transform: translate(0, -30px); }
+  100% {
+    transform: translate(-34.2px, -30px); } }
+#b21 {
+  animation: b21 0.25s ease-in 3.5s;
+  animation-fill-mode: forwards; }
+
+@keyframes b22 {
+  30% {
+    transform: translate(0, -30px); }
+  70% {
+    transform: translate(0, -30px); }
+  100% {
+    transform: translate(32px, -30px); } }
+#b22 {
+  animation: b22 0.25s ease-in 6.5s;
+  animation-fill-mode: forwards; }
+
+@keyframes b23 {
+  30% {
+    transform: translate(0, -30px); }
+  70% {
+    transform: translate(0, -30px); }
+  100% {
+    transform: translate(34.3px, -30px); } }
+#b23 {
+  animation: b23 0.25s ease-in 5s;
+  animation-fill-mode: forwards; }
+
+@keyframes b31 {
+  30% {
+    transform: translate(0, -30px); }
+  70% {
+    transform: translate(0, -60px); }
+  90% {
+    transform: translate(45.7px, -60px); }
+  100% {
+    transform: translate(31px, -60px); } }
+#b31 {
+  animation: b31 0.5s ease-in 5.5s;
+  animation-fill-mode: forwards; }
+
+@keyframes b32 {
+  30% {
+    transform: translate(0, -30px); }
+  70% {
+    transform: translate(33px, -30px); }
+  100% {
+    transform: translate(33px, -60px); } }
+#b32 {
+  animation: b32 0.25s ease-in 7.25s;
+  animation-fill-mode: forwards; }
+
+@keyframes b33 {
+  30% {
+    transform: translate(0, -30px); }
+  70% {
+    transform: translate(0, -60px); }
+  90% {
+    transform: translate(45px, -60px); }
+  100% {
+    transform: translate(35px, -60px); } }
+#b33 {
+  animation: b33 0.25s ease-in 8.25s;
+  animation-fill-mode: forwards; }
+
+@keyframes b41 {
+  10% {
+    transform: translate(0, -30px); }
+  70% {
+    transform: translate(0, -90px); }
+  90% {
+    transform: translate(-25px, -90px); }
+  100% {
+    transform: translate(0, -90px); } }
+#b41 {
+  animation: b41 0.5s ease-in 9.25s;
+  animation-fill-mode: forwards; }
+
+@keyframes b51 {
+  30% {
+    transform: translate(0, -30px); }
+  70% {
+    transform: translate(0, -120px); }
+  90% {
+    transform: translate(25px, -120px); }
+  100% {
+    transform: translate(0, -120px); } }
+#b51 {
+  animation: b51 0.5s ease-in 9.25s;
+  animation-fill-mode: forwards; }
+
+#apogee {
+  opacity: 0;
+  -webkit-animation-name: fadein, down;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 10s, 18s;
+  -webkit-animation-duration: 2s, 1s; }
+
+#bricks {
+  animation: up 1s linear 18s;
+  animation-fill-mode: forwards; }
+
+@keyframes up {
+  0% {
+    transform: translate(150px, 200px) scale(0.8); }
+  100% {
+    transform: translate(150px, 160px) scale(0.8); } }
+@keyframes down {
+  0% {
+    transform: translate(0px, -100px) scale(1); }
+  100% {
+    transform: translate(0px, -80px) scale(1); } }
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translate(0px, -100px) scale(0); }
+  100% {
+    opacity: 1;
+    transform: translate(0px, -100px) scale(1); } }
+/*# sourceMappingURL=loader.css.map */
+/*# sourceMappingURL=loader.css.map */
+
+/*# sourceMappingURL=loader.css.map */
