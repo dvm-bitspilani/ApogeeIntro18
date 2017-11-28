@@ -72,7 +72,7 @@ function change(className, data_wrapper, footer)
 	
 	return function(){
 		document.body.className = className;
-		document.body.querySelector("#data_wrapper").innerHTML = data_wrapper;
+		document.body.querySelector("#data_wrapper").innerHTML = data_wrapper
 		document.body.querySelector("#footer").innerHTML = footer;
 	}
 }
@@ -117,3 +117,5 @@ window.renderEvent = function(eventCode){
 		)();
 }
 window.renderHome = change("home", templates.home.data_wrapper, templates.home.footer);
+/*navbar ham*/
+

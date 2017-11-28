@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="apogee/navlist.css">
+	<link rel="stylesheet" type="text/css" href="apogee/pep.css">
+	<title>Apogee-2018</title>
+</head>
+<body>
+<div id="viewlist">
+	<div class="header">
+		
+		<p></p>
+		<div class="title">
+			<span class="apogee">APOGEE</span>
+			<span class="h">'18 |</span>
+			<span class="bits">BITS Pilani</span></div>
+			
+			<div class="cross" onclick="closeNav()">
+				<div class="cr">&#10060;
+				</div><!-- <div class="left"></div><div class="right"></div> -->
+		</div>
+		</div>
+		<div class="list">
+<span class="num">1</span>
+<span class="name" onclick="openinfo()">EVENTS</span>
+<span class="num">2</span>
+<span class="name" onclick="openinfo()">PAST SPEAKERS</span>
+<span class="num">3</span>
+<span class="name" onclick="openinfo()">LAST</span>
+<span class="num">4</span>
+<span class="name" onclick="openinfo()">CAMPUS AMBASSADOR</span>
+<span class="num">5</span>
+<span class="name" onclick="openinfo()">PRE-REGISTER</span></div>
+<div id="incontmain">
+<div class="header">
+		
+		<p></p>
+
+		<div class="title">
+			<span class="apogee">APOGEE</span>
+			<span class="h">'18 |</span>
+			<span class="bits">BITS Pilani</span>
+		</div>
+
+		<div class="cross" onclick="closeinfo()">
+			<div class="cr">&#10060;</div>
+		</div>
+	</div>
+	<div class="container">
+			<div class="paper" id="pap"><div><h1 style="float:right;margin-bottom:0">PAPER PRESENTATION</h1>
+			</div></div>
+		<div class="presentation"  id="pre"><h1 style="float:left;margin-bottom:0">PROJECTS</h1>
+	</div></div>
+</div>
+</div>
+
+<div id='cont1'> 
+<div class="navbar">
+	<div class="logo"><p>APOGEE<span id="color">'18</span><p id="bps">BITS PILANI</p></p></div>
+	<div class="link">
+		<p onclick="renderHome()">HOME</p>
+		<p>about</p>
+		<p onclick="renderEvent('RE')">EVENT</p>
+		<p>sponsors</p>
+		<p>contact</p>
+	</div>
+		<p id="ham" onclick="openNav()"><img id="hambur" src="Image/menu.png" ></p>
+</div>	
+
+<div class="image"></div>
+<div class="main_con">
+	<div class="info">
+		<div class="info_cont" id="data_wrapper">
+			<!-- info data for the events -->
+ 			<div class="infodata">
+				<p class="heading"></p>
+				<p class="infocontent"></p>
+			</div>
+			<!-- main data -->
+			<div class="data">
+				<p id="head">cybernetic<br> vision</p>
+				<p id="date">78-67 february</p>
+				<p id="info">annual technical fest
+				<br>
+				 of bits pilani</p>
+			</div>
+		</div>
+		<div class="social" id="footer">
+			<!-- linkage is for the events -->
+			<span class="linkage"><p><a href="#">Linkage</a></p></span>	
+			<!-- social links are in the main page -->
+			<ul class="social_link">
+				<a href="#"><li><img src="./Image/fb.png"></li></a>
+				<a href="#"><li><img src="./Image/twitter.png"></li></a>
+				<a href="#"><li><img src="./Image/insta.png"></li></a>
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<div class="about-wrapper" id="about">
+	<div class="about-heading">
+		<div class="logo"><p>APOGEE<span id="color">'18</span><p id="bps">BITS PILANI</p></p></div>
+	</div>
+	<div class="about-text">
+		<div class="about-head">ABOUT</div>
+		<p id="p1"></p>
+		<p id="p2"></p>
+	</div>
+	<div class="cross-btn" id="cross-abt"></div>
+</div>
+
+<div class="about-wrapper" id="event-menu">
+	<div class="about-heading">
+		<div class="logo"><p>APOGEE<span id="color">'18</span><p id="bps">BITS PILANI</p></p></div>
+	</div>
+	<div class="box-wrapper">
+	</div>
+	<div class="cross-btn" id="cross-em"></div>
+</div>
+<script type="text/javascript" src="Js/events.js"></script>
+<script type="text/javascript" src="Js/about.js"></script>
+<script type="text/javascript">
+function openNav() {
+    document.getElementById("viewlist").style.right = "0";
+    // document.getElementById("viewlist").style.width = "100vw";
+}
+
+function closeNav() {
+    document.getElementById("viewlist").style.right = "-100vw";
+}
+function openinfo() {
+    
+    document.getElementById("incontmain").style.top = "0";
+     document.getElementById("incontmain").style.left = "0";
+
+}
+function closeinfo() {
+    
+    document.getElementById("incontmain").style.top = "100vh";
+  
+}
+
+ var div = document.createElement('div');
+    div.innerHTML = '<img class="img" src="Image/paper.svg" ><p class="infop">Paper presentation forms the core event of APOGEE that showcases a wide range of technical and review papers on a spectrum of topics ranging from industrial applications to the very latest scientific innovations.<br><br><a class="link2" href="#">Click here to know more</a></p>';
+     document.getElementById('pap').appendChild(div);
+     div.id = "paperinrcontainer";
+
+ var div = document.createElement('div');
+    div.innerHTML = '<p class="infop">APOGEE exhibits over 550 projects in various fields of science and engineering. Based on practical application, they showcase unparalleled excellence. Some of the categories of Projects include Electronics, Environment, Software Development and Mathematical Modelling.. <br> <b>Abstract submission for non BITSian participants is open from 14th December 2016 to 7th January 2017.</b><br><br><span class="right" style="text-align:right"><a class="link2" href="#">Click here to know more</a></span></p><img class="img" src="Image/projects.svg" >';
+     document.getElementById('pre').appendChild(div);
+     div.id = "projectinrcontainer";
+</script>
+</body>
+</html>

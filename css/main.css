@@ -5,13 +5,54 @@
 * {
   padding: 0;
   margin: 0;
-  transition: all 0.3s linear; }
+  /*transition: all 0.3s linear;*/ }
 
 body {
   width: 100vw;
   height: 100vh;
-  background-size: cover; }
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  overflow: hidden; }
 
+#viewlist{
+  display: block;
+  position: fixed;
+  right: -100vw;
+margin: 0;
+padding: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 11;
+   transition: all .6s linear;
+  overflow: hidden;
+  font-size: 1em;
+  background-size: cover;
+  background-image: url("../Image/bg.jpg");
+}
+#viewlist #incontmain{
+  opacity: 1;
+   display: block;
+  position: fixed;
+  top:-100vh;
+  left: 0vw;
+  transform:rotate(0);
+margin-top: 0;
+padding: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 11;
+   transition: all .6s linear;
+
+  font-size: 1em;
+  background-size: cover;
+  background: #3e4c66;
+}
+#hambur:hover{cursor: pointer;
+}
+#cont1{
+     transition: 2s;
+}
 .navbar {
   width: 100%;
   background-color: #111;
@@ -41,8 +82,7 @@ body {
   .link p {
     margin: auto;
     font-size: 1.2em;
-    padding: 0 1vw 0 2vw; 
-    cursor: pointer;}
+    padding: 0 1vw 0 2vw; }
 
 #bps:before {
   position: absolute;
@@ -71,8 +111,12 @@ body {
 .main_con {
   display: flex;
   position: relative;
-  z-index: 10; }
-
+  z-index: 10; 
+}
+#cont1{
+  opacity: 1;
+  z-index: 10;
+}
 .image {
   position: absolute;
   width: 55vw;
