@@ -5,8 +5,7 @@
 * {
   padding: 0;
   margin: 0;
-  /*transition: all 0.3s linear;*/ 
-  }
+  /*transition: all 0.3s linear;*/ }
 
 body {
   width: 100vw;
@@ -14,9 +13,43 @@ body {
   background-size: cover;
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
-}
+  overflow: hidden; }
 
+#viewlist{
+  display: block;
+  position: fixed;
+  right: -100vw;
+margin: 0;
+padding: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 11;
+   transition: all .6s linear;
+  overflow: hidden;
+  font-size: 1em;
+  background-size: cover;
+  background-image: url("../Image/bg.jpg");
+}
+#viewlist #incontmain{
+  opacity: 1;
+   display: block;
+  position: fixed;
+  top:-100vh;
+  left: 0vw;
+  transform:rotate(0);
+margin-top: 0;
+padding: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 11;
+   transition: all .6s linear;
+
+  font-size: 1em;
+  background-size: cover;
+  background: #3e4c66;
+}
+#hambur:hover{cursor: pointer;
+}
 .navbar {
   width: 100%;
   background-color: #111;
@@ -284,7 +317,7 @@ body {
   .event #data_wrapper .letter {
     width: 20%;
     height: 100%; }
-  .event #data_wrapper .__container__ {
+  .event #data_wrapper .container {
     box-sizing: border-box;
     height: 100%;
     width: 80%;
@@ -292,14 +325,14 @@ body {
     justify-content: space-around;
     flex-direction: column;
     padding: 70px 30px; }
-    .event #data_wrapper .__container__ header {
+    .event #data_wrapper .container header {
       position: relative;
       font-size: 1.7em;
       color: #2B2B2B;
       font-family: "Raleway", sans-serif;
       font-weight: 700;
       width: fit-content; }
-      .event #data_wrapper .__container__ header ::before {
+      .event #data_wrapper .container header ::before {
         position: absolute;
         width: 95%;
         height: 100%;
@@ -308,7 +341,7 @@ body {
         pointer-events: none;
         z-index: -1;
         transform: rotate(-2deg); }
-    .event #data_wrapper .__container__ section {
+    .event #data_wrapper .container section {
       font-size: 1.2em; }
 
 @media screen and (max-width: 700px) {
@@ -324,12 +357,12 @@ body {
         width: 100vw;
         height: 20%;
         margin-top: -10%; }
-      .event #data_wrapper .__container__ {
+      .event #data_wrapper .container {
         height: fit-content;
         padding: 0 20px 40px;
         width: 100%;
         font-size: 0.8em; }
-        .event #data_wrapper .__container__ header {
+        .event #data_wrapper .container header {
           margin-bottom: 50px; } 
         }
 
