@@ -36,14 +36,14 @@ var openEventMenu = document.querySelectorAll('.eMenu-link');
 var aboutPage = document.querySelectorAll('.about-link');
 var eMenu = document.querySelector('#event-menu');
 var about = document.querySelector('#about');
-var boxWrapper = document.querySelector('.box-wrapper');																																										
+var boxWrapper = document.querySelector('.box-wrapper');
 var crossAbt = document.querySelector('#cross-abt');
 var crossEm = document.querySelector('#cross-em');
 var crossButtons  = document.querySelectorAll('.cross-btn');
 var p1 = document.querySelector('#p1');
 var p2 = document.querySelector('#p2');
 for(var i = 0;i < boxes.length;i++)
-{																																																																																																																						
+{
 	var box = document.createElement("div");
 	box.className = "box"+" "+boxes[i].class;
 	box.data = boxes[i].class.toUpperCase();
@@ -59,6 +59,7 @@ for(var i = 0;i < boxes.length;i++)
 
 Array.prototype.forEach.call(boxWrapper.children,(el)=>{
 	el.addEventListener("click", ()=>{
+		document.querySelector('.cross').click();
 		crossEm.click();
 		window.renderEvent(el.data)();
 	});
@@ -74,14 +75,14 @@ var opened = false;
 Array.prototype.forEach.call(openEventMenu, (el)=>{
 	el.addEventListener("click",function(e){
 		fadeInUp(eMenu, "flex", loadImages);
-	});	
+	});
 })
 function loadImages(){
 	if(!opened)
 		Array.prototype.forEach.call(boxWrapper.children,(el, i)=>{
 			el.querySelector('.img').style.backgroundImage = "url(" + boxes[i].image + ")";
 		});
-	opened = true;	
+	opened = true;
 }
 // crossAbt.addEventListener("click",function(e){
 // 	about.style.display = "none";
@@ -98,7 +99,7 @@ Array.prototype.forEach.call(crossButtons, (el)=>{
 	el.addEventListener("click", ()=>{
 		fadeOutDown(el.parentNode);
 	})
-})	
+})
 
 
 function fadeOutDown(e, callback=null){
