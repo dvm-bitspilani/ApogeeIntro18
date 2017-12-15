@@ -36,9 +36,12 @@ window.onload = function() { loaded = 1;
      else
      {
       setTimeout(function(){
-        $('#preloader').fadeOut(500);
-         document.getElementById("mainpage").style.display = "none";
-        document.getElementById("mainpage").style.display = "block";
-      },10000)}
+        // $('#preloader').fadeOut(100);
+        //  document.getElementById("preloader").style.display = "none";
+        // document.getElementById("mainpage").style.display = "block";
+        // $('#mainpage').fadeIn(250);
+        $('#preloader').hide(1000);
+        $('#mainpage').show(700);
+      },9800)}
       
   },10000)

@@ -17,9 +17,12 @@ body {
 }
 #mainpage{
   display: none;
+  transition:all 0.5s linear;
 }
 #preloader{
   display: block;
+  transition:all 0.5s linear;
+
 }
 
 #viewlist{

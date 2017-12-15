@@ -7,7 +7,7 @@
   background: #787d84; }*/
 
 #preloader {
-  background: #787d84;
+  background: rgba(0,0,0,.93);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,16 +17,16 @@
 .c1 {
   stroke-dasharray: 500;
   fill: none;
-  stroke-width: 6;
-  stroke: #ed0716;
+  stroke-width: 5;
+  stroke: #ef1010;
   animation: fun1 1.5s ease-out 12s;
   animation-fill-mode: forwards; }
 
 .c2 {
   stroke-dasharray: 200;
   fill: none;
-  stroke-width: 6;
-  stroke: grey;
+  stroke-width: 5;
+  stroke: #2d278e;
   stroke-dashoffset: 200;
   animation: fun2 1.5s ease-out 12s;
   animation-fill-mode: forwards; }
@@ -35,8 +35,8 @@
   stroke-dasharray: 120;
   stroke-dashoffset: 100;
   fill: none;
-  stroke-width: 6;
-  stroke: #274c82;
+  stroke-width: 5;
+  stroke: #6E0DD0;
   animation: fun3 1.5s ease-out 12s;
   animation-fill-mode: forwards; }
 
@@ -73,7 +73,7 @@
 
 .b {
   animation: bb 2s ease-in 17s;
-  stroke: black;
+  stroke: #FFF;
   stroke-dasharray: 0 300;
   animation-fill-mode: forwards; }
 
