@@ -135,3 +135,7 @@ function renderPastSpeakers(){
 function renderSponsors(){
 	fadeInUp(document.body.querySelector('#sponsors'), "flex");
 }
+
+function renderAbout(){
+	fadeInUp(document.body.querySelector('#about'), "flex");
+}

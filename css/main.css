@@ -13,7 +13,14 @@ body {
   background-size: cover;
   padding: 0;
   margin: 0;
-  overflow: hidden; }
+  overflow: hidden; 
+}
+#mainpage{
+  display: none;
+}
+#preloader{
+  display: block;
+}
 
 #viewlist{
   display: block;
