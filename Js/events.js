@@ -85,15 +85,15 @@ var templates = {
 	"home":{
 		data_wrapper: '<div class="data">\
 			<p id="head">cybernetic<br> vision</p>\
-			<p id="date">78-67 february</p>\
+			<p id="date">22-25 february</p>\
 			<p id="info">annual technical fest\
 			<br>\
 			 of bits pilani</p>\
 		</div>',
 		footer: '<ul>\
-			<a href="#"><li><img src="./Image/fb.png"></li></a>\
-			<a href="#"><li><img src="./Image/twitter.png"></li></a>\
-			<a href="#"><li><img src="./Image/insta.png"></li></a>\
+			<a href="https://www.facebook.com/bitsapogee/"><li><img src="./Image/fb.png"></li></a>\
+			<a href="https://twitter.com/bitsapogee?lang=en"><li><img src="./Image/twitter.png"></li></a>\
+			<a href="https://www.instagram.com/bitsapogee/"><li><img src="./Image/insta.png"></li></a>\
 		</ul>'
 	},
 	"event" :{
@@ -122,5 +122,5 @@ window.renderEvent = function(eventCode){
 		);
 }
 window.renderHome = change("home", templates.home.data_wrapper, templates.home.footer, "#04FFE5", "Image/mainbg.jpeg");
-//pallav
+
 

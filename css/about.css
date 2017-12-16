@@ -5,7 +5,7 @@ body{
   /*width: 100%;*/
   height: 10vh;
 }
-#event-menu,#about, #past-speakers, #sponsors{
+#event-menu,#about, #past-speakers, #sponsors, #pre_register{
   display: none;
 }
 
@@ -13,13 +13,14 @@ body{
 {
   content: " ";
   display: block;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   opacity: 0.1;
   background-image: url("../Image/bg.jpg");
+  background-attachment: fixed;
   z-index: -1;
 }
 
@@ -34,6 +35,7 @@ body{
   width: 100vw;
   overflow-x  : hidden;
   background-color: rgba(0,0,0,1);
+  
   padding: 10px;
   flex-direction: column;
   align-items: center;
@@ -50,7 +52,7 @@ body{
 .about-head{
   font-size: 2rem;
   line-height: 1.2em;
-  border-bottom: 1px solid #04E6CE; 
+  border-bottom: 1px solid #04E6CE;
   margin-bottom: 50px;
 }
 .about-text p{
@@ -111,7 +113,7 @@ body{
   background-image: url("../Image/cross.svg");
   background-size: cover;
   border: 0.5px solid #04E6CE;
-  cursor: pointer; 
+  cursor: pointer;
 }
 @media screen and (max-width: 700px){
   .box-wrapper{
@@ -170,7 +172,7 @@ body{
     justify-content: space-evenly;
     min-height: 90vh;
     align-items: center;
-  
+
 }
 
 .sponsors img, .speakers img {
@@ -199,3 +201,5 @@ body{
 .s-cont:hover img{
   border: 1px solid #fff;
 }
+
+

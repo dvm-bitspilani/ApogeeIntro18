@@ -19,20 +19,21 @@ window.onload = function() { loaded = 1;
                            };
   setTimeout(function(){
     if(loaded == 0)
-       {var repeatLoader = setInterval(function()
-        {
-       var animation = $('#bricks').html();
-       $('#inbricks').remove();
-       $('#bricks').html(animation);
-       $('#bricks').fadeIn(1000);
-       if(loaded == 1){
-         document.getElementById("preloader").style.display = "none";
-        document.getElementById("mainpage").style.display = "block";
-        $('#mainpage').fadeIn(250);
-                clearInterval(repeatLoader);
-       }
+       {
+        var repeatLoader = setInterval(function(){
+           var animation = $('#bricks').html();
+           $('#inbricks').remove();
+           $('#bricks').html(animation);
+           $('#bricks').fadeIn(1000);
+           if(loaded == 1){
+             document.getElementById("preloader").style.display = "none";
+            document.getElementById("mainpage").style.display = "block";
+            $('#mainpage').fadeIn(250);
+            window.renderHome();
+                    clearInterval(repeatLoader);
+           }
 
-     }, 11000)}
+        }, 11000)}
      else
      {
       setTimeout(function(){
@@ -42,6 +43,17 @@ window.onload = function() { loaded = 1;
         // $('#mainpage').fadeIn(250);
         $('#preloader').hide(1000);
         $('#mainpage').show(700);
+        window.renderHome();
       },9800)}
       
   },10000)
+
+
+var debug = ()=>{
+  $('#preloader').hide(1000);
+  $('#mainpage').show(700);
+  showForm();
+  // renderEvent('SMS')();
+}
+
+// debug();

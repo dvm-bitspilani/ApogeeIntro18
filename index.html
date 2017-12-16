@@ -7,7 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="css/pep.css">
 	<link rel="stylesheet" type="text/css" href="css/loader.css">
-
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+	
 	<title>Apogee-2018</title>
 </head>
 <body>
@@ -38,14 +40,14 @@
 	</filter>
 
 </defs>
-			
+
 	 <g id="apogee" transform="translate(0,-100)scale(1)">
 
 	   <g id="text" transform="translate(23,0)" >
 	   <polygon class="a" fill="none" stroke="#070808" filter="url(#sofGlow)" filter="url(#sofGlow)" stroke-miterlimit="10" points="542,397 565,338.3 580.3,338.3 556.3,397     "/>
-	  <polygon class="a" fill="none" stroke="#070808" filter="url(#sofGlow)" stroke-miterlimit="10" points="570,322.3 585.2,295 601.5,295 614,322.3 599.5,322.3 
+	  <polygon class="a" fill="none" stroke="#070808" filter="url(#sofGlow)" stroke-miterlimit="10" points="570,322.3 585.2,295 601.5,295 614,322.3 599.5,322.3
 	    593.1,308.7 585.2,322.3     "/>
-	  <polygon class="a" fill="none" stroke="#070808" filter="url(#sofGlow)" stroke-miterlimit="10" points="602.3,338.3 609,353.7 584.3,353.7 580.3,362.3 
+	  <polygon class="a" fill="none" stroke="#070808" filter="url(#sofGlow)" stroke-miterlimit="10" points="602.3,338.3 609,353.7 584.3,353.7 580.3,362.3
 	    611.7,362.3 625.7,397 641.7,397 617,338.3     "/>
 	  <rect class="a" x="660.3" y="338.3" fill="none" filter="url(#sofGlow)" stroke="#070808" stroke-miterlimit="10" width="16" height="58.7"/>
 	  <path class="a" fill="none" stroke="#070808" filter="url(#sofGlow)" stroke-miterlimit="10" d="M660.3,322.3V295c0,0,28.7,0,51.3,0c22.7,0,21.4,27.3,21.4,27.3
@@ -56,15 +58,15 @@
 	    c0,0,0.7,16.7,0,39.3C860.3,418.3,863.7,338.3,863.7,338.3z"/>
 	  <path class="a" fill="none" filter="url(#sofGlow)" stroke="#070808" stroke-miterlimit="10" d="M865,322.3c0,0,13.3-40.9,78-23.3l-0.1,11.7
 	    c0,0-53.6-12.7-61.9,11.7C885.6,326.3,865,322.3,865,322.3z"/>
-	  <polygon class="a" fill="none" filter="url(#sofGlow)" stroke="#070808" stroke-miterlimit="10" points="965,295 1031,295 1031,308.7 980.3,309.2 980.3,322.3 
+	  <polygon class="a" fill="none" filter="url(#sofGlow)" stroke="#070808" stroke-miterlimit="10" points="965,295 1031,295 1031,308.7 980.3,309.2 980.3,322.3
 	    965,322.3     "/>
-	  <polygon class="a" fill="none" filter="url(#sofGlow)" stroke="#070808" stroke-miterlimit="10" points="965,338.3 965,396.3 1027.1,396.3 1031,383.7 980.3,383.7 
+	  <polygon class="a" fill="none" filter="url(#sofGlow)" stroke="#070808" stroke-miterlimit="10" points="965,338.3 965,396.3 1027.1,396.3 1031,383.7 980.3,383.7
 	    980.3,351 1027.1,351 1031,338.3     "/>
-	  <polygon class="a" fill="none" filter="url(#sofGlow)" stroke="#070808" stroke-miterlimit="10" points="1052.7,295 1119.9,295 1119.9,308.7 1068,309.9 1068,322.3 
+	  <polygon class="a" fill="none" filter="url(#sofGlow)" stroke="#070808" stroke-miterlimit="10" points="1052.7,295 1119.9,295 1119.9,308.7 1068,309.9 1068,322.3
 	    1052.7,322.3    "/>
-	  <polygon class="a" fill="none" filter="url(#sofGlow)" stroke="#070808" stroke-miterlimit="10" points="1052.7,338.3 1052.7,396.3 1116,397 1119.9,385 1068,385 
+	  <polygon class="a" fill="none" filter="url(#sofGlow)" stroke="#070808" stroke-miterlimit="10" points="1052.7,338.3 1052.7,396.3 1116,397 1119.9,385 1068,385
 	    1068,351.7 1116,351 1119.9,338.3    "/>
-	
+
 	<polygon class="b" fill="none"  stroke="#070808" stroke-miterlimit="10" points="1134.9,295.3 1131.7,314.2 1138,314.2 1142.1,295.3  "/>
 	<rect  class="b" x="1151.2" y="295.2" fill="none"  stroke="#070808" stroke-miterlimit="10" width="4.9" height="45.6"/>
 	<path class="b" fill="none" stroke="#070808"  stroke-miterlimit="10" d="M1169.2,294.4h11.1c1.7,0,3.3,0.5,4.5,1.5l0.3,0.2
@@ -81,7 +83,7 @@
 	  c-0.5-0.6-0.8-1.4-0.8-2.2v-7.6c0-1,0.5-2,1.4-2.8l0,0C1168.8,322,1170,321.6,1171.3,321.6z"/>
 	  </g>
 	  <g id="combi">
-	    <g id="ao" > 
+	    <g id="ao" >
 	      <circle fill="black" cx="50%" cy="50%" r="150"/>
 	      <circle class="c1" fill="red" cx="816" cy="350" r="135"/>
 	      <circle class="c2" fill="green" cx="816" cy="350" r="120"/>
@@ -98,7 +100,7 @@
 	        c28-22.6,46.2-57.1,46.2-95.8S915.4,179.8,887.5,157.2z M810.5,202.6c-27.8,0-50.4,22.6-50.4,50.4s22.6,50.4,50.4,50.4
 	        c27.6,0,50.4-22.6,50.4-50.4S838.1,202.6,810.5,202.6z M810.5,225.1c15.5,0,28,12.3,28,28c0,15.5-12.5,28-28,28
 	        c-15.7,0-28-12.5-28-28C782.5,237.4,794.8,225.1,810.5,225.1z"/></g>
-	      
+
 	    </g>
 	  </g>
 	</g>
@@ -152,7 +154,7 @@
 		<p class="eMenu-link">EVENTS</p>
 	</div>
 		<p id="ham" onclick="openNav()"><img src="Image/menu.png"></p>
-</div>	
+</div>
 <div class="image"></div>
 <div class="main_con">
 	<div class="info">
@@ -165,7 +167,7 @@
 			<!-- main data -->
 			<div class="data">
 				<p id="head">cybernetic<br> vision</p>
-				<p id="date">78-67 february</p>
+				<p id="date">22-25 february</p>
 				<p id="info">annual technical fest
 				<br>
 				 of bits pilani</p>
@@ -173,7 +175,7 @@
 		</div>
 		<div class="social" id="footer">
 			<!-- linkage is for the events -->
-			<span class="linkage"><p><a href="#">Linkage</a></p></span>	
+			<span class="linkage"><p><a href="#">Linkage</a></p></span>
 			<!-- social links are in the main page -->
 			<ul class="social_link">
 				<a href="#"><li><img src="./Image/fb.png"></li></a>
@@ -203,6 +205,7 @@
 	</div>
 	<div class="cross-btn" id="cross-em"></div>
 </div>
+
 <div class="about-wrapper" id="past-speakers">
 	<div class="about-heading">
 		<div class="logo"><p>APOGEE<span id="color">'18</span><p id="bps">BITS PILANI</p></p></div>
@@ -220,13 +223,13 @@
 	<div class="cross-btn"></div>
 </div>
 <div id="viewlist">
-	<div class="header">	
+	<div class="header">
 		<p></p>
 		<div class="title">
 			<span class="apogee">APOGEE</span>
 			<span class="h">'18 |</span>
 			<span class="bits">BITS Pilani</span></div>
-			
+
 			<div class="cross" onclick="closeNav()">
 				<div class="cr">&#10060;
 				</div><!-- <div class="left"></div><div class="right"></div> -->
@@ -245,6 +248,8 @@
 <span class="name" onclick="openinfo()">PRE-REGISTER</span>
 <span class="num">6</span>
 <span class="name about-link" onclick="renderAbout()">ABOUT</span>
+<span class="num">7</span>
+<span class="name" onclick="showForm()">REGISTER</span>
 </div>
 <div id="incontmain">
 <div class="header">
@@ -267,12 +272,91 @@
 </div>
 </div>
 </div>
+
+<div class="about-wrapper" id="pre_register">
+	<div class="about-heading">
+		<div class="logo"><p>APOGEE<span id="color">'18</span><p id="bps">BITS PILANI</p></p></div>
+	</div>
+	<div class="pre_register_wrapper">
+			<div class="wrapper">
+		    
+		    <form class="form" id="register-form" acion="/dummylink" method = "POST">
+					<!-- {% csrf_token %} -->
+		  		<div class="field">
+		    		<label>1. What is your Name: </label>
+		    		<p>(As to be printed on Reward/Certificate)</p>
+		        <div class="input">
+		    			<input type="text" name="name" tabindex="1" />
+		  			</div>
+		  		</div>
+		  		<div class="field">
+		    		<label>2. What is your gender?</label>
+		    		<div class="radio-input">
+		    			 <input type="radio" name="gender" value="M" checked id="male" > <label for="male" tabindex="2">Male</label>
+		  				 <input type="radio" name="gender" value="F" id="female"> <label for="female" tabindex="3">Female</label>
+		    		</div>
+		  		</div>
+
+		  		<div class="field">
+		    		<label>3. What city do you call home?</label>
+		    		<div class="input">
+		    			<input type="text" name="city" tabindex="4"/>
+		    		</div>
+		  		</div>
+
+		  		<div class="field">
+		    		<label>4. Where can we contact you?</label>
+		        <p style="display:inline">+91-</p>
+		    		<div class="input">
+		    		<input type="text" type="number" name="phone" max="9999999999" min="100000000" tabindex="5"/>
+		    		</div>
+		  		</div>
+
+		  		<div class="field">
+		    		<label>5. What is your Email ID? </label>
+		    		<div class="input" >
+		    			<input type="text" name="email" tabindex="6"/>
+		  			</div>
+		  		</div>
+		  		
+		  		<div class="field">
+		    		<label>6. What is the name of your college? </label>
+		        <p>(If not found, please contact PCr, BITS Pilani at pcr@bits-oasis.org)</p>
+		    		<div class="input">
+		    			<select name="college" id="college" tabindex="7" >
+								<option>A</option>
+								<option>B</option>
+								<option>C</option>
+							</select>
+		  			</div>	
+		  		</div>
+
+
+		      
+		      <div class="submit">
+		  		  <input type="button" id="submit-button" name="submit" value="SUBMIT"  tabindex="17">
+		      </div>
+		</form>
+		<button id="submit-btn"></button>
+		<button id="next-btn"></button>
+		<button id="back-btn"></button>
+		<div id="resp_msg"><p>Thanks!</p></div>
+		</div>
+	</div>
+	<div class="cross-btn" id="cross-em"></div>
+	<!-- <div id="line"></div>
+	<div id="line2"></div>
+	<div id="line3"></div>
+	<div id="lineActive1"></div>
+	<div id="lineActive2"></div> -->
+</div>
 <script type="text/javascript" src="Js/events.js"></script>
 <script type="text/javascript" src="Js/about.js"></script>
 <script type="text/javascript" src="Js/navbar.js"></script>
 <script type="text/javascript" src="Js/speakers.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="Js/loader.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+<script type="text/javascript" src="Js/form.js"></script>
 	</body>
 </html>
+

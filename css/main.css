@@ -327,7 +327,7 @@ padding: 0;
   .event #data_wrapper .letter {
     width: 20%;
     height: 100%; }
-  .event #data_wrapper .container {
+  .event #data_wrapper .__container__ {
     box-sizing: border-box;
     height: 100%;
     width: 80%;
@@ -335,14 +335,14 @@ padding: 0;
     justify-content: space-around;
     flex-direction: column;
     padding: 70px 30px; }
-    .event #data_wrapper .container header {
+    .event #data_wrapper .__container__ header {
       position: relative;
       font-size: 1.7em;
       color: #2B2B2B;
       font-family: "Raleway", sans-serif;
       font-weight: 700;
       width: fit-content; }
-      .event #data_wrapper .container header ::before {
+      .event #data_wrapper .__container__ header ::before {
         position: absolute;
         width: 95%;
         height: 100%;
@@ -351,7 +351,7 @@ padding: 0;
         pointer-events: none;
         z-index: -1;
         transform: rotate(-2deg); }
-    .event #data_wrapper .container section {
+    .event #data_wrapper .__container__ section {
       font-size: 1.2em; }
 
 @media screen and (max-width: 700px) {

@@ -98,6 +98,7 @@ Array.prototype.forEach.call(crossButtons, (el)=>{
 	console.log(el);
 	el.addEventListener("click", ()=>{
 		fadeOutDown(el.parentNode);
+		closeNav()
 	})
 })
 
@@ -138,4 +139,8 @@ function renderSponsors(){
 
 function renderAbout(){
 	fadeInUp(document.body.querySelector('#about'), "flex");
+}
+
+function showForm(){
+	fadeInUp(document.body.querySelector('#pre_register'), "flex");
 }
