@@ -65,9 +65,18 @@ setTimeout(function(){
 var debug = ()=>{
   $('#loader').hide(1000);
   $('#mainpage').show(700);
+  window.renderHome();
+  setTimeout(function(){
+            document.getElementById("landingpage").style.background = "#FFF";
+
+          },1250);
+           document.getElementById("landingpage").style.height = "100vh";
+      document.getElementById("landingpage").style.marginTop = "0";
+      document.getElementById("landingrollcover").style.opacity = "1";
+        window.renderHome();
   // showForm();
   // renderEvent('SMS')();
-  renderPastSpeakers();
+  // renderPastSpeakers();
 }
 
-// debug();
+debug();
