@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
 	<link type="text/css" rel="stylesheet" href="css/main.css">
 	<link type="text/css" rel="stylesheet" href="css/about.css">
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
@@ -155,8 +156,7 @@
 			<div class="logo"><p>APOGEE<span id="color">'18</span><p id="bps">BITS PILANI</p></p></div>
 			<div class="link">
 				<p onclick="renderHome()">HOME</p>
-				<!-- <p class="about-link">about</p> -->
-				<p><a href="https://bits-apogee.org/ca" target="blank">CAMPUS AMBASSADOR</a></p>
+				<p onclick="openca()">CAMPUS AMBASSADOR</p>
 				<p class="eMenu-link">EVENTS</p>
 			</div>
 			<p id="ham" onclick="openNav()"><img src="Image/menu.png"></p>
@@ -214,7 +214,7 @@
 	<div class="cross-btn" id="cross-em"></div>
 </div>
 
-<div class="about-wrapper" id="past-speakers">
+<div class="about-wrapper_past" id="past-speakers">
 	<div class="about-heading">
 		<div class="logo"><p>APOGEE<span id="color">'18</span><p id="bps">BITS PILANI</p></p></div>
 	</div>
@@ -251,13 +251,18 @@
 <span class="num">3</span>
 <span class="name" onclick="renderSponsors()">SPONSORS</span>
 <span class="num">4</span>
-<span class="name"><a href="https://bits-apogee.org/ca" target="blank">CAMPUS AMBASSADOR</a></span>
+<span class="name" onclick="openca()">CAMPUS AMBASSADOR</span>
 <span class="num">5</span>
-<span class="name" onclick="showForm()">REGISTER</span>
+
+
+
+<span class="name" onclick="openinfo()">PAPER PRESENTATION</span>
+
 <span class="num">6</span>
 <span class="name about-link" onclick="renderAbout()">ABOUT</span>
-<!-- <span class="num">7</span>
-<span class="name" onclick="openinfo()">PRE-REGISTER</span> -->
+<span class="num">7</span>
+<!-- <span class="name" onclick="openinfo()">PRE-REGISTER</span> -->
+<span class="name" onclick="showForm()">REGISTER</span>
 </div>
 <div id="incontmain">
 		<div id="rollcontainer">
@@ -284,7 +289,7 @@
 </div>
 <!-- registeration form  -->
 
-<div class="about-wrapper" id="pre_register">
+<div class="about-wrapper_past" id="pre_register">
 	<div class="about-heading">
 		<div class="logo"><p>APOGEE<span id="color">'18</span><p id="bps">BITS PILANI</p></p></div>
 	</div>

@@ -1,3 +1,8 @@
+/*opens ca*/
+function openca()
+{
+	window.open("https://www.bits-apogee.org/ca/","_blank");
+}
 var random_text = 'Non risus etiam integer litora eros scelerisque augue aenean ante augue velit ad\
 Elit quam blandit porttitor pretium egestas potenti fringilla tristique iaculis et\
 Vehicula commodo donec tristique et pellentesque at feugiat\
@@ -91,9 +96,9 @@ var templates = {
 			 of bits pilani</p>\
 		</div>',
 		footer: '<ul>\
-			<a href="https://www.facebook.com/bitsapogee/" target="blank"><li><img src="./Image/fb.png"></li></a>\
-			<a href="https://twitter.com/bitsapogee?lang=en" target="blank"><li><img src="./Image/twitter.png"></li></a>\
-			<a href="https://www.instagram.com/bitsapogee/" target="blank"><li><img src="./Image/insta.png"></li></a>\
+			<a href="https://www.facebook.com/bitsapogee/" target="_blank"><li><img src="./Image/fb.png"></li></a>\
+			<a href="https://twitter.com/bitsapogee?lang=en" target="_blank"><li><img src="./Image/twitter.png"></li></a>\
+			<a href="https://www.instagram.com/bitsapogee/" target="_blank"><li><img src="./Image/insta.png"></li></a>\
 		</ul>'
 	},
 	"event" :{

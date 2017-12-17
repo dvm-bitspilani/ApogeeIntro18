@@ -15,7 +15,10 @@ setTimeout(function(){
 
 var loaded = 0;
 window.onload = function(){ loaded = 1};
-
+function skip()
+{
+  loaded=1;
+}
 setTimeout(function(){
   if(loaded == 0)
    { var repeatLoader = setInterval(function()
@@ -73,10 +76,10 @@ var debug = ()=>{
            document.getElementById("landingpage").style.height = "100vh";
       document.getElementById("landingpage").style.marginTop = "0";
       document.getElementById("landingrollcover").style.opacity = "1";
-        window.renderHome();
+        // window.renderHome();
   // showForm();
   // renderEvent('SMS')();
   // renderPastSpeakers();
 }
 
-debug();
+// debug();

@@ -14,3 +14,8 @@
 #ham img{
 	border: none;
 }
+
+
+#landingrollcover{
+	overflow: scroll;
+}
