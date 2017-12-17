@@ -1,0 +1,12 @@
+.name a, .link a{
+	color: inherit;
+	text-decoration: none;
+}
+
+.logo{
+	width: auto;
+}
+
+.link{
+	cursor: pointer;
+}

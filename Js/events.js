@@ -96,9 +96,15 @@ var templates = {
 			 of bits pilani</p>\
 		</div>',
 		footer: '<ul>\
+<<<<<<< HEAD
 			<a href="https://www.facebook.com/bitsapogee/" target="_blank"><li><img src="./Image/fb.png"></li></a>\
 			<a href="https://twitter.com/bitsapogee?lang=en" target="_blank"><li><img src="./Image/twitter.png"></li></a>\
 			<a href="https://www.instagram.com/bitsapogee/" target="_blank"><li><img src="./Image/insta.png"></li></a>\
+=======
+			<a href="https://www.facebook.com/bitsapogee/" target="blank"><li><img src="./Image/fb.png"></li></a>\
+			<a href="https://twitter.com/bitsapogee?lang=en" target="blank"><li><img src="./Image/twitter.png"></li></a>\
+			<a href="https://www.instagram.com/bitsapogee/" target="blank"><li><img src="./Image/insta.png"></li></a>\
+>>>>>>> 4107b6dcf5263beb8bb31e966e789a1476db15ef
 		</ul>'
 	},
 	"event" :{
