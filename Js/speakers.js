@@ -2,7 +2,7 @@ var speakers_info = [{
 	name: "Dr. Pawan Agarwal (CEO of the revered Mumbai Dabbawala Association)",
 	image: "Image/image1-small-23.png"
 }, {
-	name: "Jeff Lieberman (He is popular for hosting the show Time Warp on Discovery Channel)",
+	name: "Jeff Lieberman (He is popular for hosting the show Time Warp on Discovery Channel)",
 	image: "Image/image2-24.png"
 }, {
 	name: "Walter Lewin (Famous MIT Physics professor)",
@@ -18,7 +18,7 @@ var speakers_info = [{
 
 
 
-{name:"Jairam Ramesh : Indian PoliticianS", image:"Image/image6-31.png"}
+{name:"Jairam Ramesh : Indian Politician", image:"Image/image6-31.png"}
 ,
 
 
@@ -27,7 +27,7 @@ var speakers_info = [{
 
 ,
 
-{name:"Salman Khurshid: Indian Politician ", image:"Image/image8-33.png"}
+{name:"Salman Khurshid: Indian Politician", image:"Image/image8-33.png"}
 
 
 ,
@@ -39,7 +39,7 @@ var speakers_info = [{
 
 ,
 
-{name:"APJ Abdul Kalam – Late Former President of India", image:"Image/image11-small-39.png"}
+{name:"APJ Abdul Kalam - Late Former President of India", image:"Image/image11-small-39.png"}
 
 ,
 {name:"Radhika Vaz: Comedian", image:"Image/image12-small-41.png"}
