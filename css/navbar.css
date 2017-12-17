@@ -14,7 +14,7 @@ body {padding: 0;
   overflow: hidden;
   font-size: 1em;
   background-size: cover;
-  background-image: url("../images/bg.jpg");
+  /*background-image: url("../images/bg.jpg");*/
 }
 .header {
   display: flex;
@@ -63,46 +63,23 @@ body {padding: 0;
   color: #04FFE5;
   animation-fill-mode: forwards; }
 
-@keyframes crosshover {
+/*@keyframes crosshover {
   10% {
-    border-top: 0px solid black;
     transform: rotate(45deg); }
   20% {
-    border-top: 0px solid black;
-    border-right: 0px solid black;
     transform: rotate(90deg); }
   30% {
-    border-top: 0px solid black;
-    border-right: 0px solid black;
-    border-bottom: 0px solid black;
     transform: rotate(135deg); }
   40% {
-    border-top: 0px solid black;
-    border-right: 0px solid black;
-    border-bottom: 0px solid black;
-    border-left: 0px solid black;
     transform: rotate(180deg); }
   60% {
-    border-top: 2px solid black;
-    border-right: 0px solid black;
-    border-bottom: 0px solid black;
-    border-left: 0px solid black;
     transform: rotate(225deg); }
   70% {
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom: 0px solid black;
-    border-left: 0px solid black;
     transform: rotate(270deg); }
   80% {
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-    border-left: 0px solid black;
     transform: rotate(315deg); }
   100% {
-    border: 2px solid black;
-    transform: rotate(360deg); } }
+    transform: rotate(360deg); } }*/
 .list {
   margin-top: 7vh;
   margin-left: 15vw;
@@ -111,18 +88,19 @@ body {padding: 0;
   display: flex;
   height: 75%;
   box-sizing: border-box;
-  width: 70vw;
+  /* width: 70vw; */
   flex: 0 1 auto;
   flex-direction: column;
-  justify-content: space-around; 
-z-index: 5;}
+  justify-content: space-around;
+  z-index: 5;
+  }
   .list .num {
     position: relative;
     flex: 0 1 auto;
     font-size: 3.5vmin;
     width: 2em;
     text-align: right;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid black;
     font-family: "COVES";
     font-weight: lighter; }
   .list .name {
@@ -134,19 +112,22 @@ z-index: 5;}
     transform-origin: 50% 50%;
     transition: all 1s linear;
     font-family: "COVES";
-    font-weight: bold; }
+    font-weight: bold;
+    width: fit-content;
+    }
     .list .name:before {
       content: "";
       position: absolute;
-      margin-top: 0;
-      width: 60vw;
+      margin-top: 18px;
+      width: 100%;
       height: 2px;
       background-color: #04FFE5;
       visibility: hidden;
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
       -webkit-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.5s ease-in-out 0s; }
+      transition: all 0.5s ease-in-out 0s;
+      }
     .list .name:hover {
       transform: scale(0.95);
       cursor: pointer; }
@@ -206,6 +187,22 @@ z-index: 5;}
     border-right: 0.5px solid black;
     border-bottom: 0.5px solid black;
     border-left: 0.5px solid black; } }
+/*# sourceMappingURL=navlist.css.map */
+
+/*# sourceMappingURL=navlist.css.map */
+#viewlist:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+    background-image: url("../Image/bg.jpg");
+
+}
+
 #viewlist{
   color: white;
   display: block;
@@ -230,31 +227,16 @@ padding: 0;
   top: 100vh;
   left: 0vw;
   transform:rotate(0);
-margin-top: 47.5vh;
+margin-top: 0;
 padding: 0;
-  height: 1vh;
+  height: 100vh;
   width: 100vw;
   z-index: 11;
-   transition: top .6s cubic-bezier(0.62, 0.12, 0.29, 0.97);
-transition: height .5s cubic-bezier(0.62, 0.12, 0.29, 0.97) .8s, margin-top .5s cubic-bezier(0.62, 0.12, 0.29, 0.97) .8s;
+   transition: all .6s cubic-bezier(0.62, 0.12, 0.29, 0.97);
+
   font-size: 1em;
   background-size: cover;
   background: #3e4c66;
 }
-#viewlist #incontmain #rollcontainer{
-  opacity: 0;
-  margin-top:0;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition:opacity .5s linear 1s;
-/*  transition:opacity .05s linear .6s;
-*/}
-
 #hambur:hover{cursor: pointer;
 }
