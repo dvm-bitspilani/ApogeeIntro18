@@ -12,6 +12,9 @@ Etiam mollis pellentesque mi elementum integer commodo ipsum ut habitant varius\
 Sociosqu vel iaculis torquent ultricies molestie aliquam porttitor cursus dictumst velit\
 Et nostra suscipit mollis aliquam congue dolor dapibus fames risus viverra lobortis integer'
 
+
+
+
 var Events =
 {
 	SMS :
@@ -29,31 +32,31 @@ var Events =
 	AIC :
 	{	color : "#F33562",
 		head : "Apogee Innovation Challenge",
-		info : random_text,
+		info : "APOGEE Innovation Challenge, an exceptional technical symposium, aims at quenching your thirst for hands-on experience in real life problems plaguing the industrial world. Organized in collaboration with various multinational companies, this event presents before you existing challenges faced by these companies who seek their solutions from you. <br>Exciting internship offers and cash prizes await the winners. Participation certificate shall be given to all members of each team which present solutions during APOGEE ‘18. Needless to say, you can brag about cracking a professional challenge while still being in college.<br>These problems, which happen to be discipline specific (one need not belong to that discipline), are to be solved by participants in teams of 2-4 in a month. After scrutiny by company officials, top 5 teams will be presenting their final solutions during APOGEE ‘17. ",
 		image: "Image/aic.jpg"
 	},
 	FTGP :
 	{	color : "#52B5A0",
 		head : "Full Throttle Grand Prix",
-		info : random_text,
+		info : "Sports Cars are one of the most ultimate man-made machines and their race is full of adventures and a must watch event. On the course of F1 racing BITS-Pilani is conducting Remote Controlled racing event “The Full Throttle Grand Prix”. This competition is to show your knowledge about engineering behind remote controlled cars and feel the effect of ultimate driving experience. The event requires racing of your self-built RC cars on a race track. Although it may look simple to you but you will face cut-throat competition, and finally it is the quality of the car and driver ability which will decide the winner<br>Build a Remote Controlled IC engine powered car to traverse a race track in the minimum possible time. The time trial track may be composed of several turns with increasing difficulty levels. The teams with the top best time to lap this track qualify for racing. Final round will be a race.",
 		image: "Image/ftgp.jpeg"
 	},
 	HACK :
 	{	color : "#37F275",
 		head : "Hackathon",
-		info : random_text,
+		info : "Have you ever dreamt of exploring the world of Artificial Intelligence by solving a real life problem? If yes, then your ticket to turning this enthralling thought into reality is right in front of you. BITS-Pilani presents the premier machine learning hackathon this APOGEE 2018.",
 		image: "Image/hack.jpg"
 	},
 	ICL :
 	{	color : "#357BF3",
 		head : "International Coding League",
-		info : random_text,
+		info : "Talk is Cheap. Show me the code- Linus Torvalds.<br>Do you think you have mastered Competitive coding, the greatest mind sport? Do you feel the urge to solve Mind blowing problems and play the Game of Codes? Here’s your stage to step on and prove your coding skills – A challenging stage, a nail biting one! BITSACM presents ICL - International Coding League: a competitive programming contest based on the ACM ICPC this Apogee 2018. In February some of the best minds in the country are to gather to compete for the crown.",
 		image: "Image/icl.jpeg"
 	},
 	RAW :
 	{	color : "#F6A211",
 		head : "Robots At War",
-		info : random_text,
+		info : "Design a remote controlled robot to combat with the opponent's bot. The arena will be a rectangle measuring 24ft x 24ft. However, the fight zone will be 20ft x 20ft, pushing the opponent bot out of this fight zone will result in victory. The arena might be on hard and uneven ground and will be enclosed by a 5ft high wire meshes all around.",
 		image: "Image/re.jpeg"
 	},
 	LEAP :
@@ -63,6 +66,20 @@ var Events =
 		image: "Image/leap.jpeg"
 	}
 }
+
+
+// var Events = {
+// 	"CIVIL": {
+
+// 	},
+// 	"CODING":{
+// 		"ACYUT CHALLENGE":{
+
+// 		}
+// 	}
+// };
+
+
 var info = document.querySelector(".infodata");
 var content = document.querySelector(".infocontent")
 var head = document.querySelector(".heading");
