@@ -52,8 +52,9 @@ window.onload = function() { loaded = 1;
 var debug = ()=>{
   $('#preloader').hide(1000);
   $('#mainpage').show(700);
-  showForm();
+  // showForm();
   // renderEvent('SMS')();
+  renderPastSpeakers();
 }
 
-// debug();
+debug();

@@ -1,16 +1,51 @@
 var speakers_info = [{
-	name: "Navjot",
-	image: "../ApogeeIntro18/Image/re.jpeg"
+	name: "Dr. Pawan Agarwal (CEO of the revered Mumbai Dabbawala Association)",
+	image: "Image/image1-small-23.png"
 }, {
-	name: "Navjot",
-	image: "../ApogeeIntro18/Image/re.jpeg"
+	name: "Jeff Lieberman (He is popular for hosting the show Time Warp on Discovery Channel)",
+	image: "Image/image2-24.png"
 }, {
-	name: "Navjot",
-	image: "../ApogeeIntro18/Image/re.jpeg"
+	name: "Walter Lewin (Famous MIT Physics professor)",
+	image: "Image/image3-small-26.png"
 }, {
-	name: "Navjot",
-	image: "../ApogeeIntro18/Image/re.jpeg"
-}]
+	name: "David J. Peterson (Famous linguist, creator of Dothraki)",
+	image: "Image/image4-small-28.png"
+},
+
+
+{name:"Richard Stallman (Father of the Free Software Movement)", image:"Image/image5-small-30.png"}
+,
+
+
+
+{name:"Jairam Ramesh : Indian PoliticianS", image:"Image/image6-31.png"}
+,
+
+
+
+{name:"Simon Taufel : Famous Australian Umpire", image:"Image/image7-32.png"}
+
+,
+
+{name:"Salman Khurshid: Indian Politician ", image:"Image/image8-33.png"}
+
+
+,
+{name:"Manu Joseph", image:"Image/image9-small-35.png"}
+
+
+,
+{name:"Kailash Satyarthi- Nobel Peace Prize winner", image:"Image/image10-small-37.png"}
+
+,
+
+{name:"APJ Abdul Kalam – Late Former President of India", image:"Image/image11-small-39.png"}
+
+,
+{name:"Radhika Vaz: Comedian", image:"Image/image12-small-41.png"}
+]
+
+
 
 var string = "";
 speakers_info.forEach((el, i)=>{
