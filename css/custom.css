@@ -4,9 +4,13 @@
 }
 
 .logo{
-	width: auto;
+	width: 60vw;
 }
 
 .link{
 	cursor: pointer;
+}
+
+#ham img{
+	border: none;
 }
