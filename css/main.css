@@ -19,7 +19,7 @@ body {
   display: none;
   transition:all 0.5s linear;
 }
-#preloader{
+#loader{
   display: block;
   transition:all 0.5s linear;
 
@@ -40,7 +40,7 @@ padding: 0;
   background-size: cover;
   background-image: url("../Image/bg.jpg");
 }
-#viewlist #incontmain{
+/*#viewlist #incontmain{
   opacity: 1;
    display: block;
   position: fixed;
@@ -57,7 +57,7 @@ padding: 0;
   font-size: 1em;
   background-size: cover;
   background: #3e4c66;
-}
+}*/
 #hambur:hover{cursor: pointer;
 }
 .navbar {

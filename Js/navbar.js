@@ -11,13 +11,20 @@ function openinfo() {
     
     document.getElementById("incontmain").style.top = "0";
      document.getElementById("incontmain").style.left = "0";
+     document.getElementById("incontmain").style.height = "100vh";
+      document.getElementById("incontmain").style.marginTop = "0";
+      document.getElementById("rollcontainer").style.opacity = "1";
 
 }
 function closeinfo() {
     
     document.getElementById("incontmain").style.top = "100vh";
+    document.getElementById("incontmain").style.height = "1vh";
+    document.getElementById("incontmain").style.marginTop = "47.5vh";
+      document.getElementById("rollcontainer").style.opacity = "0";
   
 }
+
 
  var div = document.createElement('div');
     div.innerHTML = '<img class="img" src="Image/paper.svg" ><p class="infop">Paper presentation forms the core event of APOGEE that showcases a wide range of technical and review papers on a spectrum of topics ranging from industrial applications to the very latest scientific innovations.<br><br><a class="link2" href="#">Click here to know more</a></p>';
