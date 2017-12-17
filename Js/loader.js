@@ -15,7 +15,10 @@ setTimeout(function(){
 
 var loaded = 0;
 window.onload = function(){ loaded = 1};
-
+function skip()
+{
+  loaded=1;
+}
 setTimeout(function(){
   if(loaded == 0)
    { var repeatLoader = setInterval(function()

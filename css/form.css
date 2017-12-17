@@ -25,7 +25,6 @@
   padding: 20rem;
   padding-right: 0px;
   padding-left: 0px;
-  overflow-y: auto;
 }
 
 
@@ -259,9 +258,7 @@ select{
 
 @media screen and (max-width : 992px)
 {
-  body{
-    overflow: hidden;
-  }
+  
   .events-box{
     width: 100%;
   }
