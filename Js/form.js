@@ -255,7 +255,7 @@ function submitFormData(func){
     // console.log("form submitted!")
     var data = {}
     var inputs = $('input');
-    var baseUrl = 'https://bits-apogee.org/2018/registerations/introreg/';
+    var baseUrl = 'https://bits-apogee.org/2018/registrations/introreg/';
     // $.each(inputs,function(index,key){
     //   data[key.name] = key.value;
     //   console.log(key)
@@ -357,7 +357,7 @@ function getList(){
 function setOptions(list){
   var options = "";
   list.forEach((ele, index)=>{
-    // console.log(ele,index)
+    console.log(ele,index)
     options += "<option value="+ ele.id +">"+ ele.name+"</option>"
   })
   document.getElementById('college').innerHTML = options;
