@@ -57,4 +57,4 @@ var debug = ()=>{
   renderPastSpeakers();
 }
 
-debug();
+// debug();
