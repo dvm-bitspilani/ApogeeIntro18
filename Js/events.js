@@ -151,9 +151,37 @@ var Events = {
 			}
 
 	},
-	"SCIENCES":{},
+	"SCIENCES":{
+
+		AIC:{
+			head:"APOGEE Innovation Challenge",
+			info: "APOGEE Innovation Challenge, an exceptional technical symposium, aims at quenching your thirst for hands-on experience in real life problems plaguing the industrial world. Organized in collaboration with various multinational companies, this event presents before you existing challenges faced by these companies who seek their solutions from you. <br>			Exciting internship offers and cash prizes await the winners. Participation certificate shall be given to all members of each team<br>which present solutions during APOGEE '18. Needless to say, you can brag about cracking a professional challenge while still being in college.<br>These problems, which happen to be discipline specific (one need not belong to that discipline), are to be solved by participants in teams of 2-4 in a month. After scrutiny by company officials, top 5 teams will be presenting their final solutions during APOGEE ‘17. <br>StrategiaThe participants will be required to solve a case study,and present its solution. Certain incentives will be awarded to the participants based on the score of the first round, which can be used in the subsequent rounds. "
+		},
+		DXL:{
+			head:"Dexter’s Laboratory",
+			info:"A fun-filled quizzing and laboratory based event of the Apogee which provoke your practical thinking and logical approach to solve the mystery behind Dexter’s stolen invention."
+		},
+		GAMB:{
+			head:"Gambling Mathematics",
+			info:"Come with your team and show your skill to gamble in real time.<br>			All you should know is- How well you can handle your money (points in this event!). You need not know rules of Gambling as they would be told on spot at the event."
+		},
+		WHOD:{
+			head:"Who Dunnit",
+			info: "A murder has occurred in the locality. The teams participating will be rigorously screened and the best 6 will be put on the case to crack it. They will use resources available to them. The team that is able to solve the case fastest will be rewarded.<br>The candidates must appear in teams of 2 or 3 and will participate in 7 to 8 rounds of quizzes for screening. The final 6 teams will be chosen from the participants and be provided a murder mystery which they must solve with the help of chemicals available in the chemistry laboratory."
+
+		},
+		ZOMB: {
+			head:"Zombie Mathematics",
+			info:"Answer the tricky questions of your opponents and restrict their moves. It will be an online game where two teams will be playing against each other. The motive of each team will be to answer questions on each of its move in order to restrict other's way. The team that will survive till end will be the ZOMBIE of the event!"
+		}
+	},
 	"SOCIAL":{}
 };
+
+
+
+
+
 
 
 
