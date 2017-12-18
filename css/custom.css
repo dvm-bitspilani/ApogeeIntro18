@@ -20,7 +20,7 @@
 	overflow: auto;
 }
 
-#category-menu{
+#category-menu, #more-info{
 	display:none;
 }
 

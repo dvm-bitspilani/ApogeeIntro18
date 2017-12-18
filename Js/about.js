@@ -68,11 +68,7 @@ var p2 = document.querySelector('#p2');
 // 	});
 // });
 Array.prototype.forEach.call(aboutPage,(el)=>{
-	el.addEventListener("click",function(e){
-	about.style.display = "flex";
-	p1.innerHTML ="Birla Institute of Technology and Science, Pilani is one of the most prestigious institutes in the country. Over years, BITS Pilani has maintained the reputation of imparting the right mix of education and experience that form the basis for achieving success in the world.";
-	p2.innerHTML = "Retrofuturism is an exploration of the themes of tension between the new and old, between the alienating and empowering effects of technology. It might be best described as the act or tendency of an artist to progress by moving backwards, focussing on the futurist visions of eras past. Futurism was born out of humanity's reaction to a sudden thrust into technological revolution. To the many that witnessed the rapid change, it seemed technological utopia was fast approaching. This unbridled optimism caused the collective imagination to run wild.";
-});
+	el.addEventListener("click",renderAbout);
 });
 // var opened = false;
 Array.prototype.forEach.call(openEventMenu, (el)=>{
@@ -143,6 +139,8 @@ function renderSponsors(){
 }
 
 function renderAbout(){
+	p1.innerHTML ="Birla Institute of Technology and Science, Pilani is one of the most prestigious institutes in the country. Over years, BITS Pilani has maintained the reputation of imparting the right mix of education and experience that form the basis for achieving success in the world.";
+	p2.innerHTML = "Retrofuturism is an exploration of the themes of tension between the new and old, between the alienating and empowering effects of technology. It might be best described as the act or tendency of an artist to progress by moving backwards, focussing on the futurist visions of eras past. Futurism was born out of humanity's reaction to a sudden thrust into technological revolution. To the many that witnessed the rapid change, it seemed technological utopia was fast approaching. This unbridled optimism caused the collective imagination to run wild.";
 	fadeInUp(document.body.querySelector('#about'), "flex");
 }
 
@@ -150,6 +148,9 @@ function showForm(){
 	fadeInUp(document.body.querySelector('#pre_register'), "flex");
 }
 
+function renderMoreInfo(){
+	fadeInUp(document.body.querySelector('#more-info'), "flex");
+}
 
 function renderEMenu(){
 	console.log('render Emenu');

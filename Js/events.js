@@ -66,8 +66,8 @@ Et nostra suscipit mollis aliquam congue dolor dapibus fames risus viverra lobor
 // 		image: "Image/leap.jpeg"
 // 	}
 // }
-// <br>The Competition is a two-stage competition:<br>Stage 1:<br>All the teams should mail their case analysis with the model’s file (if in AUTOCAD/STAAD PRO) or images of the model (if it is an actual 3D MODEL) to the contacts listed below.<br>A design analysis report should be included with the model. The report should contain the ability of the structure to handle the problems. <br>In the report, it should be mentioned (in about 100 words) at which location should the model turned be into an actual project (hypothetically) so as to minimize the cost of construction.<br>The mail’s subject should consist of the event name.<br>They should submit a word report of not more than 30 pages.<br>Selected teams will be shortlisted for the next round. <br>All the short-listed teams will also be intimated via email.<br>Stage 2:<br>Final round of the event will be held in BITS Pilani during APOGEE.<br>The shortlisted teams will have to present their analysis and model to a panel of judges.<br>The decision of the judges will be final and binding. <br>Furthermore, these ideas should “Strictly not be copied form the internet”. If it is found that the idea is plagiarized / copied the respective team would be straight away “disqualified” from further participating in the event.<br>Grading will be done based on following criteria: -<br>Content of the presentation.<br>Presentation of the ideas i.e. whether the presentation is able to capture the attention of the audience, clearly convey the opportunities underlying the idea and whether the visuals are simple, clear and effective with good use of graphs and charts.<br>Innovativeness, uniqueness and benefits of the idea.<br>Impact on the environment.<br>Economically sound and feasibility of the ideas.<br>Contact:<br>Rahul Singh - 7891778874<br>(f2015856@pilani.bits-pilani.ac.in) <br>Sahil Bedmutha - 8600764347<br>(f2015723@pilani.bits-pilani.ac.in) "
-// <br>Rules:<br>Each team should consider the following factors given below and make an innovative model (In AUTOCAD/STAAD PRO/REAL 3D MODEL) for the building.
+// 
+// <br>
 var Events = {
 	"CIVIL": {
 		CADW:{
@@ -75,6 +75,7 @@ var Events = {
 			,info:"Problem Statement will be released by Second week of January.<br>Registration:<br>This event requires preregistration.<br>Participants can register in teams of not more than seven."
 			,color : "#37F275"
 			,image: "Image/hack.jpg"
+			,moreInfo: "Rules:<br>Each team should consider the following factors given below and make an innovative model (In AUTOCAD/STAAD PRO/REAL 3D MODEL) for the building.<br>The Competition is a two-stage competition:<br>Stage 1:<br>All the teams should mail their case analysis with the model’s file (if in AUTOCAD/STAAD PRO) or images of the model (if it is an actual 3D MODEL) to the contacts listed below.<br>A design analysis report should be included with the model. The report should contain the ability of the structure to handle the problems. <br>In the report, it should be mentioned (in about 100 words) at which location should the model turned be into an actual project (hypothetically) so as to minimize the cost of construction.<br>The mail’s subject should consist of the event name.<br>They should submit a word report of not more than 30 pages.<br>Selected teams will be shortlisted for the next round. <br>All the short-listed teams will also be intimated via email.<br>Stage 2:<br>Final round of the event will be held in BITS Pilani during APOGEE.<br>The shortlisted teams will have to present their analysis and model to a panel of judges.<br>The decision of the judges will be final and binding. <br>Furthermore, these ideas should “Strictly not be copied form the internet”. If it is found that the idea is plagiarized / copied the respective team would be straight away “disqualified” from further participating in the event.<br>Grading will be done based on following criteria: -<br>Content of the presentation.<br>Presentation of the ideas i.e. whether the presentation is able to capture the attention of the audience, clearly convey the opportunities underlying the idea and whether the visuals are simple, clear and effective with good use of graphs and charts.<br>Innovativeness, uniqueness and benefits of the idea.<br>Impact on the environment.<br>Economically sound and feasibility of the ideas.<br>Contact:<br>Rahul Singh - 7891778874<br>(f2015856@pilani.bits-pilani.ac.in) <br>Sahil Bedmutha - 8600764347<br>(f2015723@pilani.bits-pilani.ac.in) "
 		},
 		KRAZY:
 		{
@@ -416,16 +417,24 @@ var linkage = document.querySelector(".linkage");
 var image = document.querySelector(".image");
 var _url = document.location.pathname;
 var dir = _url.substring(0,_url.lastIndexOf('/'));
-function change(className, data_wrapper, footer, color, imageURL)
+function change(className, data_wrapper, footer, color, imageURL, footerCallback)
 {
 
 	return function(){
+		var footerEle = document.body.querySelector("#footer");
 		document.body.className = className;
 		document.body.querySelector("#data_wrapper").innerHTML = data_wrapper
-		document.body.querySelector("#footer").innerHTML = footer;
+		footerEle.innerHTML = footer;
 		document.body.querySelector("#color").style.color = color;
 		document.body.querySelector("#footer").style.backgroundColor = color;
 		setTimeout(()=>{document.body.querySelector('.image').style.backgroundImage = "url(" + imageURL + ")";} , 480);
+		if(footerCallback){
+			footerEle.addEventListener('click', footerCallback);
+		}else{
+			var prevFunc = footerEle.onclick;
+			if(prevFunc)
+				footerEle.removeEventListener('click', prevFunc);
+		}
 	}
 }
 
@@ -454,7 +463,9 @@ var templates = {
 			<section>' + Events[category][eventCode].info + '</section>\
 			</div>'
 		},
-		footer: '<h3>PROBLEM STATEMENTS</h3>'
+		footer: function(category, eventCode){
+			return (Events[category][eventCode]["moreInfo"]?'<h3>MORE INFO</h3>':"<h3>PROBLEM STATEMENTS</h3>");
+		}
 	}
 }
 
@@ -465,9 +476,21 @@ window.renderEvent = function(category, eventCode){
 	return change(
 		"event "+ category+" "+eventCode,
 		templates.event.data_wrapper(category, eventCode),
-		templates.event.footer,
+		templates.event.footer(category, eventCode),
 		Events[category][eventCode].color,
-		Events[category][eventCode].image
-		);
+		Events[category][eventCode].image,
+		(
+			Events[category][eventCode]["moreInfo"]?
+			(
+				function(){
+					var ev = Events[category][eventCode];
+					var screen = document.querySelector("#more-info");
+					screen.querySelector('.about-head').innerText = Events[category][eventCode]["head"];
+					screen.querySelector('.more-info-content').innerHTML = Events[category][eventCode]["moreInfo"];
+					renderMoreInfo();
+				}
+			)
+			:null
+		));
 }
-window.renderHome = change("home", templates.home.data_wrapper, templates.home.footer, "#04FFE5", "Image/mainbg.jpeg");
+window.renderHome = change("home", templates.home.data_wrapper, templates.home.footer, "#04FFE5", "Image/mainbg.jpeg", null);
