@@ -19,3 +19,30 @@
 #landingrollcover{
 	overflow: auto;
 }
+
+#category-menu{
+	display:none;
+}
+
+.category-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	width:80vw;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	flex-direction: column;
+}
+
+.category{
+	cursor: pointer;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	margin: 20px 0 ;
+}
+
+.category:hover{
+	color: rgb(4, 255, 229);
+}
+

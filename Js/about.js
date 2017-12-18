@@ -35,6 +35,7 @@ var boxes = [
 var openEventMenu = document.querySelectorAll('.eMenu-link');
 var aboutPage = document.querySelectorAll('.about-link');
 var eMenu = document.querySelector('#event-menu');
+var cMenu = document.querySelector('#category-menu');
 var about = document.querySelector('#about');
 var boxWrapper = document.querySelector('.box-wrapper');
 var crossAbt = document.querySelector('#cross-abt');
@@ -42,28 +43,30 @@ var crossEm = document.querySelector('#cross-em');
 var crossButtons  = document.querySelectorAll('.cross-btn');
 var p1 = document.querySelector('#p1');
 var p2 = document.querySelector('#p2');
-for(var i = 0;i < boxes.length;i++)
-{
-	var box = document.createElement("div");
-	box.className = "box"+" "+boxes[i].class;
-	box.data = boxes[i].class.toUpperCase();
-	var img = document.createElement("div");
-	img.className = "img";
-	// img.style.backgroundImage = "url(" + boxes[i].image + ")";
-	var p = document.createElement("p");
-	p.innerHTML = boxes[i].name;
-	box.appendChild(img);
-	box.appendChild(p);
-	boxWrapper.appendChild(box);
-}
+// for(var i = 0;i < boxes.length;i++)
+// {
+// 	var box = document.createElement("div");
+// 	box.className = "box"+" "+boxes[i].class;
+// 	box.data = boxes[i].class.toUpperCase();
+// 	var img = document.createElement("div");
+// 	img.className = "img";
+// 	// img.style.backgroundImage = "url(" + boxes[i].image + ")";
+// 	var p = document.createElement("p");
+// 	p.innerHTML = boxes[i].name;
+// 	box.appendChild(img);
+// 	box.appendChild(p);
+// 	boxWrapper.appendChild(box);
+// }
 
-Array.prototype.forEach.call(boxWrapper.children,(el)=>{
-	el.addEventListener("click", ()=>{
-		document.querySelector('.cross').click();
-		crossEm.click();
-		window.renderEvent(el.data)();
-	});
-});
+
+
+// Array.prototype.forEach.call(boxWrapper.children,(el)=>{
+// 	el.addEventListener("click", ()=>{
+// 		document.querySelector('.cross').click();
+// 		crossEm.click();
+// 		window.renderEvent(el.data)();
+// 	});
+// });
 Array.prototype.forEach.call(aboutPage,(el)=>{
 	el.addEventListener("click",function(e){
 	about.style.display = "flex";
@@ -71,18 +74,20 @@ Array.prototype.forEach.call(aboutPage,(el)=>{
 	p2.innerHTML = "Retrofuturism is an exploration of the themes of tension between the new and old, between the alienating and empowering effects of technology. It might be best described as the act or tendency of an artist to progress by moving backwards, focussing on the futurist visions of eras past. Futurism was born out of humanity's reaction to a sudden thrust into technological revolution. To the many that witnessed the rapid change, it seemed technological utopia was fast approaching. This unbridled optimism caused the collective imagination to run wild.";
 });
 });
-var opened = false;
+// var opened = false;
 Array.prototype.forEach.call(openEventMenu, (el)=>{
 	el.addEventListener("click",function(e){
-		fadeInUp(eMenu, "flex", loadImages);
+		fadeInUp(cMenu, "flex", loadImages);
 	});
 })
+
+
 function loadImages(){
-	if(!opened)
+	// if(!opened)
 		Array.prototype.forEach.call(boxWrapper.children,(el, i)=>{
 			el.querySelector('.img').style.backgroundImage = "url(" + boxes[i].image + ")";
 		});
-	opened = true;
+	// opened = true;
 }
 // crossAbt.addEventListener("click",function(e){
 // 	about.style.display = "none";
@@ -144,3 +149,11 @@ function renderAbout(){
 function showForm(){
 	fadeInUp(document.body.querySelector('#pre_register'), "flex");
 }
+
+
+function renderEMenu(){
+	console.log('render Emenu');
+	fadeInUp(eMenu, "flex", loadImages);
+}
+
+
