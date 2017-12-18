@@ -118,8 +118,38 @@ var Events = {
 	"ROBOTICS":{
 		IS:{
 			head:"I strike",
- 			info:"Build a computer controlled robot which can move on a road with the help of overhead camera."			
-		}
+ 			info:"Build a computer controlled robot which can move on a road with the help of overhead camera."
+		},
+		RAW: {
+			head:"Robots at War",
+			info: "Design a remote controlled robot to combat with the opponent's bot. The arena will be a rectangle measuring 24ft x 24ft. However, the fight zone will be 20ft x 20ft, pushing the opponent bot out of this fight zone will result in victory. The arena might be on hard and uneven ground and will be enclosed by a 5ft high wire meshes all around."
+		},
+		SDC: {
+			head: "Student Design Competition",
+			info: "The ASME Student Design Competition provides a platform for you all to present your solutions. Each team is required to design, construct and operate a prototype meeting the requirements of the problem statement.<br>APOGEE-2018 Student Design Competition: Robot Soccer.<br>You may choose to construct a team that is just one device or a team with multiple devices that are remotely controlled and must fit in a specified box provided by your team. The competition will have a multi-game group stage followed by a semi-final and final round for the top teams."
+		},
+		TOM:{
+			head: "Track-O-Mania",
+			info:"Maze solving line follower - A game where your problem solving skill is tested along with your ability to build a line following bot."
+		},
+		ARX:{
+			head: "Arduinoix",
+			info:"Mazes are one of the oldest puzzles known to man. Mazes have been built with walls and rooms, with hedges, turf, corn stalks, hay bales, books, paving stones of contrasting colours or designs, bricks and turf. An intricate maze will be awaiting you at Arduinoix. It’s the race against time. BOTS will be provided during the event. Contestants have to write Arduino code for the given bot to manoeuvre it through the event arena (maze)."
+		},
+		ADC:{
+			head: "Analogue Design Challenge",
+			info:"Are you intrigued by electronics? Are you bored of designing circuits on paper and want to try your skills on a world class designing platform? Then put on your thinking caps and get ready to rack your brains, Analogue Design Challenge is here.<br>The problem will be based on Analogue Design and the designing will be done using Cadence. You have to design the circuit based on the requirement specifications provided to you and within the given time limit."
+		},
+		CDC:{
+			head: "Circuit Design Challenge",
+			info:"Are you an electronics buff? Do you want to convert theoretical knowledge into a practical application? Can you do it fast enough? Then, Circuit Design Challenge is the place for you.<br>The problem will be based on Analogue and digital electronics and to be designed on a breadboard. You have to design an electronic circuit that meets the requirements of the problem by using the components provided by us."
+
+		},
+			HACKTR:{
+				head:"Hackatronics",
+				info:"Are you one of those people who itch to open it up whenever you look at a new gadget? Do you share the spirit of gadget-hacking? If so, you're looking at the right event.<br>This APOGEE, we give you the opportunity to open things up and make something useful and innovative out of them. Hack! Innovate! Build!"
+			}
+
 	},
 	"SCIENCES":{},
 	"SOCIAL":{}
@@ -128,25 +158,10 @@ var Events = {
 
 
 
-// Robots at War
-// Design a remote controlled robot to combat with the opponent's bot. The arena will be a rectangle measuring 24ft x 24ft. However, the fight zone will be 20ft x 20ft, pushing the opponent bot out of this fight zone will result in victory. The arena might be on hard and uneven ground and will be enclosed by a 5ft high wire meshes all around.
-// Student Design Competition
-// The ASME Student Design Competition provides a platform for you all to present your solutions. Each team is required to design, construct and operate a prototype meeting the requirements of the problem statement.
-// APOGEE-2018 Student Design Competition: Robot Soccer.
-// You may choose to construct a team that is just one device or a team with multiple devices that are remotely controlled and must fit in a specified box provided by your team. The competition will have a multi-game group stage followed by a semi-final and final round for the top teams.
-// Track-O-Mania
-// Maze solving line follower - A game where your problem solving skill is tested along with your ability to build a line following bot.
-// Arduinoix
-// Mazes are one of the oldest puzzles known to man. Mazes have been built with walls and rooms, with hedges, turf, corn stalks, hay bales, books, paving stones of contrasting colours or designs, bricks and turf. An intricate maze will be awaiting you at Arduinoix. It’s the race against time. BOTS will be provided during the event. Contestants have to write Arduino code for the given bot to manoeuvre it through the event arena (maze).
-// Analogue Design Challenge
-// Are you intrigued by electronics? Are you bored of designing circuits on paper and want to try your skills on a world class designing platform? Then put on your thinking caps and get ready to rack your brains, Analogue Design Challenge is here.
-// The problem will be based on Analogue Design and the designing will be done using Cadence. You have to design the circuit based on the requirement specifications provided to you and within the given time limit.
-// Circuit Design Challenge
-// Are you an electronics buff? Do you want to convert theoretical knowledge into a practical application? Can you do it fast enough? Then, Circuit Design Challenge is the place for you.
-// The problem will be based on Analogue and digital electronics and to be designed on a breadboard. You have to design an electronic circuit that meets the requirements of the problem by using the components provided by us.
-// Hackatronics
-// Are you one of those people who itch to open it up whenever you look at a new gadget? Do you share the spirit of gadget-hacking? If so, you're looking at the right event.
-// This APOGEE, we give you the opportunity to open things up and make something useful and innovative out of them. Hack! Innovate! Build!
+
+
+
+
 
 
 
@@ -169,10 +184,10 @@ var renderCatMenu = function(category){
 				closeNav();
 				document.querySelector('#category-menu').querySelector('.cross-btn').click();
 				document.querySelector('#event-menu').querySelector('.cross-btn').click();
-			})			
+			})
 		});
 		renderEMenu();
-	};	
+	};
 };
 
 (function __init_categories__(){
@@ -180,11 +195,11 @@ var renderCatMenu = function(category){
 	var cat_wrapper = document.querySelector('.category-wrapper');
 	for( category in Events){
 		category_wrapper_html += '<div class="category" data="'+category+'">' + category + '</div>'
-	}	
-	
+	}
+
 	cat_wrapper.innerHTML = category_wrapper_html;
 	var cats = document.querySelectorAll('.category');
-	
+
 	Array.prototype.forEach.call(cats,(el, i)=>{
 
 		el.addEventListener('click', renderCatMenu(el.getAttribute('data')))
@@ -205,8 +220,8 @@ var image = document.querySelector(".image");
 var _url = document.location.pathname;
 var dir = _url.substring(0,_url.lastIndexOf('/'));
 function change(className, data_wrapper, footer, color, imageURL)
-{	
-	
+{
+
 	return function(){
 		document.body.className = className;
 		document.body.querySelector("#data_wrapper").innerHTML = data_wrapper
@@ -253,11 +268,9 @@ window.renderEvent = function(category, eventCode){
 	return change(
 		"event "+ category+" "+eventCode,
 		templates.event.data_wrapper(category, eventCode),
-		templates.event.footer, 
+		templates.event.footer,
 		Events[category][eventCode].color,
 		Events[category][eventCode].image
 		);
 }
 window.renderHome = change("home", templates.home.data_wrapper, templates.home.footer, "#04FFE5", "Image/mainbg.jpeg");
-
-
