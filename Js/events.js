@@ -87,7 +87,7 @@ var Events = {
 		LIFT:
 		{
 			head:"Lift it Up"
-			,info:"A jack is a mechanical device used as a lifting device to lift heavy loads or to apply great forces.  A hydraulic jack uses hydraulic power.<br>This is based on Pascal’s Principle. According to Pascal’s principle, in a hydraulic system a pressure exerted on a piston produces an equal increase in pressure on another piston in the system. If the second piston has an area 10 times that of the first, the force on the second piston is 10 times greater, though the pressure is the same as that on the first piston. "
+			,info:"A jack is a mechanical device used as a lifting device to lift heavy loads or to apply great forces.  A hydraulic jack uses hydraulic power.<br>This is based on Pascal’s Principle. According to Pascal’s principle, in a hydraulic system a pressure exerted on a piston produces an equal increase in pressure on another piston in the system. If the second piston has an area 10 times that of the first, the force on the second piston is 10 times greater, though the pressure is the same as that on the first piston. "
 			,color : "#37F275"
 			,image: "Image/hack.jpg"
 		}

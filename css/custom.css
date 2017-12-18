@@ -56,3 +56,50 @@
 	}
 }
 
+.s-name{
+	padding: 30px;
+	position: relative;	
+}
+
+/*.s-name:before{
+	position:absolute;
+	top:0;
+	left:0;
+	background: rgb(4, 255, 200);
+	height: 2px;
+	right: 100%;
+	
+	content: "";
+	
+}
+
+.s-name:hover:before{
+	
+	animation: line 5s linear;
+}
+
+@keyframes line{
+	from{
+		right: 100%;
+		left:0
+	},
+	50%{
+		right: 100%;
+		left:0
+	}
+	to{
+		left: 100%;
+		right: 0;	
+	}
+}
+
+@keyframes coco{
+	from{
+		background:#fff;
+		height: 10px;
+	},
+	to{
+		background: #ff0;
+		height: 20px;
+	}
+}*/
