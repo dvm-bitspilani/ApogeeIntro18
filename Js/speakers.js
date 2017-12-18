@@ -58,17 +58,67 @@ speakers_info.forEach((el, i)=>{
 document.querySelector('.speakers').innerHTML = string;
 
 sponsors_info = [{
-	name: "Navjot",
-	image: "../ApogeeIntro18/Image/re.jpeg"
+	image: "../ApogeeIntro18/Image/spons/sp1.png"
+}, 
+{
+	image: "../ApogeeIntro18/Image/spons/sp2.png"
+}, 
+{
+	image: "../ApogeeIntro18/Image/spons/sp3.png"
+}, 
+{
+	image: "../ApogeeIntro18/Image/spons/sp4.jpg"
+}, 
+{
+	image: "../ApogeeIntro18/Image/spons/sp5.jpg"
+}, 
+{
+	image: "../ApogeeIntro18/Image/spons/sp6.png"
+}, 
+{
+	image: "../ApogeeIntro18/Image/spons/sp7.png"
+}, 
+{
+	image: "../ApogeeIntro18/Image/spons/sp8.jpg"
+}, 
+{
+	image: "../ApogeeIntro18/Image/spons/sp9.png"
+}, 
+{
+	image: "../ApogeeIntro18/Image/spons/sp10.png"
+}, 
+{
+	image: "../ApogeeIntro18/Image/spons/sp11.jpg"
+}, 
+{
+	image: "../ApogeeIntro18/Image/spons/sp12.png"
+}, 
+{
+	image: "../ApogeeIntro18/Image/spons/sp13.jpg"
+},
+{
+	image: "../ApogeeIntro18/Image/spons/sp14.png"
+}, 
+{
+	image: "../ApogeeIntro18/Image/spons/sp15.jpg"
+}, 
+{
+	image: "../ApogeeIntro18/Image/spons/sp16.png"
+}, 
+{
+	image: "../ApogeeIntro18/Image/spons/sp17.jpg"
+},  
+{
+	image: "../ApogeeIntro18/Image/spons/sp18.jpg"
 }, {
-	name: "Navjot",
-	image: "../ApogeeIntro18/Image/re.jpeg"
+	image: "../ApogeeIntro18/Image/spons/sp19.png"
 }, {
-	name: "Navjot",
-	image: "../ApogeeIntro18/Image/re.jpeg"
+	image: "../ApogeeIntro18/Image/spons/sp20.png"
 }, {
-	name: "Navjot",
-	image: "../ApogeeIntro18/Image/re.jpeg"
+	image: "../ApogeeIntro18/Image/spons/sp21.jpg"
+},
+ {
+	image: "../ApogeeIntro18/Image/spons/sp22.png"
 }];
 
 
@@ -76,7 +126,6 @@ var string2 = "";
 sponsors_info.forEach((el, i)=>{
 	string2 += "<div class='s-cont'>\
 			<img src='"+ el.image +"'>\
-			<p class='s-name'>" + el.name + "</p>\
 		</div>"
 })
 
