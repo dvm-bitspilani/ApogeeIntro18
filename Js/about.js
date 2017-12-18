@@ -58,10 +58,10 @@ for(var i = 0;i < boxes.length;i++)
 }
 
 Array.prototype.forEach.call(boxWrapper.children,(el)=>{
-	el.addEventListener("click", ()=>{
+	el.addEventListener("click",()=>{
 		document.querySelector('.cross').click();
 		crossEm.click();
-		window.renderEvent(el.data)();
+		window.renderEvent(el.data);
 	});
 });
 Array.prototype.forEach.call(aboutPage,(el)=>{
