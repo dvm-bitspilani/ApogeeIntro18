@@ -88,11 +88,68 @@ var Events = {
 	},
 	"MECHATRONICS":{},
 	"MISCELLANEOUS":{},
-	"QUIZZING":{},
-	"ROBOTICS":{},
+	"QUIZZING":{
+		OHT :{
+			head: "Over Head Transmission",
+			info:"Over Head Transmission, which is one of the biggest crowd pullers during APOGEE, is an event which is sure to test your lateral thinking abilities as well as simple General Knowledge. For the quizzical enough, OHT offers ample proof that quizzing isn't all about mugging.<br>Hosted by Major Chandrakant Nair."
+		},
+		BQ:{
+			head:"Biz Quiz",
+			info:"Do economics and finance interest you? This quiz will challenge your knowledge, test your limits and broaden your horizons.<br>Hosted by Kushan Patel."
+		},
+		IQ:{
+			head:"India Quiz",
+			info:"\"India is the cradle of the human race, the birthplace of human speech, the mother of history, the grandmother of legend, and the great grandmother of tradition. Our most valuable and most instructive materials in the history of man are treasured up in India only.\"<br>-Mark Twain<br>India Quiz introduces you to the different facets of India which you might have seen or heard of, but never experienced. Its people and places, its colour and hues, its opulence and magnificence are presented to you in a four hour format which promises to give you a whirlwind tour of India. It has been a successful crowd puller for the past few years and with all humility claims to be one of the foremost quizzing competitions of BITS-Pilani.<br>Hosted by Major Chandrakant Nair, a name synonymous with India-themed quizzing."
+		},
+		JEP:{
+			head:"Jeopardy",
+			info:"A quiz with a twist, get your questions answered before you can ask them, requires you to plan the questions you answer or ask rather. This event will give you a taste of the twisted TV show as well as the usual quizzing trivia! Rules: Teams of 2. Prelims round will reduce the participation to 18 teams. It is followed by Eliminations from which 6 teams will get selected to the finals. The finals, based on the Jeopardy board style, will have a number of rounds with the highest score deciding the winner. Bring a pen along."
+		},
+		STQ:{
+			head:"Sci-Tech Quiz",
+			info:"A sci-tech quiz in a tech fest in an institute of science and technology. This quiz will comprehensively examine your scientific knowledge and technological expertise, while providing a very enjoyable experience. <br>Hosted by Kushan Patel."
+		},
+		DQ:{
+			head:"Doper’s Quiz",
+			info: "This APOGEE, delve into the world of the Narcotics in our mind-boggling quiz. The questions will be based on real-life applications and situations in which the contestant will have to think logically and realistically. Audio and Visual aids will be provided to the participants in order to make the quiz more interesting."
+		}
+
+	},
+	"ROBOTICS":{
+		IS:{
+			head:"I strike",
+ 			info:"Build a computer controlled robot which can move on a road with the help of overhead camera."			
+		}
+	},
 	"SCIENCES":{},
 	"SOCIAL":{}
 };
+
+
+
+
+// Robots at War
+// Design a remote controlled robot to combat with the opponent's bot. The arena will be a rectangle measuring 24ft x 24ft. However, the fight zone will be 20ft x 20ft, pushing the opponent bot out of this fight zone will result in victory. The arena might be on hard and uneven ground and will be enclosed by a 5ft high wire meshes all around.
+// Student Design Competition
+// The ASME Student Design Competition provides a platform for you all to present your solutions. Each team is required to design, construct and operate a prototype meeting the requirements of the problem statement.
+// APOGEE-2018 Student Design Competition: Robot Soccer.
+// You may choose to construct a team that is just one device or a team with multiple devices that are remotely controlled and must fit in a specified box provided by your team. The competition will have a multi-game group stage followed by a semi-final and final round for the top teams.
+// Track-O-Mania
+// Maze solving line follower - A game where your problem solving skill is tested along with your ability to build a line following bot.
+// Arduinoix
+// Mazes are one of the oldest puzzles known to man. Mazes have been built with walls and rooms, with hedges, turf, corn stalks, hay bales, books, paving stones of contrasting colours or designs, bricks and turf. An intricate maze will be awaiting you at Arduinoix. It’s the race against time. BOTS will be provided during the event. Contestants have to write Arduino code for the given bot to manoeuvre it through the event arena (maze).
+// Analogue Design Challenge
+// Are you intrigued by electronics? Are you bored of designing circuits on paper and want to try your skills on a world class designing platform? Then put on your thinking caps and get ready to rack your brains, Analogue Design Challenge is here.
+// The problem will be based on Analogue Design and the designing will be done using Cadence. You have to design the circuit based on the requirement specifications provided to you and within the given time limit.
+// Circuit Design Challenge
+// Are you an electronics buff? Do you want to convert theoretical knowledge into a practical application? Can you do it fast enough? Then, Circuit Design Challenge is the place for you.
+// The problem will be based on Analogue and digital electronics and to be designed on a breadboard. You have to design an electronic circuit that meets the requirements of the problem by using the components provided by us.
+// Hackatronics
+// Are you one of those people who itch to open it up whenever you look at a new gadget? Do you share the spirit of gadget-hacking? If so, you're looking at the right event.
+// This APOGEE, we give you the opportunity to open things up and make something useful and innovative out of them. Hack! Innovate! Build!
+
+
+
 
 var renderCatMenu = function(category){
 	console.log(category, Events[category]);
