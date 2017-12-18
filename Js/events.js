@@ -70,6 +70,17 @@ Et nostra suscipit mollis aliquam congue dolor dapibus fames risus viverra lobor
 
 var Events = {
 	"CIVIL": {
+CADW
+:{head:"CAD Wars"
+,info:"Problem Statement will be released by Second week of January.<br>Registration:<br>This event requires preregistration.<br>Participants can register in teams of not more than seven.<br>Rules:<br>Each team should consider the following factors given below and make an innovative model (In AUTOCAD/STAAD PRO/REAL 3D MODEL) for the building.<br>The Competition is a two-stage competition:<br>Stage 1:<br>All the teams should mail their case analysis with the model’s file (if in AUTOCAD/STAAD PRO) or images of the model (if it is an actual 3D MODEL) to the contacts listed below.<br>A design analysis report should be included with the model. The report should contain the ability of the structure to handle the problems. <br>In the report, it should be mentioned (in about 100 words) at which location should the model turned be into an actual project (hypothetically) so as to minimize the cost of construction.<br>The mail’s subject should consist of the event name.<br>They should submit a word report of not more than 30 pages.<br>Selected teams will be shortlisted for the next round. <br>All the short-listed teams will also be intimated via email.<br>Stage 2:<br>Final round of the event will be held in BITS Pilani during APOGEE.<br>The shortlisted teams will have to present their analysis and model to a panel of judges.<br>The decision of the judges will be final and binding. <br>Furthermore, these ideas should “Strictly not be copied form the internet”. If it is found that the idea is plagiarized / copied the respective team would be straight away “disqualified” from further participating in the event.<br>Grading will be done based on following criteria: -<br>Content of the presentation.<br>Presentation of the ideas i.e. whether the presentation is able to capture the attention of the audience, clearly convey the opportunities underlying the idea and whether the visuals are simple, clear and effective with good use of graphs and charts.<br>Innovativeness, uniqueness and benefits of the idea.<br>Impact on the environment.<br>Economically sound and feasibility of the ideas.<br>Contact:<br>Rahul Singh - 7891778874<br>(f2015856@pilani.bits-pilani.ac.in) <br>Sahil Bedmutha - 8600764347<br>(f2015723@pilani.bits-pilani.ac.in) "
+},KRAZY
+:{head:"Krazy Bridge"
+,info:"A bridge is a structure built to span and provide a passage over a physical obstacle. This event will test your skills to approach the problem in an innovative manner. With just scrap, you are expected to build a bridge that can bear maximum load and undergoes minimum deflection. You have the freedom on the type of bridge you construct."
+},LIFT
+:{head:"Lift it Up"
+,info:"A jack is a mechanical device used as a lifting device to lift heavy loads or to apply great forces.  A hydraulic jack uses hydraulic power.<br>This is based on Pascal’s Principle. According to Pascal’s principle, in a hydraulic system a pressure exerted on a piston produces an equal increase in pressure on another piston in the system. If the second piston has an area 10 times that of the first, the force on the second piston is 10 times greater, though the pressure is the same as that on the first piston. "
+}
+
 
 	},
 	"CODING":{
@@ -85,8 +96,49 @@ var Events = {
 			info : "Talk is Cheap. Show me the code- Linus Torvalds.<br>Do you think you have mastered Competitive coding, the greatest mind sport? Do you feel the urge to solve Mind blowing problems and play the Game of Codes? Here’s your stage to step on and prove your coding skills – A challenging stage, a nail biting one! BITSACM presents ICL - International Coding League: a competitive programming contest based on the ACM ICPC this Apogee 2018. In February some of the best minds in the country are to gather to compete for the crown.",
 			image: "Image/icl.jpeg"
 		},
+ACYUT
+:{head:"Acyut Challenge"
+,info:"Robots will harvest, cook, and serve our food. They will work in our factories, drive our cars, and walk our dogs. Like it or not, the age of work is coming to an end.<br>AcYut in collaboration with BITSACM presents India’s only collegiate humanoid robotics challenge where you get to solve a problem set by our team and watch your code run on India’s first indigenous humanoid robot, AcYut. You also get the opportunity to watch your code displays it prowess at Robocup as AcYuT takes on competitors from around the globe and beats them at soccer!"
+},ONHACK
+:{head:"Online Hackathon"
+,info:"Learning from solved real world problems, participants will need to complete machine learning challenges in the post-workshop hackathon."
+},ANTCODE
+:{head:"Anti-Coding "
+,info:"Do you want to check the verso of coding? Are you fatigued by traditional competitive programming? Do you want a break, out of this coding blasé? A ‘yes’ for any of these tells us you are watching the right space. Anti-Coding is an on-campus event in which participants need to write code unconventionally. To make it much more interesting we choose a theme every year; bend the rules and make one code a brain teaser for another. We are excited to announce this year’s theme: Code Obfuscation."
+},CDOKU
+:{head:"C Doku"
+,info:"C-Doku is an on campus Apogee Event. It consists of solving the Sudoku based on solving a few number of C/C++ questions."
+},CRLAY
+:{head:"Code Relay"
+,info:"Have you ever run in a relay race?<br>Code Relay brings to you the opportunity to solve programs with your team like in a relay race. Switch between writing code and figuring out what your teammate has written.<br>The team which solves the questions 1st wins!"
+}
+
+
+
 	},
-	"MECHATRONICS":{},
+	"MECHATRONICS":{
+DP:{
+head:"Drone Prix"
+,info:"Feel the sweat trickling down your forehead, feel the adrenaline pumping through veins and feel the cheers of the crowd fade away behind the hum of the rotors. This APOGEE even sky is not the limit!!!<br>Design a remote controlled Multi Rotor to race against the hurdles and the ticking clock. The arena will be open ground. However, the maximum flight altitude will be 15 meters. The competition comprises of scoring at 5 different levels including elimination rounds. <br>Kindly read all the rules and specifications clearly and contact us for any discrepancies."
+},FTGP:{
+head:"Full Throttle Grand Prix"
+,info:"Sports Cars are one of the most ultimate man-made machines and their race is full of adventures and a must watch event. On the course of F1 racing BITS-Pilani is conducting Remote Controlled racing event “The Full Throttle Grand Prix”. This competition is to show your knowledge about engineering behind remote controlled cars and feel the effect of ultimate driving experience. The event requires racing of your self-built RC cars on a race track. Although it may look simple to you but you will face cut-throat competition, and finally it is the quality of the car and driver ability which will decide the winner<br>Build a Remote Controlled IC engine powered car to traverse a race track in the minimum possible time. The time trial track may be composed of several turns with increasing difficulty levels. The teams with the top best time to lap this track qualify for racing. Final round will be a race."
+},AIRB:{
+head:"AirBorne"
+,info:"Make a remote-controlled hovercraft that can handle 200gm weight and outrun other opponents on a smooth track ridden with obstacles."
+},DMVC:{
+head:"Dual Mode Vehicle Challenge"
+,info:"1963, Eight years into the Vietnam War, the Americans have understood a few things: Men can’t kill everything with small arms, they can’t go everywhere either. Tanks are not the solution. They get bogged down in the swamps and, then, they get taken out like fish in a barrel by the Cong. They are sick of it and need some transport vehicle which can navigate swamps, ponds, rivers, and the whole list. As an engineer, you have to build a remote controlled vehicle which can navigate through water and land.<br>To build a remote controlled ‘all-terrain’ vehicle that can move and steer on both land and water and is able to move from water to land and vice versa without any physical human involvement."
+},BAW:{
+head:"Battle at Waterloo"
+,info:"Ever wanted to feel the power of the driving force of the racing Power boats? Come and build your own Speed boat at Battle of waterloo. Apogee 2018 gives you an opportunity to build your own RC motor boat and prove your mettle against other racers. Build a wireless remote controlled BOAT which travels a specified race track in the least possible time. You will get a chance to showcase and race your boat this Apogee in the BITS Swimming Pool."
+},WR:{
+head:"Water Rocketry"
+,info:"Design a water rocket that is completely powered by the thrust delivered by water expelled at high pressure along with its launch pad."
+}
+
+
+	},
 	"MISCELLANEOUS":{
 		POL:{
 		head:"POLYSIS",
