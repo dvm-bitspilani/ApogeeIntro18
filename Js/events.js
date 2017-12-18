@@ -87,7 +87,33 @@ var Events = {
 		},
 	},
 	"MECHATRONICS":{},
-	"MISCELLANEOUS":{},
+	"MISCELLANEOUS":{
+		POL:{
+		head:"POLYSIS",
+info:'"If you believe the major issues in the country is primarily due to institutional voids in policy making and implementation process and if you think you can create a policy agenda from the existing issues in the society and structure a well-designed solution for the same, POLYSIS (Policy Analysis) is one of a kind opportunity to contest your opinions with top minds in the country.'
+},
+BTB:{
+head: "Bob the Builder",
+info:"A pile of junk, knowledge of basic laws of science and a lot of creativity, that's all it takes to make an awesome contraption. Creative Activities Club brings to all a contraption making competition. The entire inventory will be provided on the spot along with a problem statement. "
+	},
+	CHM:{
+head:"Checkmate",
+info:"Intelligence is not to make no mistakes, but to see quickly how to make them good.<br>~ Bertolt Brecht<br>A contest designed to test the mental aptitude of the contestants. What matters is your perseverance to get out of unforeseen situations. It may consist of brain teasers, mind boggling puzzles and other aptitude questions to juggle your brain"
+},
+GE:{
+head:"Goodbye Earth",
+info:"It's the year 2050. Humans have left Planet Earth and are trying to build a colony on other planet. Your team is in-charge of this settlement and thus you have to take care of various aspects of this new colony. There will be three rounds in the event which will be declared then and there. Round will test your creative abilities and scientific aptitude. "
+},
+JAW:{
+head:"Join & Win",
+info:"As is the case that \"the one who deserve is the one who observe\" the same goes with our event Join & Win, where you spectate all around to win here. <br>The keen observant of the events throughout the day get a chance to answer various questions and puzzles based on the events held on that day and  answering and gaining maximum points makes you the winner."
+},
+MM:{head:"Media Mania",
+info:"Test your skills in the world of Journalism. This event aims at bringing out the hidden journalist inside you.<br> Participants will be tested on their 'awareness', 'reporting skills', ‘communication skills' and whatever one can imagine of, by the word ‘media’. Specific details and rules of the various rounds of this event will be declared on the spot to retain the surprise element."
+},
+MS:{head:"Mind-sweeper",
+info:"Ever dreamed of beating a computer which learns as you challenge it? This is the event in which you’ll challenge not only a computer but your own smartness."
+}	},
 	"QUIZZING":{
 		OHT :{
 			head: "Over Head Transmission",
@@ -175,8 +201,15 @@ var Events = {
 			info:"Answer the tricky questions of your opponents and restrict their moves. It will be an online game where two teams will be playing against each other. The motive of each team will be to answer questions on each of its move in order to restrict other's way. The team that will survive till end will be the ZOMBIE of the event!"
 		}
 	},
-	"SOCIAL":{}
+	"SOCIAL":{
+		DHITI:{
+			head:"DHITI",
+			info:"\"Have faith in people. They are basically good and smart. Given the right tools, they can do wonderful things.\"  – Steve Jobs.<br>Technology today has seeped into every aspect of our lives. But we must not forget about the society and its problems.  We, the youth form more than half of our nation's population. Our ideas and knowledge base can solve a multitude of different problems faced by the communities today. <br>We invite people to bring forth their ideas that can revolutionize the use of technology to improve people's lives. It is only by solving such basic problems that development will occur collectively in every community and not selectively.<br>APOGEE, BITS Pilani presents to you the social event of the annual technical extravaganza - DHITI.<br>Dhiti (Sanskrit for “An idea”) is a platform for passionate individuals who ideate and aspire for technology to reach the grassroots. Here we will provide you with problems and mentors to form feasible solutions to various issues and provide recognition to your solution. So, let’s put our ideas and knowledge bases to some real use.<br>Problem Statements would be updated later."
+		}
+	}
 };
+
+
 
 
 
