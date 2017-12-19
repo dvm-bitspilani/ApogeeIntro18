@@ -48,11 +48,16 @@
 
 .category img{
 	width: 200px;
+	transition: all .4s linear;
 }
 
 .category:hover{
 	color: rgb(4, 255, 229);
 	border: 1px solid rgb(4, 255, 229);
+}
+
+.category:hover img{
+	transform: scale(0.9);
 }
 
 @media screen and (max-width: 700px){
@@ -110,5 +115,22 @@
 	to{
 		background: #ff0;
 		height: 20px;
+	}
+}*/
+
+/*
+.animate{
+	
+	opacity: 1;
+	animation: __eee__ .7s linear;
+}
+
+@keyframes __eee__{
+	form{
+		opacity: 0 !important;
+	},
+	to{
+		opacity: 1 !important;
+		
 	}
 }*/
