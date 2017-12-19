@@ -392,7 +392,7 @@ var renderCatMenu = function(category){
 	var category_wrapper_html = "";
 	var cat_wrapper = document.querySelector('.category-wrapper');
 	for( category in Events){
-		category_wrapper_html += '<div class="category" data="'+category+'">' + category + '</div>'
+		category_wrapper_html += '<div class="category" data="'+category+'"><img src="Image/'+ category.toLowerCase() +'.svg" alt="'+ category +'"></div>'
 	}
 
 	cat_wrapper.innerHTML = category_wrapper_html;
