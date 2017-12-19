@@ -74,3 +74,4 @@ function dismissLoader(){
       document.getElementById("landingpage").style.marginTop = "0";
       document.getElementById("landingrollcover").style.opacity = "1";
 }
+dismissLoader()
