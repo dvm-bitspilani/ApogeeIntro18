@@ -467,7 +467,7 @@ var templates = {
 			</div>'
 		},
 		footer: function(category, eventCode){
-			return (Events[category][eventCode]["moreInfo"]?'<h3>MORE INFO</h3>':"<h3>PROBLEM STATEMENTS</h3>");
+			return (Events[category][eventCode]["moreInfo"]?'<h3>MORE INFO</h3>':'<h3><a style="text-decoration:none;color:#fff" href="./pdfs/Rules Booklet Updated complete.pdf" download="Rules Booklet.pdf">DOWNLOAD RULES BOOKLET</a></h3>');
 		}
 	}
 }
