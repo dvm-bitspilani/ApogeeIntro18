@@ -422,11 +422,13 @@ function change(className, data_wrapper, footer, color, imageURL, footerCallback
 
 	return function(){
 		var footerEle = document.body.querySelector("#footer");
+		
 		document.body.className = className;
 		document.body.querySelector("#data_wrapper").innerHTML = data_wrapper
 		footerEle.innerHTML = footer;
 		document.body.querySelector("#color").style.color = color;
 		document.body.querySelector("#footer").style.backgroundColor = color;
+		
 		setTimeout(()=>{document.body.querySelector('.image').style.backgroundImage = "url(" + imageURL + ")";} , 480);
 		if(footerCallback){
 			footerEle.addEventListener('click', footerCallback);
@@ -460,7 +462,7 @@ var templates = {
 			return '<div class="letter"></div>\
 			<div class="__container__">\
 			<header><h1><b>' + Events[category][eventCode].head + '</b></h1></header>\
-			<section>' + Events[category][eventCode].info + '</section>\
+			<section >' + Events[category][eventCode].info + '</section>\
 			</div>'
 		},
 		footer: function(category, eventCode){
@@ -473,7 +475,7 @@ window.renderEvent = function(category, eventCode){
 	if(eventCode == null){
 		eventCode = "RE";
 	}
-	return change(
+	var __render__ = change(
 		"event "+ category+" "+eventCode,
 		templates.event.data_wrapper(category, eventCode),
 		templates.event.footer(category, eventCode),
@@ -492,5 +494,28 @@ window.renderEvent = function(category, eventCode){
 			)
 			:null
 		));
+	return function(){
+		__render__();
+		// setTimeout(animateInfo, 1000);
+	};
 }
 window.renderHome = change("home", templates.home.data_wrapper, templates.home.footer, "#04FFE5", "Image/mainbg.jpeg", null);
+
+
+function animateInfo(){
+	console.log("animate");
+	var container = document.querySelector('.__container__');
+	var header = container.querySelector('header');
+	var section = container.querySelector('section');
+	animate(header);
+	animate(section);
+}
+
+function animate(ele){
+	ele.className += " animate";
+	setTimeout(function(){
+		console.log("remove animate");
+		ele.className = ele.className.replace(" animate", "");
+		// console.log("remove animate", );
+	}, 1000)
+}
