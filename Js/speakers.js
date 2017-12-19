@@ -173,9 +173,9 @@ sponsors_info = [{
 
 var string2 = "";
 sponsors_info.forEach((el, i)=>{
-	string2 += "<div class='s-cont'>\
+	string2 += "<div class='spons-cont'>\
 			<img src='"+ el.image +"'>\
-			<p class='s-name'>" + el.name + "</p>\
+			<p class='spons-name'>" + el.name + "</p>\
 		</div>"
 })
 

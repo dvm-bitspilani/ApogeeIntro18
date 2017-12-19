@@ -123,10 +123,16 @@
   background-size: 90% 90%;
   background-position: center;
   background-repeat: no-repeat;
+  transition: transform .5s linear;
+  cursor: pointer;
 }
 .box .img:hover{
   border:1px solid #f6a211;
+ /* border: 1px solid rgb(4, 255, 229);
+  */
+  transform: scale(.97)
 }
+
 .box p{
   text-align: center;
   color: #fff;
@@ -216,7 +222,7 @@
     border: 1px solid transparent;
 }
 
-.sponsors .s-name, .speakers .s-name{
+.sponsors .spons-name, .speakers .s-name{
     color: #fff;
     text-align: center;
     /* line-height: 1.6em; */
@@ -224,15 +230,18 @@
     height: auto;
 }
 
-.s-cont{
-    /*width: 200px;
-    height: 200px;*/
+.s-cont, .spons-cont{
+    
     padding: 0;
     margin: 20px 10px;
     height: auto;
 }
+.s-cont{
+  width: 200px;
+  /*height: 200px;*/
+}
 
-.s-cont:hover img{
+.s-cont:hover img, .spons-cont:hover img{
   border: 1px solid #fff;
 }
 

@@ -29,7 +29,9 @@ setTimeout(function(){
        document.getElementById("loader").style.display = "none";
        document.getElementById("mainpage").style.display = "block";
        $('#mainpage').fadeIn(250);
+       console.log("AAA")
        window.renderHome();
+       dismissLoader();
        clearInterval(repeatLoader);
       }
     }, 11000)
@@ -43,12 +45,24 @@ setTimeout(function(){
         // $('#mainpage').fadeIn(250);
         $('#loader').hide(1000);
         $('#mainpage').show(700);
+        dismissLoader();
+        console.log("BBB");
         window.renderHome();
       },9800)
    }
 },10000)
 
 var debug = ()=>{
+  dismissLoader();
+        // window.renderHome();
+  // showForm();
+  // renderEvent('SMS')();
+  // renderPastSpeakers();
+}
+
+// debug()
+
+function dismissLoader(){
   $('#loader').hide(1000);
   $('#mainpage').show(700);
   window.renderHome();
@@ -59,10 +73,4 @@ var debug = ()=>{
            document.getElementById("landingpage").style.height = "100vh";
       document.getElementById("landingpage").style.marginTop = "0";
       document.getElementById("landingrollcover").style.opacity = "1";
-        // window.renderHome();
-  // showForm();
-  // renderEvent('SMS')();
-  // renderPastSpeakers();
 }
-
-debug();
