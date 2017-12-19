@@ -138,13 +138,15 @@
     margin-right: 4px;
     margin-left: 4px; }
      }
-
-.pepheading{
+.centerlogo{
+  width: 100vw;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+/*.pepheading{
   position: fixed;
   left:18vw;
-  
-
-  
-}
+}*/
 /*# sourceMappingURL=pep.css.map */
   /*<a href="https://bits-apogee.org/2018/portal" target="_blank">*/
