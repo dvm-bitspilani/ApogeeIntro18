@@ -79,67 +79,95 @@ speakers_info.forEach((el, i)=>{
 document.querySelector('.speakers').innerHTML = string;
 
 sponsors_info = [{
-	image: "../ApogeeIntro18/Image/spons/sp1.jpg"
+	image: "./Image/spons/sp1.png",
+	name:"Title Sponser"
 }, 
 {
-	image: "../ApogeeIntro18/Image/spons/sp2.jpg"
+	image: "./Image/spons/sp2.png",
+	name:"Title Sponser - Litfest"
+
 }, 
 {
-	image: "../ApogeeIntro18/Image/spons/sp3.jpg"
+	image: "./Image/spons/sp3.png",
+	name:"Gold Sponser"
 }, 
 {
-	image: "../ApogeeIntro18/Image/spons/sp4.jpg"
+	image: "./Image/spons/sp4.png",
+	name:"Title Sponser - Vootathon"
 }, 
 {
-	image: "../ApogeeIntro18/Image/spons/sp5.jpg"
+	image: "./Image/spons/sp5.png",
+	name:"Media Partner"
 }, 
 {
-	image: "../ApogeeIntro18/Image/spons/sp6.jpg"
+	image: "./Image/spons/sp6.png",
+	name:"Gold Partner"
 }, 
 {
-	image: "../ApogeeIntro18/Image/spons/sp7.jpg"
+	image: "./Image/spons/sp7.png",
+	name:"Driven By Partner - FTGP"
 }, 
 {
-	image: "../ApogeeIntro18/Image/spons/sp8.jpg"
+	image: "./Image/spons/sp8.png",
+	name:"Education Partner"
 }, 
 {
-	image: "../ApogeeIntro18/Image/spons/sp9.jpg"
+	image: "./Image/spons/sp9.png",
+	name:"Platinum Sponser - Litfest"
 }, 
 {
-	image: "../ApogeeIntro18/Image/spons/sp10.jpg"
+	image: "./Image/spons/sp10.png",
+	name:"Platinum Sponser - Litfest"
 }, 
 {
-	image: "../ApogeeIntro18/Image/spons/sp11.jpg"
+	image: "./Image/spons/sp11.png",
+	name:"Workspace Partner"
 }, 
 {
-	image: "../ApogeeIntro18/Image/spons/sp12.jpg"
+	image: "./Image/spons/sp12.png",
+	name:"Platinum Sponser"
 }, 
 {
-	image: "../ApogeeIntro18/Image/spons/sp13.jpg"
+	image: "./Image/spons/sp13.png",
+	name:"Title Sponser - Hackathon"
 },
 {
-	image: "../ApogeeIntro18/Image/spons/sp14.jpg"
+	image: "./Image/spons/sp14.png",
+	name:"Merchandise Partner"
+
 }, 
 {
-	image: "../ApogeeIntro18/Image/spons/sp15.jpg"
+	image: "./Image/spons/sp15.png",
+	name:"Media Partner"
+
 }, 
 {
-	image: "../ApogeeIntro18/Image/spons/sp16.jpg"
+	image: "./Image/spons/sp16.png",
+	name:"Youth Partner"
 }, 
 {
-	image: "../ApogeeIntro18/Image/spons/sp17.jpg"
+	image: "./Image/spons/sp17.png",
+	name:"Official Online Media Partner"
 },  
 {
-	image: "../ApogeeIntro18/Image/spons/sp18.jpg"
-}, {
-	image: "../ApogeeIntro18/Image/spons/sp19.jpg"
-}, {
-	image: "../ApogeeIntro18/Image/spons/sp20.jpg"
-}, {
-	image: "../ApogeeIntro18/Image/spons/sp21.jpg"
+	image: "./Image/spons/sp18.png",
+	name:"Online Media Partner"
+}, 
+{
+	image: "./Image/spons/sp19.png",
+	name:"Online Media Partner"
+}, 
+{
+	image: "./Image/spons/sp20.png",
+	name:"Online Media Partner"
+}, 
+{
+	image: "./Image/spons/sp21.png",
+	name:"Online Media Partner"
 },
- {
-	image: "../ApogeeIntro18/Image/spons/sp22.jpg"
+{
+	image: "./Image/spons/sp22.png",
+	name:"Sponser"
 }];
 
 
@@ -147,6 +175,7 @@ var string2 = "";
 sponsors_info.forEach((el, i)=>{
 	string2 += "<div class='s-cont'>\
 			<img src='"+ el.image +"'>\
+			<p class='s-name'>" + el.name + "</p>\
 		</div>"
 })
 
