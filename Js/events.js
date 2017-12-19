@@ -454,6 +454,7 @@ var templates = {
 		<a href="https://www.facebook.com/bitsapogee/" target="_blank"><li><img src="./Image/fb.png"></li></a>\
 		<a href="https://twitter.com/bitsapogee?lang=en" target="_blank"><li><img src="./Image/twitter.png"></li></a>\
 		<a href="https://www.instagram.com/bitsapogee/" target="_blank"><li><img src="./Image/insta.png"></li></a>\
+		<a href="https://www.youtube.com/watch?v=wVBO2qEUpck" target="_blank"><li><img src="./Image/ytb.png"></li></a>\
 		</ul>'
 	},
 	"event" :{

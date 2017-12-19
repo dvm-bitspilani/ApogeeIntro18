@@ -75,6 +75,78 @@
 	position: relative;	
 }
 
+.home #head{
+	animation: aaa_a .5s linear;
+}
+.home #date{
+	animation: aaa_b .7s linear;
+}
+.home #info{
+	animation: aaa_c .9s linear;
+}
+
+#footer{
+	transition: all 1s linear;
+}
+
+.home .social img{
+	animation: zooom .5s linear; 
+}
+
+
+@keyframes zooom{
+	from{
+		transform: scale(.5);
+	},
+	to{
+		transform: scale(1);
+	}
+}
+
+
+@keyframes aaa_a{
+	from{
+		opacity: 0;
+		margin-left: -20vw;
+	},
+	to{
+		opacity: 1;
+		margin-left: 7vw;
+	}
+
+}
+
+@keyframes aaa_b{
+	from{
+		opacity: 0;
+		margin-left: -20vw;
+	},
+	20%{
+		opacity: 0;
+		margin-left: -20vw;
+	},
+	to{
+		opacity: 1;
+		margin-left: 7vw;
+	}
+
+}
+@keyframes aaa_c{
+	from{
+		opacity: 0;
+		margin-left: -20vw;
+	},
+	40%{
+		opacity: 0;
+		margin-left: -20vw;
+	},
+	to{
+		opacity: 1;
+		margin-left: 7vw;
+	}
+
+}
+
 /*.s-name:before{
 	position:absolute;
 	top:0;
