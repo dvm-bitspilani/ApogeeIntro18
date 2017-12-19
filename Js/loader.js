@@ -15,10 +15,7 @@ setTimeout(function(){
 
 var loaded = 0;
 window.onload = function(){ loaded = 1};
-function skip()
-{
-  loaded=1;
-}
+
 setTimeout(function(){
   if(loaded == 0)
    { var repeatLoader = setInterval(function()
@@ -29,15 +26,9 @@ setTimeout(function(){
      $('#bricks').fadeIn(1000);
      if(loaded == 1)
       {
-         $('#loader').hide(1000);
-         $('#mainpage').show(500);
-      setTimeout(function(){
-             document.getElementById("landingpage").style.background = "#FFF";
-
-           },1250);
-            document.getElementById("landingpage").style.height = "100vh";
-       document.getElementById("landingpage").style.marginTop = "0";
-       document.getElementById("landingrollcover").style.opacity = "1";
+       document.getElementById("loader").style.display = "none";
+       document.getElementById("mainpage").style.display = "block";
+       $('#mainpage').fadeIn(250);
        window.renderHome();
        clearInterval(repeatLoader);
       }
@@ -51,19 +42,11 @@ setTimeout(function(){
         // document.getElementById("mainpage").style.display = "block";
         // $('#mainpage').fadeIn(250);
         $('#loader').hide(1000);
-        $('#mainpage').show(500);
-     setTimeout(function(){
-            document.getElementById("landingpage").style.background = "#FFF";
-
-          },1250);
-           document.getElementById("landingpage").style.height = "100vh";
-      document.getElementById("landingpage").style.marginTop = "0";
-      document.getElementById("landingrollcover").style.opacity = "1";
+        $('#mainpage').show(700);
         window.renderHome();
       },9800)
    }
 },10000)
-
 
 var debug = ()=>{
   $('#loader').hide(1000);
