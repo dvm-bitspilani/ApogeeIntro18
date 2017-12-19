@@ -11,18 +11,13 @@ function openinfo() {
     
     document.getElementById("incontmain").style.top = "0";
      document.getElementById("incontmain").style.left = "0";
-     document.getElementById("incontmain").style.height = "100vh";
-      document.getElementById("incontmain").style.marginTop = "0";
-      document.getElementById("rollcontainer").style.opacity = "1";
+    
 
 }
 function closeinfo() {
     
     document.getElementById("incontmain").style.top = "100vh";
-    document.getElementById("incontmain").style.height = "1vh";
-    document.getElementById("incontmain").style.marginTop = "47.5vh";
-      document.getElementById("rollcontainer").style.opacity = "0";
-  
+    // document.getElementById("viewlist").style.top = "-100vh";
 }
 
 

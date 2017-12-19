@@ -156,5 +156,8 @@ function renderEMenu(){
 	console.log('render Emenu');
 	fadeInUp(eMenu, "flex", loadImages);
 }
+function renderpep(){
+	fadeInUp(document.body.querySelector('#pep'), "block");
+}
 
 

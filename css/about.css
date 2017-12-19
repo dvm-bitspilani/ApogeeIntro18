@@ -2,7 +2,7 @@
   /*width: 100%;*/
   height: 10vh;
 }
-#event-menu,#about, #past-speakers, #sponsors, #pre_register{
+#event-menu,#about, #past-speakers, #sponsors, #pre_register, #pep{
   display: none;
 }
 .s-cont img
