@@ -134,7 +134,8 @@ transform: rotate(360deg); } }*/
       position: absolute;
       right: 0;
       margin-top: 18px;
-      width: 100%;
+      width: 50%;
+      right: 0;
       height: 2px;
       background-color: #04FFE5;
       visibility: hidden;
