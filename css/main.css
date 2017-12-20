@@ -119,20 +119,20 @@ transition: height .5s cubic-bezier(0.62, 0.12, 0.29, 0.97) .55s, margin-top .5s
 .image {
   z-index: 11 !important;
   position: absolute;
-  width: 60vw;
+  width: 61vw;
   height: 90vh;
 	z-index : 11;
   background-image: url("../Image/mainbg.jpeg");
   background-size: cover;
   background-position: center;
   right: 0px;
-  -webkit-clip-path: polygon(40% 0%, 100% 0%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(41% 0%, 100% 0%, 100% 100%, 4% 100%);
 }
 
 .info {
   font-family: "COVES";
   height: 90vh;
-  -webkit-clip-path: polygon(0% 0%, 92% 0%, 60% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 91.5% 0%, 58.5% 100%, 0% 100%);
   display: flex;
   width: 70vw;
   flex-wrap: wrap;
