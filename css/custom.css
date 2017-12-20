@@ -12,12 +12,46 @@
 }
 
 #ham img{
-	border: none;
+	padding: 5px 10px;
+	border: 1px solid #3e3e3e;
+	border-radius: 3px;
+}
+
+.navbar{
+	height: 12vh;
+}
+
+.image{
+	height: 88vh;
+}
+
+.info_cont{
+	height: 76vh;
+}
+
+#footer{
+line-height: 12vh;	
+}
+
+.event .social{
+	font-size: 1.6em;
 }
 
 
 #landingrollcover{
-	overflow: auto;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+	#landingrollcover{
+		overflow: auto;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.info #head{
+		font-size: 3em;
+	}
 }
 
 #category-menu, #more-info{
