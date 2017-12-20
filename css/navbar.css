@@ -1,86 +1,87 @@
 @font-face {
-  font-family: "COVES";
+font-family: "COVES";
 src: url("css/Fonts/coveslight.otf"); }
 body {padding: 0;
-  margin: 0;
+margin: 0;
 /*color: #fff;*/
 }
 #c{
-  opacity: 1;
-   margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100px;
-  overflow: hidden;
-  font-size: 1em;
-  background-size: cover;
-  /*background-image: url("../images/bg.jpg");*/
+opacity: 1;
+margin: 0;
+padding: 0;
+height: 100%;
+width: 100px;
+overflow: hidden;
+font-size: 1em;
+background-size: cover;
+/*background-image: url("../images/bg.jpg");*/
 }
 .header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-   }
-  .header .title {
-    flex: 0 1 auto; }
-  .header p {
-    flex-basis: 10%; }
-  .header .title .apogee {
-    font-size: 3rem;
-    font-family: "COVES";
-    font-weight: bold; }
-  .header .title .h {
-    font-size: 3rem;
-    color: #04FFE5;
-    font-family: "COVES";
-    font-weight: bold; }
-  .header .title .bits {
-    font-size: 1.5rem;
-    font-family: "COVES";
-    font-weight: bold; }
-  .header .cross {
-    width: 2em;
-    flex: 0 0 auto;
-    height: 2em;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid black;
-    margin: 1em;
-    animation-fill-mode: forwards; }
-    .header .cross:hover {
-      animation: crosshover 0.75s ease-in-out;
-      cursor: pointer; }
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+}
+.header .title {
+flex: 0 1 auto; }
+.header p {
+flex-basis: 10%; }
+.header .title .apogee {
+font-size: 3rem;
+font-family: "COVES";
+font-weight: bold; }
+.header .title .h {
+font-size: 3rem;
+color: #04FFE5;
+font-family: "COVES";
+font-weight: bold; }
+.header .title .bits {
+font-size: 1.5rem;
+font-family: "COVES";
+font-weight: bold; }
+.header .cross {
+width: 2em;
+flex: 0 0 auto;
+height: 2em;
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+border: 2px solid black;
+margin: 1em;
+animation-fill-mode: forwards; }
+.header .cross:hover {
+animation: crosshover 0.75s ease-in-out;
+cursor: pointer; }
 
 .cr {
-  font-size: 1.5rem;
-  transform-orign: 50% 50%;
-  transform: rotate(0deg);
-  color: #04FFE5;
-  animation-fill-mode: forwards; }
+font-size: 1.5rem;
+transform-orign: 50% 50%;
+transform: rotate(0deg);
+color: #04FFE5;
+animation-fill-mode: forwards; }
 
 /*@keyframes crosshover {
-  10% {
-    transform: rotate(45deg); }
-  20% {
-    transform: rotate(90deg); }
-  30% {
-    transform: rotate(135deg); }
-  40% {
-    transform: rotate(180deg); }
-  60% {
-    transform: rotate(225deg); }
-  70% {
-    transform: rotate(270deg); }
-  80% {
-    transform: rotate(315deg); }
-  100% {
-    transform: rotate(360deg); } }*/
+10% {
+transform: rotate(45deg); }
+20% {
+transform: rotate(90deg); }
+30% {
+transform: rotate(135deg); }
+40% {
+transform: rotate(180deg); }
+60% {
+transform: rotate(225deg); }
+70% {
+transform: rotate(270deg); }
+80% {
+transform: rotate(315deg); }
+100% {
+transform: rotate(360deg); } }*/
 .list {
+
       /* margin-top: 7vh; */
     /* margin-left: 15vw; */
     /* padding-top: 3vh; */
@@ -160,82 +161,86 @@ body {padding: 0;
         visibility: visible;
         transform: scale(1); }*/
 
+
 @media screen and (orientation: landscape) and (max-width: 761px) {
-  .header .title .apogee {
-    font-size: 2rem; }
-  .header .title .h {
-    font-size: 2rem;
-    color: #04FFE5; }
-  .header .title .bits {
-    font-size: 0.75rem; }
+.header .title .apogee {
+font-size: 2rem; }
+.header .title .h {
+font-size: 2rem;
+color: #04FFE5; }
+.header .title .bits {
+font-size: 0.75rem; }
 
-  .list .name {
-    font-size: 4vh; }
-  .list .num {
-    font-size: 4vh; } }
+.list .name {
+font-size: 4vh; }
+.list .num {
+font-size: 4vh; } }
 @media screen and (orientation: portrait) and (max-width: 500px) {
-  .header .title .apogee {
-    font-size: 1.5rem; }
-  .header .title .h {
-    font-size: 1.5rem;
-    color: #04FFE5; }
-  .header .title .bits {
-    font-size: 0.6rem; }
-  .header .cross {
-    height: 1.25em;
-    width: 1.25em; }
+.header .title .apogee {
+font-size: 1.5rem; }
+.header .title .h {
+font-size: 1.5rem;
+color: #04FFE5; }
+.header .title .bits {
+font-size: 0.6rem; }
+.header .cross {
+height: 1.25em;
+width: 1.25em; }
 
-  .cr {
-    font-size: 0.5em; }
+.cr {
+font-size: 0.5em; }
+
 
   .list .name {
     font-size: 4vh; }
   .list .num {
     font-size: 3vh; } }
+
 @keyframes brdr {
-  20% {
-    border-top: 0.5px solid black; }
-  40% {
-    border-top: 0.5px solid black;
-    border-right: 0.5px solid black; }
-  60% {
-    border-top: 0.5px solid black;
-    border-right: 0.5px solid black;
-    border-bottom: 0.5px solid black; }
-  80% {
-    border-top: 0.5px solid black;
-    border-right: 0.5px solid black;
-    border-bottom: 0.5px solid black;
-    border-left: 0.5px solid black; }
-  100% {
-    border-top: 0.5px solid black;
-    border-right: 0.5px solid black;
-    border-bottom: 0.5px solid black;
-    border-left: 0.5px solid black; } }
+20% {
+border-top: 0.5px solid black; }
+40% {
+border-top: 0.5px solid black;
+border-right: 0.5px solid black; }
+60% {
+border-top: 0.5px solid black;
+border-right: 0.5px solid black;
+border-bottom: 0.5px solid black; }
+80% {
+border-top: 0.5px solid black;
+border-right: 0.5px solid black;
+border-bottom: 0.5px solid black;
+border-left: 0.5px solid black; }
+100% {
+border-top: 0.5px solid black;
+border-right: 0.5px solid black;
+border-bottom: 0.5px solid black;
+border-left: 0.5px solid black; } }
 /*# sourceMappingURL=navlist.css.map */
 
 /*# sourceMappingURL=navlist.css.map */
 #viewlist:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.1;
-    background-image: url("../Image/bg.jpg");
+content: " ";
+display: block;
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+opacity: 0.1;
+background-image: url("../Image/bg.jpg");
 
 }
 
 #viewlist{
-  color: white;
-  display: block;
-  position: fixed;
-  left : 0px;
-  bottom: -100vh;
+color: white;
+display: block;
+position: fixed;
+left : 0px;
+bottom: -100vh;
 margin: 0;
 padding: 0;
+
   height: 100vh;
   width: 100vw;
   z-index: 11;
@@ -245,14 +250,15 @@ padding: 0;
   background-size: cover;
   background-color: #111;
   overflow: auto;
-}
- #pep{
-  opacity: 1;
 
-  
-   transition: all .6s cubic-bezier(0.62, 0.12, 0.29, 0.97);
-font-family: "COVES";
-  font-size: 1em;
- }
-#hambur:hover{cursor: pointer;
 }
+
+#pep{
+opacity: 1;
+transition: all .6s cubic-bezier(0.62, 0.12, 0.29, 0.97);
+font-family: "COVES";
+font-size: 1em;
+}
+
+/*#ham:hover{cursor: pointer;
+}*/

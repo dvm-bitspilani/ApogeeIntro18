@@ -85,7 +85,7 @@ transition: height .5s cubic-bezier(0.62, 0.12, 0.29, 0.97) .55s, margin-top .5s
   .link p {
     margin: auto;
     font-size: 1.2em;
-    padding: 0 1vw 0 2vw; }
+    padding: 0 1vw 0 1vw; }
 
 #bps:before {
   position: absolute;
