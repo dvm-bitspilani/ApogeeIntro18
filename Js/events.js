@@ -517,7 +517,8 @@ var templates = {
 			</div>'
 		},
 		footer: function(category, eventCode){
-			return (Events[category][eventCode]["moreInfo"]?'<h3>MORE INFO</h3>':'<h3><a style="text-decoration:none;color:#fff" href="./pdfs/Rules Booklet Updated complete.pdf" download="Rules Booklet.pdf">DOWNLOAD RULES BOOKLET</a></h3>');
+			// return (Events[category][eventCode]["moreInfo"]?'<h3>MORE INFO</h3>':'<h3><a style="text-decoration:none;color:#fff" href="./pdfs/Rules Booklet Updated complete.pdf" download="Rules Booklet.pdf">DOWNLOAD RULES BOOKLET</a></h3>');
+			return ('<h3><a style="text-decoration:none;color:#fff" href="./pdfs/Rules Booklet Updated complete.pdf" download="Rules Booklet.pdf">DOWNLOAD RULES BOOKLET</a></h3>');
 		},
 		image: function(category, eventCode){
 			return "Image/"+ category.toLowerCase() + "/" + eventCode.toLowerCase() + ".jpg" ;
