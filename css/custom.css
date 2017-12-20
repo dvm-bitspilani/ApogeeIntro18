@@ -112,6 +112,9 @@ line-height: 12vh;
 	padding: 30px;
 	position: relative;	
 }
+.list .name{
+	display: table;
+}
 
 .home #head{
 	animation: aaa_a .5s linear;
