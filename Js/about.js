@@ -80,9 +80,9 @@ Array.prototype.forEach.call(openEventMenu, (el)=>{
 
 function loadImages(){
 	// if(!opened)
-		Array.prototype.forEach.call(boxWrapper.children,(el, i)=>{
-			el.querySelector('.img').style.backgroundImage = "url(" + boxes[i].image + ")";
-		});
+		// Array.prototype.forEach.call(boxWrapper.children,(el, i)=>{
+		// 	el.querySelector('.img').style.backgroundImage = "url(" + boxes[i].image + ")";
+		// });
 	// opened = true;
 }
 // crossAbt.addEventListener("click",function(e){

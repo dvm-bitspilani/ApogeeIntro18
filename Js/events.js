@@ -416,7 +416,7 @@ var renderCatMenu = function(category){
 		var box_wrapper_innerHTML = "";
 
 		for(eventCode in Events[category]){
-			box_wrapper_innerHTML += "<div class='box "+ eventCode.toLowerCase()+"' data-category='"+category+"' data-event='"+ eventCode+"'><div class='img'></div><p>"+ Events[category][eventCode].head+"</p></div>";
+			box_wrapper_innerHTML += "<div class='box "+ eventCode.toLowerCase()+"' data-category='"+category+"' data-event='"+ eventCode+"'><div class='img' style='background-image: url(\""+ templates.event.image(category, eventCode) +"\")'></div><p>"+ Events[category][eventCode].head+"</p></div>";
 		}
 		document.querySelector('.box-wrapper').innerHTML = box_wrapper_innerHTML;
 		console.log(box_wrapper_innerHTML);
@@ -518,6 +518,9 @@ var templates = {
 		},
 		footer: function(category, eventCode){
 			return (Events[category][eventCode]["moreInfo"]?'<h3>MORE INFO</h3>':'<h3><a style="text-decoration:none;color:#fff" href="./pdfs/Rules Booklet Updated complete.pdf" download="Rules Booklet.pdf">DOWNLOAD RULES BOOKLET</a></h3>');
+		},
+		image: function(category, eventCode){
+			return "Image/"+ category.toLowerCase() + "/" + eventCode.toLowerCase() + ".jpg" ;
 		}
 	}
 }
@@ -531,7 +534,7 @@ window.renderEvent = function(category, eventCode){
 		templates.event.data_wrapper(category, eventCode),
 		templates.event.footer(category, eventCode),
 		Events[category][eventCode].color,
-		Events[category][eventCode].image,
+		templates.event.image(category, eventCode),
 		(
 			Events[category][eventCode]["moreInfo"]?
 			(
