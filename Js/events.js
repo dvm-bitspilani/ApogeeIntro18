@@ -495,7 +495,7 @@ var templates = {
 	"home":{
 		data_wrapper: '<div class="data">\
 		<p id="head">cybernetic<br> vision</p>\
-		<p id="date">22-25 february</p>\
+		<p id="date">21-25 february</p>\
 		<p id="info">annual technical fest\
 		<br>\
 		of bits pilani</p>\
