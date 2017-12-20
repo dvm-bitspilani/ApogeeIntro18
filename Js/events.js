@@ -66,7 +66,24 @@ Et nostra suscipit mollis aliquam congue dolor dapibus fames risus viverra lobor
 // 		image: "Image/leap.jpeg"
 // 	}
 // }
-// 
+// The 3rd edition of Startup Weekend Pilani is about to be held between 23
+// rd and 25
+// th February. The
+// schedule for the same is as follows:
+// Friday
+// - Inauguration
+// - Idea Pitching
+// - Team allotment
+// Saturday
+// - Product Building
+// - Mentoring
+// Sunday
+// - Product Pitching
+// - Q&A Session
+// - Award Ceremony
+// The perks include $300​ in credit from Google Cloud Platform ​to help build mobile and web apps, a free
+// dot(CO) domain ​and access to a lot of community benefits and discounts.
+// If you want to apply for participation, contact esummit@bits-apogee.org
 // <br>
 var Events = {
 	"CIVIL": {
@@ -319,29 +336,58 @@ var Events = {
 		AIC:{
 			head:"APOGEE Innovation Challenge",
 			info: "APOGEE Innovation Challenge, an exceptional technical symposium, aims at quenching your thirst for hands-on experience in real life problems plaguing the industrial world. Organized in collaboration with various multinational companies, this event presents before you existing challenges faced by these companies who seek their solutions from you. <br>			Exciting internship offers and cash prizes await the winners. Participation certificate shall be given to all members of each team<br>which present solutions during APOGEE '18. Needless to say, you can brag about cracking a professional challenge while still being in college.<br>These problems, which happen to be discipline specific (one need not belong to that discipline), are to be solved by participants in teams of 2-4 in a month. After scrutiny by company officials, top 5 teams will be presenting their final solutions during APOGEE ‘17. <br>StrategiaThe participants will be required to solve a case study,and present its solution. Certain incentives will be awarded to the participants based on the score of the first round, which can be used in the subsequent rounds. "
+			,color : "#F6A211"
+			,image : "Image/re.jpeg"
 		},
 		DXL:{
 			head:"Dexter’s Laboratory",
 			info:"A fun-filled quizzing and laboratory based event of the Apogee which provoke your practical thinking and logical approach to solve the mystery behind Dexter’s stolen invention."
+			,color : "#F6A211"
+			,image : "Image/re.jpeg"
 		},
 		GAMB:{
 			head:"Gambling Mathematics",
 			info:"Come with your team and show your skill to gamble in real time.<br>			All you should know is- How well you can handle your money (points in this event!). You need not know rules of Gambling as they would be told on spot at the event."
+			,color : "#F6A211"
+			,image : "Image/re.jpeg"
 		},
 		WHOD:{
 			head:"Who Dunnit",
 			info: "A murder has occurred in the locality. The teams participating will be rigorously screened and the best 6 will be put on the case to crack it. They will use resources available to them. The team that is able to solve the case fastest will be rewarded.<br>The candidates must appear in teams of 2 or 3 and will participate in 7 to 8 rounds of quizzes for screening. The final 6 teams will be chosen from the participants and be provided a murder mystery which they must solve with the help of chemicals available in the chemistry laboratory."
-
+			,color : "#F6A211"
+			,image : "Image/re.jpeg"
 		},
 		ZOMB: {
 			head:"Zombie Mathematics",
 			info:"Answer the tricky questions of your opponents and restrict their moves. It will be an online game where two teams will be playing against each other. The motive of each team will be to answer questions on each of its move in order to restrict other's way. The team that will survive till end will be the ZOMBIE of the event!"
+			,color : "#F6A211"
+			,image : "Image/re.jpeg"
 		}
 	},
 	"SOCIAL":{
 		DHITI:{
 			head:"DHITI",
 			info:"\"Have faith in people. They are basically good and smart. Given the right tools, they can do wonderful things.\"  – Steve Jobs.<br>Technology today has seeped into every aspect of our lives. But we must not forget about the society and its problems.  We, the youth form more than half of our nation's population. Our ideas and knowledge base can solve a multitude of different problems faced by the communities today. <br>We invite people to bring forth their ideas that can revolutionize the use of technology to improve people's lives. It is only by solving such basic problems that development will occur collectively in every community and not selectively.<br>APOGEE, BITS Pilani presents to you the social event of the annual technical extravaganza - DHITI.<br>Dhiti (Sanskrit for “An idea”) is a platform for passionate individuals who ideate and aspire for technology to reach the grassroots. Here we will provide you with problems and mentors to form feasible solutions to various issues and provide recognition to your solution. So, let’s put our ideas and knowledge bases to some real use.<br>Problem Statements would be updated later."
+			,color : "#F6A211"
+			,image : "Image/re.jpeg"
+		}
+	},
+	"ESUMMIT":{
+		TALKS:{
+			head:"Talks by eminent entrepreneurs.",
+			info:"The E-Summit shall involve talks by distinguished luminaries from the entrepreneurial ecosystem. Our series of talks serves the privilege of viewing some of the exalted minds of the millennium touchdown in this calm little town of Pilani, and amuse the attendees with their multifaceted talks and entrenched knowledge. Stay tuned for the rollout of the speaker lineups.<br>If you want to apply for speaker slots, contact esummit@bits-apogee.org"
+			,color : "#F6A211"
+			,image : "Image/re.jpeg"
+		}, SW: {
+			head: "Startup Weekend",
+			info: "Startup Weekend is TechStars’ 54-hour weekend hackathon, backed by Google For Entrepreneurs, and has a global coverage of more than 150+ countries, with chapters set up in more than 1800+ cities. It is a networking-centric hackathon wherein participants transform an idea of theirs into a Minimum Viable Product with assistance from mentors, and present it to the jury on the last day."
+			,color : "#F6A211"
+			,image : "Image/re.jpeg"
+		}, EXPO:{
+			head: "Startup Expo",
+			info: "The Startup Expo is an amalgamation of some of India’s finest hardware startups. The Expo is based on a synergy-centric model, wherein the entrepreneurial folks of Pilani would draw insights from the learnings of the founders and the startup benefits from the welcome publicity, thereby adding value to the fraternity. The Expo shall witness stalls being put up by the respective startups, exercising their space to showcase their products, widen their outreach, and conduct workshops and internship fairs. Startups participating in the Expo would also be offered resources and an opportunity to participate in a workshop, conducted by AngelHack on ‘Basics of Angel Investing’. If you want to apply for a stall during Expo, then please contact esummit@bits-apogee.org."
+			,color : "#F6A211"
+			,image : "Image/re.jpeg"
 		}
 	}
 };
@@ -392,7 +438,11 @@ var renderCatMenu = function(category){
 	var category_wrapper_html = "";
 	var cat_wrapper = document.querySelector('.category-wrapper');
 	for( category in Events){
-		category_wrapper_html += '<div class="category" data="'+category+'"><img src="Image/'+ category.toLowerCase() +'.svg" alt="'+ category +'"></div>'
+		var ext = '.svg';
+		if(category == "ESUMMIT"){
+			ext = ".png";
+		}
+		category_wrapper_html += '<div class="category" data="'+category+'"><img src="Image/'+ category.toLowerCase() + ext + '" alt="'+ category +'"></div>'
 	}
 
 	cat_wrapper.innerHTML = category_wrapper_html;
@@ -492,9 +542,9 @@ window.renderEvent = function(category, eventCode){
 					screen.querySelector('.more-info-content').innerHTML = Events[category][eventCode]["moreInfo"];
 					renderMoreInfo();
 				}
-			)
+				)
 			:null
-		));
+			));
 	return function(){
 		__render__();
 		// setTimeout(animateInfo, 1000);
