@@ -29,6 +29,10 @@
 	height: 76vh;
 }
 
+.info_cont:before{
+	pointer-events: none;
+}
+
 #footer{
 line-height: 12vh;	
 }
@@ -127,6 +131,9 @@ line-height: 12vh;
 	animation: zooom .5s linear; 
 }
 
+.social ul li{
+	padding-top: 10px;
+}
 
 @keyframes zooom{
 	from{

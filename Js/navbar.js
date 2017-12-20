@@ -1,6 +1,7 @@
 
 function openNav() {
     document.getElementById("viewlist").style.bottom = "0";
+    
     // document.getElementById("viewlist").style.width = "100vw";
 }
 

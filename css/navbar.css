@@ -81,28 +81,39 @@ body {padding: 0;
   100% {
     transform: rotate(360deg); } }*/
 .list {
-  margin-top: 7vh;
-  margin-left: 15vw;
-  padding-top: 3vh;
-  padding-bottom: 5vh;
-  display: flex;
-  height: 75%;
-  box-sizing: border-box;
-  /* width: 70vw; */
-  flex: 0 1 auto;
-  flex-direction: column;
-  justify-content: space-around;
-  z-index: 5;
+      /* margin-top: 7vh; */
+    /* margin-left: 15vw; */
+    /* padding-top: 3vh; */
+    /* padding-bottom: 5vh; */
+    display: flex;
+    /* height: 75%; */
+    /* box-sizing: border-box; */
+    /* width: 70vw; */
+    /* flex: 0 1 auto; */
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    width: 65vw;
+    margin: 50px auto;
+    z-index: 5;
+    height: fit-content;
+  }
+  .list div{
+    display: flex;
+    flex-direction: column;
   }
   .list .num {
-    position: relative;
+    transition: all 0.5s ease-in-out 0s;
+       position: relative;
     flex: 0 1 auto;
     font-size: 3.5vmin;
     width: 2em;
     text-align: right;
     border-bottom: 1px solid black;
     font-family: "COVES";
-    font-weight: lighter; }
+    font-weight: lighter;
+    border-bottom: 1px solid #95989A;
+    padding: 5px 11px 0 0; }
   .list .name {
     position: relative;
     font-size: 6vmin;
@@ -114,12 +125,15 @@ body {padding: 0;
     font-family: "COVES";
     font-weight: bold;
     width: fit-content;
+    padding: 0 10px;
+    letter-spacing: .3em;
     }
     .list .name:before {
       content: "";
       position: absolute;
+      right: 0;
       margin-top: 18px;
-      width: 100%;
+      width: 50%;
       height: 2px;
       background-color: #04FFE5;
       visibility: hidden;
@@ -128,12 +142,23 @@ body {padding: 0;
       -webkit-transition: all 0.3s ease-in-out 0s;
       transition: all 0.5s ease-in-out 0s;
       }
-    .list .name:hover {
+      .list div:hover .name{
+         transform: scale(0.95);
+      cursor: pointer; 
+      }
+      .list div:hover .name:before{
+        visibility: visible;
+        transform: scale(1); 
+      }
+      .list div:hover .num{
+        border-color:#04FFE5;
+      }
+    /*.list .name:hover {
       transform: scale(0.95);
       cursor: pointer; }
       .list .name:hover:before {
         visibility: visible;
-        transform: scale(1); }
+        transform: scale(1); }*/
 
 @media screen and (orientation: landscape) and (max-width: 761px) {
   .header .title .apogee {
@@ -145,7 +170,7 @@ body {padding: 0;
     font-size: 0.75rem; }
 
   .list .name {
-    font-size: 7vh; }
+    font-size: 4vh; }
   .list .num {
     font-size: 4vh; } }
 @media screen and (orientation: portrait) and (max-width: 500px) {

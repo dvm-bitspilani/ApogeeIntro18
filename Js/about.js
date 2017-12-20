@@ -97,10 +97,13 @@ function loadImages(){
 console.log('eee')
 Array.prototype.forEach.call(crossButtons, (el)=>{
 	console.log(el);
-	el.addEventListener("click", ()=>{
-		fadeOutDown(el.parentNode);
-		closeNav()
-	})
+	if((el.getAttribute('data') && el.getAttribute('data')!="nope")|| !(el.getAttribute('data'))){
+
+		el.addEventListener("click", ()=>{
+			fadeOutDown(el.parentNode);
+			closeNav()
+		})
+	}
 })
 
 
