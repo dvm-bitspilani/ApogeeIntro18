@@ -26,9 +26,9 @@ setTimeout(function(){
      $('#bricks').fadeIn(1000);
      if(loaded == 1)
       {
-       document.getElementById("loader").style.display = "none";
-       document.getElementById("mainpage").style.display = "block";
-       $('#mainpage').fadeIn(250);
+       // document.getElementById("loader").style.display = "none";
+       // document.getElementById("mainpage").style.display = "block";
+       // $('#mainpage').fadeIn(250);
        console.log("AAA")
        window.renderHome();
        dismissLoader();
@@ -74,4 +74,4 @@ function dismissLoader(){
       document.getElementById("landingpage").style.marginTop = "0";
       document.getElementById("landingrollcover").style.opacity = "1";
 }
-// dismissLoader()
+dismissLoader()
