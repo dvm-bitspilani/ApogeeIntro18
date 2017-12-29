@@ -389,10 +389,20 @@ var Events = {
 			,color : "#F6A211"
 			,image : "Image/re.jpeg"
 		}
-	}
+	},
+	// "BBC":{
+	// 	"SMS":{
+	// 		head:"Stock Market Simulation"
+	// 		,info:"Stock Market Simulation is a joint collaboration of the Economics and Finance Association and the Association of Computing Machinery BITS Pilani. \nThe best way to grow your money is to invest it!!\nStep into the shoes of the greatest investors of all time – Be the next John Templeton, Philip Fisher, Benjamin Graham, Warren Buffet, Peter Thiel, Rakesh Jhunjhunwala, Radhakishan Damani, Raamdeo Agrawal and more…\nSeen your dad betting hard on the reds and blues on the niche black screen? Ever wondered about those fluctuating numbers that made little sense in your childhood??\nPlaying with Stocks is regarded as one of the most refined gambles of the Smart. \nThe fascination towards Stocks can be gauged by the fact that Global Stock Markets alone account for $69 Trillion worth of the world’s $294 Trillion Financial Assets capital."
+	// 	},"BW":{
+	// 		head:"Bid-Wiser"
+	// 		,info:"Going Once!                        \nGoing Twice!  \nAnd sold!\nDid you change your bid?\nBlink and its gone! It’s only a matter of two seconds.\nWitness the fever of Live Auctions at the only such event in APOGEE. \nOpening the doors of traditional auction houses, we bring to you a new way to bid on World-class art, collectibles and more, with an innovative twist. "
+	// 	}, "NEV": {
+	// 		head:"Night en Vegas"
+	// 		,info:"“Cause the house always wins. Play long enough, you don’t change the stakes.\nUNLESS. When that perfect hand comes along, you bet, and you bet big, then you take the house.”\nEver wondered how Bond defeated Le Chiffre in Casino Royale?\nAside from his good looks he also had the guts to take that big risk.\nEconomics & Finance Association presents to you this APOGEE 2018, a series of games where you’ll need a valiant heart to make a move.\nLook out for the stars, for as the night settles in, it’s time to bid all your Money – Goodbye.\nPlay as long as you can, for either you get rich or you get drunk trying.\nAnd don’t ever forget: what happens in Vegas stays in Vegas!!"
+	// 	}
+	// }
 };
-
-
 
 
 
