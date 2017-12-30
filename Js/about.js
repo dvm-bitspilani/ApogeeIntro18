@@ -1,37 +1,4 @@
-var boxes = [
-	{	class: "re",
-		name: "Reverse Enginering",
-		image: "../ApogeeIntro18/Image/re.jpeg"
-	},
-	{	class: "sms",
-		name: "Stock Market Simulation",
-		image: "../ApogeeIntro18/Image/sms.jpeg"
-	},
-	{	class: "aic",
-		name: "Apogee Inovation Challenge",
-		image: "../ApogeeIntro18/Image/aic.jpg"
-	},
-	{	class: "ftgp",
-		name: "Full Throttle Grand Prix",
-		image: "../ApogeeIntro18/Image/ftgp.jpeg"
-	},
-	{	class: "hack",
-		name: "Hackathon",
-		image: "../ApogeeIntro18/Image/hack.jpg"
-	},
-	{	class: "icl",
-		name: "International Coding League",
-		image: "../ApogeeIntro18/Image/icl.jpeg"
-	},
-	{	class: "leap",
-		name: "Leap",
-		image: "../ApogeeIntro18/Image/leap.jpeg"
-	},
-	{	class: "raw",
-		name: "Robots at War",
-		image: "../ApogeeIntro18/Image/re.jpeg	"
-	},
-]
+
 var openEventMenu = document.querySelectorAll('.eMenu-link');
 var aboutPage = document.querySelectorAll('.about-link');
 var eMenu = document.querySelector('#event-menu');
@@ -43,58 +10,17 @@ var crossEm = document.querySelector('#cross-em');
 var crossButtons  = document.querySelectorAll('.cross-btn');
 var p1 = document.querySelector('#p1');
 var p2 = document.querySelector('#p2');
-// for(var i = 0;i < boxes.length;i++)
-// {
-// 	var box = document.createElement("div");
-// 	box.className = "box"+" "+boxes[i].class;
-// 	box.data = boxes[i].class.toUpperCase();
-// 	var img = document.createElement("div");
-// 	img.className = "img";
-// 	// img.style.backgroundImage = "url(" + boxes[i].image + ")";
-// 	var p = document.createElement("p");
-// 	p.innerHTML = boxes[i].name;
-// 	box.appendChild(img);
-// 	box.appendChild(p);
-// 	boxWrapper.appendChild(box);
-// }
 
-
-
-// Array.prototype.forEach.call(boxWrapper.children,(el)=>{
-// 	el.addEventListener("click", ()=>{
-// 		document.querySelector('.cross').click();
-// 		crossEm.click();
-// 		window.renderEvent(el.data)();
-// 	});
-// });
 Array.prototype.forEach.call(aboutPage,(el)=>{
 	el.addEventListener("click",renderAbout);
 });
 // var opened = false;
 Array.prototype.forEach.call(openEventMenu, (el)=>{
 	el.addEventListener("click",function(e){
-		fadeInUp(cMenu, "flex", loadImages);
+		fadeInUp(cMenu, "flex");
 	});
 })
 
-
-function loadImages(){
-	// if(!opened)
-		// Array.prototype.forEach.call(boxWrapper.children,(el, i)=>{
-		// 	el.querySelector('.img').style.backgroundImage = "url(" + boxes[i].image + ")";
-		// });
-	// opened = true;
-}
-// crossAbt.addEventListener("click",function(e){
-// 	about.style.display = "none";
-// });
-
-// crossEm.addEventListener("click",function(){
-// 	closeNav();
-// 	fadeOutDown(crossEm.parentNode);
-// })
-
-console.log('eee')
 Array.prototype.forEach.call(crossButtons, (el)=>{
 	console.log(el);
 	if((el.getAttribute('data') && el.getAttribute('data')!="nope")|| !(el.getAttribute('data'))){
@@ -157,7 +83,7 @@ function renderMoreInfo(){
 
 function renderEMenu(){
 	console.log('render Emenu');
-	fadeInUp(eMenu, "flex", loadImages);
+	fadeInUp(eMenu, "flex");
 }
 function renderpep(){
 	fadeInUp(document.body.querySelector('#pep'), "block");
