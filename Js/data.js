@@ -317,5 +317,208 @@ var Events = {
 	}
 };
 
+var contacts_info = [
+{
+	dept:'Finance',
+	img_url:'/2017/static/intro/img/contacts/prez.jpg',
+	back_img:'/2017/static/intro/img/contacts/prez_back.jpg',
+	name:'Bharatha Ratna Puli',
+	phone:'+91-8297039977',
+	email:'president[at]pilani.bits-pilani.ac.in',
+},
+{
+	dept:'Inventory',
+	img_url:'/2017/static/intro/img/contacts/gensec.jpg',
+	back_img:'/2017/static/intro/img/contacts/gensec_back.jpg',
+	name:'Shivam Jindal',
+	phone:'+91-9717024281',
+	email:'gensec[at]pilani.bits-pilani.ac.in',
+},
+{
+	dept:'For sponsorship and marketing',
+	img_url:'/2017/static/intro/img/contacts/spons.jpg',
+	back_img:'/2017/static/intro/img/contacts/spons_back.jpg',
+	name:'Keshav Jain',
+	phone:'+91-9833175804',
+	email:'sponsorship[at]bits-apogee[dot]org',
+},
+{
+	dept:'For reception and accommodation',
+	img_url:'/2017/static/intro/img/contacts/recnacc.jpg',
+	back_img:'/2017/static/intro/img/contacts/recnacc_back2.jpg',
+	name:'Anshuman Sharma',
+	phone:'+91-9425331555',
+	email:'reccnacc[at]bits-apogee[dot]org',
+},
+{
+	dept:'For invites and correspondence',
+	img_url:'/2017/static/intro/img/contacts/pcr.jpg',
+	back_img:'/2017/static/intro/img/contacts/pcr_back.jpg',
+	name:'Alanckrit Jain',
+	phone:'+91-9582553659',
+	email:'pcr[at]bits-apogee[dot]org',
+},
+{
+	dept:'For Publicity and Online Partnership',
+	img_url:'/2017/static/intro/img/contacts/adp.jpg',
+	back_img:'/2017/static/intro/img/contacts/adp_back.jpg',
+	name:'Vaibhav Jain',
+	phone:'+91-8239737593',
+	email:'adp[at]bits-apogee[dot]org',
+},
+{
+	dept:'For projects, events and registration',
+	img_url:'/2017/static/intro/img/contacts/controls.jpg',
+	back_img:'/2017/static/intro/img/contacts/controls_back.jpg',
+	name:'Himangshu Baid',
+	phone:'+91-9704050069',
+	email:'controls[at]bits-apogee[dot]org',
+},
+{
+	dept:'For paper presentations and Guest Lectures',
+	img_url:'/2017/static/intro/img/contacts/pep.jpg',
+	back_img:'/2017/static/intro/img/contacts/pep_back.jpg',
+	name:'Abhishek Gupta',
+	phone:'+91-9453212629',
+	email:'pep[at]bits-apogee[dot]org, guestlectures[at]bits-apogee[dot]org',
+},
+{
+	dept:'For website and online registration queries',
+	img_url:'/2017/static/intro/img/contacts/dvm.jpg',
+	back_img:'/2017/static/intro/img/contacts/dvm_back.jpg',
+	name:'Hitesh Raghuvanshi',
+	phone:'+91-8003398809',
+	email:'webmaster[at]bits-apogee[dot]org',
+}
+];
+
+
+var speakers_info = [
+{
+	name:"Richard Stallman (Father of the Free Software Movement)"
+	,image:"Image/4.jpg"
+}
+,
+{
+	name:"APJ Abdul Kalam - Late Former President of India", 
+	image:"Image/10.jpg"
+}
+
+,
+{
+	name: "Walter Lewin (Famous MIT Physics professor)",
+	image: "Image/1.jpg"
+},{name:"Simon Taufel : Famous Australian Umpire", image:"Image/6.jpg"},
+{name:"Kailash Satyarthi- Nobel Peace Prize winner", image:"Image/9.jpg"},
+{
+
+	name: "David J. Peterson (Famous linguist, creator of Dothraki)",
+	image: "Image/3.jpg"
+},
+{name:"Jairam Ramesh : Indian Politician", image:"Image/5.jpg"},{name:"Radhika Vaz: Comedian", image:"Image/11.jpg"},
+{
+	name: "Jeff Lieberman (He is popular for hosting the show Time Warp on Discovery Channel)",
+	image: "Image/12.jpg"
+},
+{name:"Salman Khurshid: Indian Politician", image:"Image/7.jpg"},
+{name:"Manu Joseph", image:"Image/8.jpg"},
+{
+	name: "Dr. Pawan Agarwal (CEO of the revered Mumbai Dabbawala Association)",
+	image: "Image/2.jpg"
+}  
+]
+
+var sponsors_info = [{
+	image: "./Image/spons/sp1.png",
+	name:"Title Sponser"
+}, 
+{
+	image: "./Image/spons/sp2.png",
+	name:"Title Sponser - Litfest"
+
+}, 
+{
+	image: "./Image/spons/sp3.png",
+	name:"Gold Sponser"
+}, 
+{
+	image: "./Image/spons/sp4.png",
+	name:"Title Sponser - Vootathon"
+}, 
+{
+	image: "./Image/spons/sp5.png",
+	name:"Media Partner"
+}, 
+{
+	image: "./Image/spons/sp6.png",
+	name:"Gold Partner"
+}, 
+{
+	image: "./Image/spons/sp7.png",
+	name:"Driven By Partner - FTGP"
+}, 
+{
+	image: "./Image/spons/sp8.png",
+	name:"Education Partner"
+}, 
+{
+	image: "./Image/spons/sp9.png",
+	name:"Platinum Sponser - Litfest"
+}, 
+{
+	image: "./Image/spons/sp10.png",
+	name:"Platinum Sponser - Litfest"
+}, 
+{
+	image: "./Image/spons/sp11.png",
+	name:"Workspace Partner"
+}, 
+{
+	image: "./Image/spons/sp12.png",
+	name:"Platinum Sponser"
+}, 
+{
+	image: "./Image/spons/sp13.png",
+	name:"Title Sponser - Hackathon"
+},
+{
+	image: "./Image/spons/sp14.png",
+	name:"Merchandise Partner"
+
+}, 
+{
+	image: "./Image/spons/sp15.png",
+	name:"Media Partner"
+
+}, 
+{
+	image: "./Image/spons/sp16.png",
+	name:"Youth Partner"
+}, 
+{
+	image: "./Image/spons/sp17.png",
+	name:"Official Online Media Partner"
+},  
+{
+	image: "./Image/spons/sp18.png",
+	name:"Online Media Partner"
+}, 
+{
+	image: "./Image/spons/sp19.png",
+	name:"Online Media Partner"
+}, 
+{
+	image: "./Image/spons/sp20.png",
+	name:"Online Media Partner"
+}, 
+{
+	image: "./Image/spons/sp21.png",
+	name:"Online Media Partner"
+},
+{
+	image: "./Image/spons/sp22.png",
+	name:"Sponser"
+}];
+
 
 

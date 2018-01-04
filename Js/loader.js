@@ -57,7 +57,7 @@ var debug = ()=>{
         // window.renderHome();
   // showForm();
   // renderEvent('SMS')();
-  // renderPastSpeakers();
+  renderContacts();
 }
 
 // debug()

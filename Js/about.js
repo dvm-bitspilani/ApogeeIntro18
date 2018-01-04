@@ -63,6 +63,10 @@ function renderPastSpeakers(){
 	fadeInUp(document.body.querySelector('#past-speakers'), "flex");
 }
 
+function renderContacts(){
+	fadeInUp(document.body.querySelector('#contacts'), "flex");
+}
+
 function renderSponsors(){
 	fadeInUp(document.body.querySelector('#sponsors'), "flex");
 }

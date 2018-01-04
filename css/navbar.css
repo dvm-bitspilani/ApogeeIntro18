@@ -117,7 +117,7 @@ transform: rotate(360deg); } }*/
     padding: 5px 11px 0 0; }
   .list .name {
     position: relative;
-    font-size: 6vmin;
+    font-size: 4vmin;
     flex: 0 1 auto;
     margin-left: 2.5rem;
     box-sizing: border-box;
